@@ -1,0 +1,78 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+@import "compass/typography/lists/bullets";
+
+ul.events {
+    @include no-bullets;
+    padding: 0;
+    margin: 0;
+}
+
+li.event_item {
+    clear: both;
+    /* height: 48px; */
+    padding: 0;
+    margin: 0px 0px 12px 0px;
+    /* border: 1px dotted gray; */
+    /* margin-bottom: 12px; */
+    /* border-left: 6px red solid; */
+    em {
+        background: #ffa;
+        color: black;
+    }
+}
+
+.event_title {
+   margin: 0 0 4px 0;
+   font-size: 90%;
+   line-height: 100%;
+
+   a {
+       color: #aaa;
+       text-decoration: none;
+   }
+}
+
+h3.event_subject {
+    padding: 0;
+    margin: 0 0 8px 0;
+    /* width: 520px; */
+    color: gray;
+    /* float: left; */
+}
+img.event_image {
+    float: left;
+    margin-right: 12px;
+    width: 64;
+    height: 64;
+}
+
+.event_plans {
+    color: gray;
+}
+
+.event_datetime {
+    width: 48px;
+    height: 64px;
+    margin-right: 12px;
+    float: left;
+    text-align: center;
+    .event_day {
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: bold;
+    }
+    .event_month {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .event_time {
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 14px;
+    }
+}

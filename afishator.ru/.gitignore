@@ -1,0 +1,10 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+public/assets/
+.sass-cache/
+json_data*/
+/public/stylesheets/
+/solr/data/
+/log/sunspot-solr-development.log.lck

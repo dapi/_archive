@@ -1,0 +1,22 @@
+%li.event_item
+  .event_datetime
+    - plan = event.plans.first
+    .event_day
+      = plan.date.day
+    .event_month
+      = plan.date.strftime('%B')
+    .event_time
+      = plan.time.strftime('%H:%M')
+  %h3.event_subject
+    = image_tag event.image_url, :class=>:event_image, :width=>64, :height=>64, :align=>:left
+    = link_to highlighted(event, hit, :subject), event.url
+  .event_title
+    = link_to event.city, 'city'
+    \/
+    = link_to event.category, 'category'
+    \/
+    = link_to event.place, 'place'
+  .event_plans
+    = event.plans.map { |plan| plan.date.strftime('%d %B')+' '+plan.time.strftime('%H:%M') }.join(', ')
+  .clear
+

@@ -1,0 +1,29 @@
+- examples = ['сегодня в 19', 'сегодня в москве', 'театры в субботу' ]
+
+%form
+  %input{:name=>'query', :size=>40, :value=>params['query'], :hint=>'Что вас интересует?', :type=>:search, :autofocus=>:autofocus}
+  %p
+    Примеры:
+    = (examples.map {|e| "<a href='?query=#{e}' class='query_example'>#{e}</a>" } * ', ').html_safe
+%hr
+  - if @search
+    -# .page_info== Displaying page #{@search.hits.page} of #{@search.hits.per_page} out of #{@search.total} results
+    %h2 Search #{@search.total} results
+    %ul.events
+      - @search.each_hit_with_result do |hit, event|
+        = render event, :hit=>hit # haml :_event, :locals=>{ :event=>event, :hit=>hit }
+    .pagination= will_paginate(@search.hits)
+
+
+-# %hr
+-# json response:
+-# = @result
+-# %br
+-# list condition:
+-# = @conditions
+-# - else
+-#   %h2 List #{@events.total_entries} results
+-#   %ul.events
+-#     - @events.each do |event|
+-#       = haml :_event, :locals=>{ :event=>event }
+

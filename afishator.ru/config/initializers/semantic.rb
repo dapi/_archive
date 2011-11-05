@@ -1,0 +1,1 @@
+require 'semantic_query'

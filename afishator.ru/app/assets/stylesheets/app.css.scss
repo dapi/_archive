@@ -1,0 +1,56 @@
+@import "compass"; /* /css3/opacity"; */
+@import "blueprint";
+
+@include blueprint;
+
+/* .container { */
+/*     @include showgrid; */
+/* } */
+html {
+    height:100%;
+    max-height:100%;
+    overflow:auto;
+	padding:0;
+	margin:0;
+	border:0; }
+
+body {
+    height:100%;
+    max-height:100%;
+    overflow:auto;
+	padding:0;
+	margin:0;
+	border:0;
+        @include linear-gradient(color-stops(#eee, #fff));
+}
+
+header, footer {
+    @include column(24);
+    h1 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    /*     color: white; */
+    /*     @include text-shadow; */
+    }
+}
+
+form {
+    padding-bottom: 20px;
+    p {
+        padding-top: 5px;
+    }
+}
+
+section {
+    @include column(15);
+}
+
+aside {
+    @include column(9, true);
+}
+
+a.query_example {
+    text-decoration: none;
+    border-bottom: 1px dashed $link-color;
+}
+

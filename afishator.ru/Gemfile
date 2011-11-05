@@ -1,0 +1,56 @@
+source 'http://rubygems.org'
+
+gem 'rails', '3.1.0.rc1'
+
+group :development, :production  do
+# Bundle edge Rails instead:
+# gem 'rails',     :git => 'git://github.com/rails/rails.git'
+
+# gem 'pg'
+gem "mongoid"
+gem "bson_ext"
+
+# Asset template engines
+gem 'sass'
+gem 'coffee-script'
+
+gem 'mustang'
+gem 'uglifier'
+
+gem 'jquery-rails'
+gem 'haml-rails'
+gem 'compass', ">= 0.11.1" #, :require => false
+
+gem 'curb'
+# gem 'json'
+
+gem 'sunspot_rails', '~> 1.2.1'
+# gem 'sunspot'
+gem 'sunspot_mongoid'
+
+gem 'simple_form', ">= 1.4"
+
+gem 'will_paginate'
+
+
+# Use unicorn as the web server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'ruby-debug19', :require => 'ruby-debug'
+
+end
+
+group :test do
+  # Pretty printed test output
+  gem 'turn', :require => false
+end
+
+group :development do
+  gem 'vlad', :path => '/home/danil/code/gems/vlad/' #, :git=>'git://github.com/dapi/vlad.git' # '~> 2.2.0',
+  gem 'vlad-extras', :path => '/home/danil/code/gems/vlad-extras/'
+  gem 'vlad-git', :path => '/home/danil/code/gems/vlad-git/'
+end
