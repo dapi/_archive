@@ -1,0 +1,24 @@
+<h1>Editing telefon_federal</h1>
+
+<% form_for(@telefon_federal) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :federal %><br />
+    <%= f.text_field :federal %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :operator %><br />
+    <%= f.text_field :operator %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @telefon_federal %> |
+<%= link_to 'Back', telefon_federals_path %>

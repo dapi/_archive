@@ -1,0 +1,5 @@
+%tr
+  %td= company_group.id
+  %td= company_group.name
+  %td= link_to icon(:edit), edit_admin_company_group_url(company_group), :title => "Изменить"
+  %td= link_to icon(:delete), admin_company_group_url(company_group), :method => :delete, :confirm => "Вы уверены?", :title => "Удалить"  

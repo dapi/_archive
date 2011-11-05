@@ -1,0 +1,24 @@
+<h1>Editing telefon_rename</h1>
+
+<% form_for(@telefon_rename) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :prefix %><br />
+    <%= f.text_field :prefix %>
+  </p>
+  <p>
+    <%= f.label :old %><br />
+    <%= f.text_field :old %>
+  </p>
+  <p>
+    <%= f.label :new %><br />
+    <%= f.text_field :new %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @telefon_rename %> |
+<%= link_to 'Back', telefon_renames_path %>

@@ -1,0 +1,13 @@
+<div id="search">
+	
+	<div id="search_title">Адрес, наименование, вид деятельности или телефон</div>
+<%= text_field "search", :query %> <input type="submit" value="Найти" id="search_button" />
+	<%= observe_field "search_query", :url => { :action => :search, :controller => :companies},
+																		:frequency => 0.5,
+	                                  :update => "search_results", 
+	                                  :with => "search",
+																		:complete => "$('#search_button').hide();"
+	 																	%>
+	<div id="search_tips">Например: <span><a href="">металлические двери</a></span></div>
+	<hr/>
+</div>

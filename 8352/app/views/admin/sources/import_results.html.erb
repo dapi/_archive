@@ -1,0 +1,15 @@
+<h2>Импорт данных в каталог</h2>
+
+
+<p>Обновлено записей: <%= @result[:updated] %></p>
+<p>Добавлено новых: <%= @result[:new] %></p>
+<p>Всего обработано: <%= @result[:all] %></p>
+<p>Еще необработано записей: <%= @source.results.updated.count  %></p>
+
+<hr/>
+
+<%= link_to "back..", "/admin/sources/show/#{@source.id}" %>
+
+
+
+

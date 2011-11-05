@@ -1,0 +1,11 @@
+#search
+  #search_title
+    Адрес, наименование, вид деятельности или телефон
+    - form_tag search_path do
+      = text_field_tag :q, @search_query || '', :size => 50
+      = submit_tag 'Искать'
+    #search_tips
+      Например:
+      %span
+        %a металлические двери
+  %hr

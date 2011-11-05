@@ -1,0 +1,47 @@
+# !!! All settings see in vendor/plugins/thinking-sphinx/lib/thinking_sphinx/configuration.rb
+# 
+# Here are the default settings, relative to RAILS_ROOT where relevant:
+#
+# config file::           config/#{environment}.sphinx.conf
+# searchd log file::      log/searchd.log
+# query log file::        log/searchd.query.log
+# pid file::              log/searchd.#{environment}.pid
+# searchd files::         db/sphinx/#{environment}/
+# address::               127.0.0.1
+# port::                  3312
+# allow star::            false
+# min prefix length::     1
+# min infix length::      1
+# mem limit::             64M
+# max matches::           1000
+# morphology::            stem_en
+# charset type::          utf-8
+# charset table::         nil
+# ignore chars::          nil
+# html strip::            false
+# html remove elements::  ''
+#
+# If you want to change these settings, create a YAML file at
+# config/sphinx.yml with settings for each environment, in a similar
+# fashion to database.yml - using the following keys: 
+#
+development:
+#  config_file:
+#  searchd_log_file:
+#  query_log_file:
+#  pid_file:
+#  searchd_file_path:
+#  port:
+#  allow_star:
+  enable_star: true
+#  min_prefix_len:
+  min_infix_len: 1
+#  mem_limit:
+#  max_matches: 1000
+  morphology: stem_enru
+#  charset_type:
+#  charset_table:
+#  ignore_chars:
+#  html_strip:
+#  html_remove_elements:
+  limit: 100

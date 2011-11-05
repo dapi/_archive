@@ -1,0 +1,10 @@
+- if @search_query.blank?
+  Пустой запрос
+- else
+  %h2 Результаты поиска:
+  - if @companies.empty?
+    По Вашему запросу ничего не найдено.
+  - else
+    = render :partial => 'company', :collection => @companies
+    = will_paginate @companies
+    = page_entries_info @companies

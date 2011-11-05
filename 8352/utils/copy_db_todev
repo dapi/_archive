@@ -1,0 +1,11 @@
+table="$1"
+
+if [ -z "$table" ]; then
+ echo "Не указана таблица для перемещения. Пример copy_db categories"
+
+else
+ echo "Перемещаю на production сервер таблицу $table"
+ echo "delete from ${table};" > /tmp/${table}.sql
+ pg_dump -h orionet.ru -a -t $table d8352 >> /tmp/${table}.sql
+ psql d8352_site_dev < /tmp/${table}.sql
+fi

@@ -1,0 +1,5 @@
+- unless companies.empty?
+  - for company in companies
+    = render :partial => "companies/inline_show", :locals => { :company => company, :show_group=>true }
+  = will_paginate companies
+  = page_entries_info companies

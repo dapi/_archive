@@ -1,0 +1,13 @@
+<h1>Listing companies</h1>
+<br />
+<%= link_to 'New company', new_company_path %>
+<br />
+<br />
+<%#= @companies.size %>
+<%# @companies.each do |c| %>
+  <%#= c.name %>
+  <%#= c.addresses.size %>
+<%# end %>
+<%= render :partial => "companies/list", :locals => { :companies => @companies }%>
+
+

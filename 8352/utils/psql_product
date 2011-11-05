@@ -1,0 +1,1 @@
+psql d8352 -h orionet.ru $*

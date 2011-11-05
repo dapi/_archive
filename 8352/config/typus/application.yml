@@ -1,0 +1,322 @@
+# Typus Models Configuration File
+#
+# Use the README file on the same folder as this file as a reference to
+# customize this file to your needs.
+
+
+City:
+  fields:
+    list: name, ctype, prefix, is_prefix_owner
+    form: ctype, name, prefix, is_prefix_owner
+    show: id, ctype, name, prefix, is_prefix_owner
+    options:
+      selectors: ctype
+  actions:
+    edit: show
+  order_by:
+  filters: ctype
+  search: name, prefix
+  options:
+    per_page: 50
+    default_action_on_item: show
+  application: 8352.info
+  description:
+
+TelefonFederal:
+  fields:
+    list: operator, federal, city
+    form: federal, city, operator
+    show: federal, city, operator
+  actions:
+    index: check_number
+    edit: check_number
+  order_by: operator, federal
+  relationships: 
+  filters: operator
+  options:
+    per_page: 50
+  search: federal, city, operator
+  application: 8352.info
+  description:
+
+TelefonRename:
+  fields:
+    list: oldphone, newphone, rename_date
+    form: oldphone, newphone, rename_date
+    show: oldphone, newphone, rename_date
+  actions:
+    index: check_number
+    edit: check_number
+  order_by: oldphone, newphone
+  relationships: 
+  filters: 
+  options:
+    per_page: 50
+  search: oldphone, newphone
+  application: 8352.info
+  description:
+
+
+Tag:
+  fields:
+    list: name, is_primary, taggings #,  taggings_count
+    form: name, is_primary, description, taggings_count
+    show: id, name, is_primary, description, taggings_count
+  actions:
+    index:
+    edit:
+  order_by: name
+  relationships: taggings, tags_synonyms
+  filters: is_primary
+  options:
+    per_page: 50
+  search: name
+  application: Tags
+  description:
+
+TagsSynonym:
+  fields:
+    list: name, tag
+    form: name, tag
+    show: name, tag
+  actions:
+    index:
+    edit:
+  order_by: name
+  filters:
+  options:
+    per_page: 50
+  search: name
+  application: Tags
+  description:
+
+
+Tagging:
+  fields:
+    list: id, tag, taggable_type, taggable
+    form: tag, taggable_id, taggable_type
+    show: id, created_at, updated_at, tag, taggable, taggable_id, taggable_type
+  actions:
+    index:
+    edit:
+  order_by: 
+  options:
+    per_page: 50
+  relationships: tag
+  filters: 
+  search: tag
+  application: Tags
+  description:
+
+
+
+
+
+
+# APPLICATION:
+#
+# Company catalog
+#
+
+CompanyGroup:
+   fields:
+     list: name, branches # , companies_count  #companies_count, position, hidden
+     form: name #, branches
+     show: id,  name, branches
+   actions:
+     index:
+     edit: show
+   order_by: name
+# #  relationships: children #companies #, parent, children #, 
+   options:
+     per_page: 30
+   filters:
+   relationships: results_to_company_groups, companies #, parents, children
+   search: name
+   application: Company catalog
+   description: Группы компаний
+
+Branch:
+   fields:
+     list: name
+     form: name
+     show: id,  name
+   actions:
+     index:
+     edit: show
+   order_by: name
+   relationships: company_groups
+   options:
+     per_page: 30
+   filters:
+   search: name
+   application: Company catalog
+   description: Категории компаний
+
+
+Company:
+  fields:
+    list: name, results_count, company_group
+    form: name, inn, emails, site, director, description, working_time, company_group
+    show: id, results_count, emails, name, site, director, description, working_time, sources, created_at, updated_at, pending, dump, company_group
+  actions:
+    index:
+    edit: show
+  order_by:
+  relationships: addresses, phones, results #, tags
+  filters: company_group, tag
+  options:
+    per_page: 50
+  search: name
+  application: Company catalog
+  description: Каталог компаний
+
+Address:
+  fields:
+    list: address, city, company, post_index
+    show: address, city, company, post_index, parsed_address, ymaps
+    form: address, city, company, post_index, parsed_address, ymaps
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: company, city
+  filters:
+  search: address, post_index
+  options:
+    per_page: 50
+  application: Company catalog
+  description:
+
+Phone:
+  fields:
+    list: id, number, company, person, department, description
+    form: number, person, department, working_time, description, short_code, company
+    show: id, number, person, department, working_time, description, short_code, created_at, updated_at, company
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: company
+  filters:
+  search: number, person, departmend
+  options:
+    selectors: state
+    per_page: 30
+  application: Company catalog
+  description:
+
+
+ResultsToCompanyGroup:
+   fields:
+     list: category_name, company_group, source_id
+     show: id, category_name, company_group, source_id
+     form: category_name, company_group, source
+   actions:
+     index:
+     show: update_companies
+     edit: update_companies
+   order_by: category_name
+   filters:
+   options:
+     per_page: 30
+   relationships: results
+   search: category_name
+   application: Company catalog
+   description:
+
+
+
+Result:
+  fields: #category_name, 
+    list: name, normalized_name, company, parsed_phones_str, state #address, state, importer_state, import_errors
+    form: name, normalized_name, short_name, address, phones, parsed_phones, parsed_phones_str, email, site_url, category_name, work_time, other_info, raw_html, company, is_checked, state, importer_state
+#, link
+    show: id, name, address, phones, parsed_phones, email, site_url, category_name, work_time, other_info, raw_html, is_checked, state, importer_state, created_at, updated_at, link, company, source, import_errors, parsed_address, parsed_phones
+    options:
+      selectors: state
+  actions:
+    index:
+    edit:
+  order_by: category_name, name
+  options:
+    selectors: state
+    per_page: 50
+#  relationships: company, link
+  filters: state, importer_state, source
+  search: category_name, name, address, phones, email, site_url
+  application: Company catalog
+  description: Результаты поиска бьявлений
+
+
+
+
+# APPLICATION:
+#
+# Company grabber
+#
+
+Link:
+  fields:
+    list: id, name, url, is_follow, links_count, source, parent
+    form: name, url, is_follow, links_count, source, parent
+    show: id, name, url, is_follow, links_count, created_at, updated_at, source, parent
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: children, parent, results, source
+  filters:
+  search:
+  application: Grabber
+  description:
+
+Source:
+  fields:
+    list: target_url, grabber_name, results_count, ad_results_count
+    form: target_url, grabber_name
+    show: target_url, id, results_count, ad_results_count, grabber_name, results_updated_count, results_importable_count, results_imported_count, results_noimportable_count, unprocessed_categories_count, created_at, updated_at
+  actions:
+    edit: show
+    show: company_groups, import_results
+    company_groups: show, import_results
+  order_by:
+  relationships: results_to_company_groups # result_categories #, ad_result_categories #, results #links, results
+  filters:
+  search:
+  options:
+    default_action_on_item: show
+  application: Grabber
+  description:
+
+
+# APPLICATION:
+#
+# Advert catalog
+#
+
+
+AdResult:
+  fields:
+    list: category_name, source, fields, state, price
+    form: source, category_name, fields, state, price, contacts
+    show: source, category_name, fields, state, price, contacts
+#address, state, importer_state, import_errors
+#    form: name, address, phones, email, site_url, result_category, category_name, work_time, other_info, raw_html, company, is_checked, state, importer_state
+#, link
+#    show: id, name, address, phones, email, site_url, category_name, work_time, other_info, raw_html, is_checked, state, importer_state, created_at, updated_at, link, company, source, import_errors, parsed_address, parsed_phones
+    options:
+      selectors: state
+  actions:
+    index:
+    edit:
+  order_by: category_name, ad_text
+  options:
+    selectors: state, source
+    per_page: 50
+#  relationships: company, link
+#  filters: state, importer_state, source
+  search: category_name, name #, address, phones, email, site_url
+  application: Advert catalog
+  description:
+

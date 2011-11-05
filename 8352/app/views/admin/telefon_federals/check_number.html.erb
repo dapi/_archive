@@ -1,0 +1,23 @@
+<h2>Узнать федеральный номер</h2>
+
+<% form_tag :action => 'check_number' do |f| %>
+
+  <p>
+    <%= label_tag :number, 'Номер для проверки' %><br />
+    <%= text_field_tag :number, params[:number] %>
+  </p>
+
+<%= submit_tag 'Проверить' %>
+
+
+<% end %>
+
+<hr>
+
+<% if @newnumber %>
+<h2>Федеральный: <%= h_phone @newnumber %></h2>
+<% end %>
+
+
+
+

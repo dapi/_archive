@@ -1,0 +1,24 @@
+<h1>Listing telefon_federals</h1>
+
+<table>
+  <tr>
+    <th>Federal</th>
+    <th>City</th>
+    <th>Operator</th>
+  </tr>
+
+<% @telefon_federals.each do |telefon_federal| %>
+  <tr>
+    <td><%=h telefon_federal.federal %></td>
+    <td><%=h telefon_federal.city %></td>
+    <td><%=h telefon_federal.operator %></td>
+    <td><%= link_to 'Show', telefon_federal %></td>
+    <td><%= link_to 'Edit', edit_telefon_federal_path(telefon_federal) %></td>
+    <td><%= link_to 'Destroy', telefon_federal, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New telefon_federal', new_telefon_federal_path %>

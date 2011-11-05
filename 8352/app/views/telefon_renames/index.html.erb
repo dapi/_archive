@@ -1,0 +1,24 @@
+<h1>Listing telefon_renames</h1>
+
+<table>
+  <tr>
+    <th>Prefix</th>
+    <th>Old</th>
+    <th>New</th>
+  </tr>
+
+<% @telefon_renames.each do |telefon_rename| %>
+  <tr>
+    <td><%=h telefon_rename.prefix %></td>
+    <td><%=h telefon_rename.old %></td>
+    <td><%=h telefon_rename.new %></td>
+    <td><%= link_to 'Show', telefon_rename %></td>
+    <td><%= link_to 'Edit', edit_telefon_rename_path(telefon_rename) %></td>
+    <td><%= link_to 'Destroy', telefon_rename, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New telefon_rename', new_telefon_rename_path %>

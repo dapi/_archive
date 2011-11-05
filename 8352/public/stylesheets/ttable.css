@@ -1,0 +1,34 @@
+.ttable { border-collapse: collapse;width:100%}
+.ttable caption {
+  font: bold 18px arial, helvetica, sans-serif;
+  text-align: center;
+  border: 1px solid #03476F;
+  padding: 6px 4px 8px 0px;
+  color: #03476F;
+  background-color: #c3d9ff;
+  background-color: #8DBDD8;
+}
+.ttable thead { background: #9cf; }
+.ttable tbody { background: #E6EEEE; }
+.ttable tbody tr:hover { background: #FAFA98; border: 1px solid #03476F; color: #000; }
+.ttable tfoot td{text-align: center;}
+.ttable td { padding: .3em; border: 1px #03476F solid; }
+.ttable th { padding: .3em; border: 1px #03476F solid; }
+
+.ttable th.ascending {
+  background-image: url(/images/asc.gif);
+  background-color: #99CCFF;
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding: 4px;
+}
+.ttable th.descending {
+  background-image: url(/images/desc.gif);
+  background-color: #99CCFF;
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding: 4px;
+}
+.ttable td.delimiter {
+  background-color: #fff;
+}

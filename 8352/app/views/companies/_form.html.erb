@@ -1,0 +1,64 @@
+<% nested_attributes_for f, :phones -%>
+<% nested_attributes_for f, :emails -%>
+
+<p>
+  <%= f.label :name, 'Название' %><br />
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :full_name, 'Полное название' %><br />
+  <%= f.text_field :full_name %>
+</p>
+<p>
+  <%= f.label :inn, 'ИНН' %><br />
+  <%= f.text_field :inn %>
+</p>
+<p>
+  <%= f.label :address, 'Адрес' %><br />
+  <%= f.text_field :address %>
+</p>
+<p>
+  <%= f.label :site, 'Сайт' %><br />
+  <%= f.text_field :site %>
+</p>
+<p>
+  <%= f.label :director, 'Руководитель' %><br />
+  <%= f.text_field :director %>
+</p>
+<p>
+  <%= f.label :description, 'Описание' %><br />
+  <%= f.text_area :description %>
+</p>
+<p>
+  <%= f.label :working_time, 'Рабочее время' %><br />
+  <%= f.text_field :working_time %>
+</p>
+<p>
+  <%= f.label :sources, 'Источники' %><br />
+  <%= f.text_field :sources %>
+</p>
+
+<p>
+  <%= f.label :tag_list, 'Тэги' %><br />
+  <%= f.text_field :tag_list %>
+</p>
+
+<fieldset id="phones">
+  <legend>Телефоны</legend>
+  <% f.fields_for :phones do |phones_form| -%>
+    <%= render :partial => 'phone', :locals => { :f => phones_form }  %>
+  <% end -%>
+ 	<p><%= link_to 'Добавить телефон', '#phones', :class => 'add_nested' %></p>
+</fieldset>
+
+<div id="phones_form"></div>
+
+<fieldset id="emails">
+  <legend>E-mail</legend>
+  <% f.fields_for :emails do |emails_form| -%>
+    <%= render :partial => 'email', :locals => { :f => emails_form }  %>
+  <% end -%>
+ 	<p><%= link_to 'Добавить e-mail', '#emails', :class => 'add_nested' %></p>
+</fieldset>
+
+<div id="emails_form"></div>

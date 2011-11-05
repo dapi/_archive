@@ -1,0 +1,41 @@
+# Typus Roles Configuration File
+#
+# In this file you can configure the actions available for each of your 
+# models on the application.
+#
+#     admin:
+#       Post: create, read, update, delete
+#       Category: create, read, update, delete
+#
+#     editor:
+#       Post: create, read, update
+#       Category: read, update
+#
+# You can also define `resources` which are not related to a model, 
+# for example to control MemCached or see the Starling queue statistics.
+#
+#     admin:
+#      Starling: index
+#      MemCached: index, cleanup
+#
+
+admin:
+  Address: create, read, update, delete
+  City: create, read, update, delete
+  Company: create, read, update, delete
+  Email: create, read, update, delete
+  Link: create, read, update, delete
+  Phone: create, read, update, delete
+  Result: create, read, update, delete
+  AdResult: create, read, update, delete
+  Role: create, read, update, delete
+  CompanyGroup: create, read, update, delete
+#  Branch: create, read, update, delete
+  Source: create, read, update, delete, set_categories, set_company_group, company_groups, import_results, reset_imported_companies, reset_imported_categories
+  ResultsToCompanyGroup: create, read, update, delete, update_companies
+  Tag: create, read, update, delete
+  Tagging: create, read, update, delete
+  TagsSynonym: create, read, update, delete
+  TelefonFederal: create, read, update, delete, check_number
+  TelefonRename: create, read, update, delete, check_number
+  User: create, read, update, delete

@@ -1,0 +1,15 @@
+AuthlogicGenerator
+==================
+
+This generator for authlogic creates models, controllers and view for authentication, user activation and password resetting
+
+
+Example
+=======
+
+./script/plugin install authlogic-generator
+
+./script/generate authlogic-generator
+
+
+Copyright (c) 2009 [Develon], released under the MIT license

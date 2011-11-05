@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title><%= h("#{@page_title} - ") if @page_title %>8352.info</title>
+    <%= stylesheet_link_tag 'scaffold', 'application', 'tree', 'flash_messages' %>
+    <%= javascript_include_tag :defaults %>
+
+    <% javascript_tag do %>
+      <%= yield :javascript %>
+    <% end -%>
+
+    <%= javascript_include_tag 'ymaps' %>
+    <%#= javascript_include_tag "http://api-maps.yandex.ru/1.1/index.xml?key=ABM-eUoBAAAATmj6fQMAi7QVJIpWi4c9evSNm-2wCl4pLvoAAAAAAAAAAAAQubp7bOY3W2ZfaO57THpWZI8hIw==" %>
+
+  </head>
+  <body>
+    <div id="header">
+      <a href="/">
+        <h1 id="logo">chuvashya.ru</h1>
+      </a>
+      <%= flash_messages %>
+      <%= render :partial => 'layouts/usernav' %>
+    </div>
+
+    <div id="main">
+      <%= render :partial => "searches/new"%>
+      <div id="body">
+        <%= yield  %>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>(c) ООО "Медиа Системы".</p><a href="/admin/">admin</a>
+    </div>
+  </body>
+</html>

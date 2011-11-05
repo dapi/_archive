@@ -1,0 +1,4 @@
+<h2><%= h @street.name %></h2>
+<%= render :partial => "premises/list", :locals => { :premises => @premises } unless @premises.empty? %>
+<%= render :partial => "companies/list", :locals => { :companies => @companies } %>
+

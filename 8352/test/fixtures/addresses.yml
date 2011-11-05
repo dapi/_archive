@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  address: MyString
+  company_id: 1
+  index: MyString
+  city_id: 1
+  parsed_address: MyText
+  ymaps: MyText
+
+two:
+  address: MyString
+  company_id: 1
+  index: MyString
+  city_id: 1
+  parsed_address: MyText
+  ymaps: MyText

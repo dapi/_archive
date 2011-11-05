@@ -1,0 +1,28 @@
+<% if @item.unprocessed_categories.count>0 %>
+<h2>Новые категории (<%= @item.unprocessed_categories.count %>)</h2>
+
+<% form_tag :action => 'set_company_group' do |f|%>
+<%= hidden_field "item", "id" %>
+  <table>
+    <tr>
+      <th>Источник</th>
+      <th>Каталог</th>
+    </tr>
+  <% @item.unprocessed_categories.each_with_index do |rc, i| %>
+    <tr>
+      <td><%= hidden_field "categories[#{i}]", "title", :value => rc.category_name %>
+<%= link_to "#{rc.category_name} (#{rc.count})", :controller=>"results", :source_id=>@item.id, :category_name=>rc.category_name %>
+</td>
+      <td>
+<%# , :selected=>"all" %>
+<%# aac_select @croots, {:name=>"categories[#{i}][id]", :option_nil=>"-", :option_all=>"auto" } %>
+<%# aac_select @croots, {:name=>"categories[#{i}][id]", :option_nil=>"-", :option_all=>"auto" } %>
+<% select_group 
+</td>
+    </tr>
+  <% end %>
+  </table>
+
+  <%= submit_tag "Установить" %>
+<% end %>
+<% end %>

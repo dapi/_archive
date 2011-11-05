@@ -1,0 +1,17 @@
+<% form_tag :action => 'update_categories' do |f|%>
+  <table>
+    <tr>
+      <td>Категория results</td>
+      <td>Установленная категория</td>
+    </tr>
+  <% @categories.each_with_index do |rc, i| %>
+    <tr>
+      <td><%= hidden_field "categories[#{i}]", "title", :value => rc %><%= rc %></td>
+      <td><%= select "categories[#{i}]", "id", Category.all_for_select %></td>
+    </tr>
+  <% end %>
+  </table>
+
+  <%= submit_tag "Обновить" %>
+<% end %>
+

@@ -1,0 +1,4 @@
+<h2><%= "#{link_to(h(@premise.street.name), @premise.street)}, #{@premise.number}" %></h2>
+
+<%= render :partial => "companies/list", :locals => { :companies => @companies } %>
+

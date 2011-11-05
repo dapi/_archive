@@ -1,0 +1,13 @@
+- @groups.each do |source_group|
+  -# cache "admin_source_group:#{source_group.id}" do
+  %tr{:class => "_group", :id => "group_#{source_group.id}", :rel => "#{source_group.name}"}
+    %td= icon(:move, :class => "_move")
+    %td
+      = link_to source_group.name, company_group_path(source_group)
+      &nbsp;(
+      = source_group.companies_count
+      )&nbsp;
+    %td= link_to icon(:edit), edit_admin_company_group_path(source_group)
+    %td
+      - if source_group.companies_count.to_i == 0
+        = link_to icon(:delete), admin_company_group_path(source_group), :method => "delete", :confirm => "Вы уверены?"

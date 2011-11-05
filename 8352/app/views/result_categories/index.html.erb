@@ -1,0 +1,16 @@
+<% if @update_categories_count > 0 %>
+  Количество категорий для обновления: <%= @update_categories_count %><br />
+  <% form_tag :action => 'import_categories' do |f| %>
+    <%= submit_tag 'Импорт категорий' %>
+  <% end %>
+<% else %>
+  Нет новых записей категорий<br />
+  <% if @update_records_count > 0 %>
+    Количество записей для обновления: <%= @update_records_count %><br />
+    <% form_tag :action => 'import_results' do |f| %>
+      <%= submit_tag 'Импорт каталога' %>
+    <% end %>
+  <% end %>
+<% end %>
+
+

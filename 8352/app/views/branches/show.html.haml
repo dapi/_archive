@@ -1,0 +1,14 @@
+= breadcrumb @branch.breadcrumb
+
+%h1
+  = h @branch.name
+
+%ul
+  = render :partial => 'branch', :collection => @branch.children
+
+%ul
+  = render :partial => 'company_groups/company_group', :collection => @company_groups
+
+= render :partial => "companies/list", :locals => { :companies => @companies }
+
+

@@ -1,0 +1,10 @@
+<!--<ul>
+<%# for category in @categories %>
+	<%#= render_categories_front_end(category, false, true) %>
+<%# end %>
+</ul>
+-->
+<hr/>
+<%= category_tree(Category.roots) %>
+
+

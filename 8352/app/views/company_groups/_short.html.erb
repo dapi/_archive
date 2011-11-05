@@ -1,0 +1,17 @@
+<h2>Категории</h2>
+
+<% columns = 3 %>
+<% rows = (Category.roots.size/columns).round + (Category.roots.size % columns > 0 ? 1 : 0) %>
+
+<% column=0 %>
+<% index=0 %>
+<div class="ccol">
+<% Category.roots.each do |category| %>
+<% if (index/rows).round>column %>
+<% column = column + 1 %></div><div class="ccol"><% end %>
+<h3><%= link_to category.name, category_path(category) %></h3>
+<% index=index + 1 %>
+<% end %>
+</div>
+<br class="clearer"/>
+<%= link_to "Все категории..", categories_path %>

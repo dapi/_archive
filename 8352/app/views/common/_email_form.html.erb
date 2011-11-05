@@ -1,0 +1,15 @@
+<div class="email">
+  <%= remove_link_unless_new_record(f) %>
+  <p>
+    <%= f.label :email, 'E-mail' %>
+		<%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :person, 'Контактное лицо' %>
+		<%= f.text_field :person %>
+  </p>
+  <p>
+    <%= f.label :department, 'Отдел' %>
+		<%= f.text_field :department %>
+  </p>
+</div>

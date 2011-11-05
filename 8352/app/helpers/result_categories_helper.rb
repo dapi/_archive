@@ -1,0 +1,2 @@
+module ResultCategoriesHelper
+end

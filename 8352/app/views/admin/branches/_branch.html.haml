@@ -1,0 +1,32 @@
+- visibility = params[:visibility] || []
+- child_visible = visibility.include?(branch.id.to_s)
+- hidden = "display: none;"
+%dt{:id => "branch_#{branch.id}", :class => "_branch", :rel => "#{branch.name}"}    
+  - if branch.groups.empty? && branch.children.empty?
+    = empty_folder_icon
+  - else
+    = open_icon % [branch.id, branch.id, child_visible ? hidden : ""]
+    = close_icon % [branch.id, branch.id, !child_visible ? hidden : ""]    
+  = move_icon
+  = branch.name
+  = edit_branch_link % branch.id
+  = delete_branch_link % branch.id
+  = left_branch_link % branch.id
+  = right_branch_link % branch.id
+
+  %dl{:class => "level_#{branch.level + 1}", :id => "parent_#{branch.id}", :style => child_visible ? nil : hidden } 
+    = render :partial => "branch", :collection => branch.children  
+    
+    - unless branch.groups.empty?
+      - branch.groups.each do |group|
+        %dt{:id => "group_#{group.id}_parent_#{branch.id}", :rel => "#{group.name}", :class => "_group"}
+          = clone_icon
+          = move_icon
+          = group_name_link % [group.id, group.name]
+          &nbsp;(
+          = group.companies_count
+          )&nbsp;
+          = edit_group_link % group.id
+          = detach_group_link % [branch.id, group.id]
+          = up_group_link % [group.id, branch.id]
+          = down_group_link % [group.id, branch.id]

@@ -1,0 +1,30 @@
+div#new_user, div.user, div#new_password {
+    border:1px solid #BBBBBB;
+    background:#EEEEEE;
+    width:500px;
+}
+
+.clearer
+{
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+	margin-top: -1px;
+}
+
+.checked {
+background-color:green;
+}
+
+.unchecked {
+background-color:red;
+}
+
+#logo {color: black}
+
+
+.ccol {  position: relative; float: left; padding-right: 20px;  }
+
+optgroup > option { padding-left: 10px }
+
+.match { background-color: yellow; }

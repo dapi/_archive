@@ -1,0 +1,2388 @@
+--- 
+phones_001: 
+  company_id: "1"
+  created_at: "2009-04-17 05:47:50.268441"
+  department: ~
+  description: ~
+  id: "1"
+  number: "78352240490"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.268441"
+  working_time: ~
+phones_002: 
+  company_id: "1"
+  created_at: "2009-04-17 05:47:50.274439"
+  department: ~
+  description: ~
+  id: "2"
+  number: "78352240491"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.274439"
+  working_time: ~
+phones_003: 
+  company_id: "1"
+  created_at: "2009-04-17 05:47:50.27763"
+  department: ~
+  description: ~
+  id: "3"
+  number: "78352240492"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.27763"
+  working_time: ~
+phones_004: 
+  company_id: "1"
+  created_at: "2009-04-17 05:47:50.28044"
+  department: ~
+  description: ~
+  id: "4"
+  number: "78352240493"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.28044"
+  working_time: ~
+phones_005: 
+  company_id: "1"
+  created_at: "2009-04-17 05:47:50.284487"
+  department: ~
+  description: ~
+  id: "5"
+  number: "78352240494"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.284487"
+  working_time: ~
+phones_006: 
+  company_id: "1"
+  created_at: "2009-04-17 05:47:50.287452"
+  department: ~
+  description: ~
+  id: "6"
+  number: "78352240495"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.287452"
+  working_time: ~
+phones_007: 
+  company_id: "1"
+  created_at: "2009-04-17 05:47:50.290288"
+  department: ~
+  description: ~
+  id: "7"
+  number: "78352240496"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.290288"
+  working_time: ~
+phones_008: 
+  company_id: "1"
+  created_at: "2009-04-17 05:47:50.292999"
+  department: ~
+  description: ~
+  id: "8"
+  number: "78352240497"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.292999"
+  working_time: ~
+phones_009: 
+  company_id: "1"
+  created_at: "2009-04-17 05:47:50.295886"
+  department: ~
+  description: ~
+  id: "9"
+  number: "78352240498"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.295886"
+  working_time: ~
+phones_010: 
+  company_id: "1"
+  created_at: "2009-04-17 05:47:50.29896"
+  department: ~
+  description: ~
+  id: "10"
+  number: "78352240499"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.29896"
+  working_time: ~
+phones_011: 
+  company_id: "2"
+  created_at: "2009-04-17 05:47:50.310674"
+  department: "кредитование физлиц"
+  description: ~
+  id: "11"
+  number: "78352662156"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.310674"
+  working_time: ~
+phones_012: 
+  company_id: "2"
+  created_at: "2009-04-17 05:47:50.313609"
+  department: вклады
+  description: ~
+  id: "12"
+  number: "78352623458"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.313609"
+  working_time: ~
+phones_013: 
+  company_id: "2"
+  created_at: "2009-04-17 05:47:50.316627"
+  department: "обслуживание юрлиц"
+  description: ~
+  id: "13"
+  number: "78352620673"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.316627"
+  working_time: ~
+phones_014: 
+  company_id: "2"
+  created_at: "2009-04-17 05:47:50.321106"
+  department: "кредитование юрлиц"
+  description: ~
+  id: "14"
+  number: "78352623135"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.321106"
+  working_time: ~
+phones_015: 
+  company_id: "2"
+  created_at: "2009-04-17 05:47:50.323898"
+  department: "обмен валют"
+  description: ~
+  id: "15"
+  number: "78352628171"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.323898"
+  working_time: ~
+phones_016: 
+  company_id: "3"
+  created_at: "2009-04-17 05:47:50.335576"
+  department: приемная
+  description: ~
+  id: "16"
+  number: "78352344515"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.335576"
+  working_time: ~
+phones_017: 
+  company_id: "3"
+  created_at: "2009-04-17 05:47:50.3383"
+  department: приемная
+  description: ~
+  id: "17"
+  number: "78352344424"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.3383"
+  working_time: ~
+phones_018: 
+  company_id: "3"
+  created_at: "2009-04-17 05:47:50.341016"
+  department: "операционный зал"
+  description: ~
+  id: "18"
+  number: "78352344393"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.341016"
+  working_time: ~
+phones_019: 
+  company_id: "4"
+  created_at: "2009-04-17 05:47:50.365677"
+  department: ~
+  description: ~
+  id: "19"
+  number: "78352580905"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.365677"
+  working_time: ~
+phones_020: 
+  company_id: "4"
+  created_at: "2009-04-17 05:47:50.368385"
+  department: "курс обмена валют"
+  description: ~
+  id: "20"
+  number: "78352583450"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.368385"
+  working_time: ~
+phones_021: 
+  company_id: "4"
+  created_at: "2009-04-17 05:47:50.37114"
+  department: приемная
+  description: ~
+  id: "21"
+  number: "78352585838"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.37114"
+  working_time: ~
+phones_022: 
+  company_id: "4"
+  created_at: "2009-04-17 05:47:50.434473"
+  department: "операционный зал"
+  description: ~
+  id: "22"
+  number: "78352583326"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.434473"
+  working_time: ~
+phones_023: 
+  company_id: "5"
+  created_at: "2009-04-17 05:47:50.4501"
+  department: приемная
+  description: ~
+  id: "23"
+  number: "78352624545"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.4501"
+  working_time: ~
+phones_024: 
+  company_id: "5"
+  created_at: "2009-04-17 05:47:50.452948"
+  department: директор
+  description: ~
+  id: "24"
+  number: "78352626434"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.452948"
+  working_time: ~
+phones_025: 
+  company_id: "5"
+  created_at: "2009-04-17 05:47:50.455768"
+  department: бухгалтерия
+  description: ~
+  id: "25"
+  number: "78352621757"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.455768"
+  working_time: ~
+phones_026: 
+  company_id: "5"
+  created_at: "2009-04-17 05:47:50.458836"
+  department: "операционный отдел"
+  description: ~
+  id: "26"
+  number: "78352626431"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.458836"
+  working_time: ~
+phones_027: 
+  company_id: "6"
+  created_at: "2009-04-17 05:47:50.475543"
+  department: "отдел вкладов"
+  description: ~
+  id: "27"
+  number: "78352580413"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.475543"
+  working_time: ~
+phones_028: 
+  company_id: "6"
+  created_at: "2009-04-17 05:47:50.478425"
+  department: факс
+  description: ~
+  id: "28"
+  number: "78352581929"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.478425"
+  working_time: ~
+phones_029: 
+  company_id: "6"
+  created_at: "2009-04-17 05:47:50.481286"
+  department: автоответчик
+  description: ~
+  id: "29"
+  number: "78352584008"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.481286"
+  working_time: ~
+phones_030: 
+  company_id: "7"
+  created_at: "2009-04-17 05:47:50.497511"
+  department: факс
+  description: ~
+  id: "30"
+  number: "78352665102"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.497511"
+  working_time: ~
+phones_031: 
+  company_id: "7"
+  created_at: "2009-04-17 05:47:50.500321"
+  department: бухгалтерия
+  description: ~
+  id: "31"
+  number: "78352638702"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.500321"
+  working_time: ~
+phones_032: 
+  company_id: "7"
+  created_at: "2009-04-17 05:47:50.503245"
+  department: управляющий
+  description: ~
+  id: "32"
+  number: "78352638716"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.503245"
+  working_time: ~
+phones_033: 
+  company_id: "7"
+  created_at: "2009-04-17 05:47:50.505995"
+  department: ~
+  description: ~
+  id: "33"
+  number: "78352638414"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.505995"
+  working_time: ~
+phones_034: 
+  company_id: "7"
+  created_at: "2009-04-17 05:47:50.508711"
+  department: "кредитный отдел"
+  description: ~
+  id: "34"
+  number: "78352638452"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.508711"
+  working_time: ~
+phones_035: 
+  company_id: "7"
+  created_at: "2009-04-17 05:47:50.511466"
+  department: общий
+  description: ~
+  id: "35"
+  number: "78352638033"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.511466"
+  working_time: ~
+phones_036: 
+  company_id: "8"
+  created_at: "2009-04-17 05:47:50.523783"
+  department: факс
+  description: ~
+  id: "36"
+  number: "78352661155"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.523783"
+  working_time: ~
+phones_037: 
+  company_id: "8"
+  created_at: "2009-04-17 05:47:50.526598"
+  department: приемная
+  description: ~
+  id: "37"
+  number: "78352625757"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.526598"
+  working_time: ~
+phones_038: 
+  company_id: "8"
+  created_at: "2009-04-17 05:47:50.52934"
+  department: зам.управляющего
+  description: ~
+  id: "38"
+  number: "78352626023"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.52934"
+  working_time: ~
+phones_039: 
+  company_id: "8"
+  created_at: "2009-04-17 05:47:50.534313"
+  department: "операционный отдел"
+  description: ~
+  id: "39"
+  number: "78352624208"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.534313"
+  working_time: ~
+phones_040: 
+  company_id: "8"
+  created_at: "2009-04-17 05:47:50.537096"
+  department: "работа с населением"
+  description: ~
+  id: "40"
+  number: "78352625272"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.537096"
+  working_time: ~
+phones_041: 
+  company_id: "9"
+  created_at: "2009-04-17 05:47:50.548319"
+  department: ~
+  description: ~
+  id: "41"
+  number: "78352240256"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.548319"
+  working_time: ~
+phones_042: 
+  company_id: "9"
+  created_at: "2009-04-17 05:47:50.551162"
+  department: "обменный пункт"
+  description: ~
+  id: "42"
+  number: "78352240259"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.551162"
+  working_time: ~
+phones_043: 
+  company_id: "9"
+  created_at: "2009-04-17 05:47:50.553884"
+  department: факс
+  description: ~
+  id: "43"
+  number: "78352450870"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.553884"
+  working_time: ~
+phones_044: 
+  company_id: "10"
+  created_at: "2009-04-17 05:47:50.566692"
+  department: ~
+  description: ~
+  id: "44"
+  number: "78352580402"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.566692"
+  working_time: ~
+phones_045: 
+  company_id: "10"
+  created_at: "2009-04-17 05:47:50.570157"
+  department: ~
+  description: ~
+  id: "45"
+  number: "78352580303"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.570157"
+  working_time: ~
+phones_046: 
+  company_id: "10"
+  created_at: "2009-04-17 05:47:50.572868"
+  department: факс
+  description: ~
+  id: "46"
+  number: "78352580917"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.572868"
+  working_time: ~
+phones_047: 
+  company_id: "11"
+  created_at: "2009-04-17 05:47:50.584687"
+  department: ~
+  description: ~
+  id: "47"
+  number: "78352628920"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.584687"
+  working_time: ~
+phones_048: 
+  company_id: "11"
+  created_at: "2009-04-17 05:47:50.587375"
+  department: "обменный пункт"
+  description: ~
+  id: "48"
+  number: "78352628903"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.587375"
+  working_time: ~
+phones_049: 
+  company_id: "11"
+  created_at: "2009-04-17 05:47:50.590274"
+  department: справочная
+  description: ~
+  id: "49"
+  number: "78352629162"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.590274"
+  working_time: ~
+phones_050: 
+  company_id: "11"
+  created_at: "2009-04-17 05:47:50.592964"
+  department: кредиты
+  description: ~
+  id: "50"
+  number: "78352628901"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.592964"
+  working_time: ~
+phones_051: 
+  company_id: "11"
+  created_at: "2009-04-17 05:47:50.595727"
+  department: лизинг
+  description: ~
+  id: "51"
+  number: "78352628895"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.595727"
+  working_time: ~
+phones_052: 
+  company_id: "12"
+  created_at: "2009-04-17 05:47:50.608247"
+  department: ~
+  description: ~
+  id: "52"
+  number: "78352403037"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.608247"
+  working_time: ~
+phones_053: 
+  company_id: "12"
+  created_at: "2009-04-17 05:47:50.610927"
+  department: ~
+  description: ~
+  id: "53"
+  number: "78352403066"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.610927"
+  working_time: ~
+phones_054: 
+  company_id: "13"
+  created_at: "2009-04-17 05:47:50.62254"
+  department: приемная
+  description: ~
+  id: "54"
+  number: "78352430143"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.62254"
+  working_time: ~
+phones_055: 
+  company_id: "13"
+  created_at: "2009-04-17 05:47:50.625285"
+  department: кредиты
+  description: ~
+  id: "55"
+  number: "78352430003"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.625285"
+  working_time: ~
+phones_056: 
+  company_id: "13"
+  created_at: "2009-04-17 05:47:50.628005"
+  department: бухгалтерия
+  description: ~
+  id: "56"
+  number: "78352431900"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.628005"
+  working_time: ~
+phones_057: 
+  company_id: "13"
+  created_at: "2009-04-17 05:47:50.630711"
+  department: "обмен валют"
+  description: ~
+  id: "57"
+  number: "78352431550"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.630711"
+  working_time: ~
+phones_058: 
+  company_id: "14"
+  created_at: "2009-04-17 05:47:50.643439"
+  department: ~
+  description: ~
+  id: "58"
+  number: "78352240286"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.643439"
+  working_time: ~
+phones_059: 
+  company_id: "14"
+  created_at: "2009-04-17 05:47:50.646196"
+  department: ~
+  description: ~
+  id: "59"
+  number: "78352240287"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.646196"
+  working_time: ~
+phones_060: 
+  company_id: "14"
+  created_at: "2009-04-17 05:47:50.648827"
+  department: ~
+  description: ~
+  id: "60"
+  number: "78352572001"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.648827"
+  working_time: ~
+phones_061: 
+  company_id: "15"
+  created_at: "2009-04-17 05:47:50.659642"
+  department: ~
+  description: ~
+  id: "61"
+  number: "78002006200"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.659642"
+  working_time: ~
+phones_062: 
+  company_id: "16"
+  created_at: "2009-04-17 05:47:50.672182"
+  department: ~
+  description: ~
+  id: "62"
+  number: "78352289038"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.672182"
+  working_time: ~
+phones_063: 
+  company_id: "16"
+  created_at: "2009-04-17 05:47:50.67507"
+  department: ~
+  description: ~
+  id: "63"
+  number: "78352289081"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.67507"
+  working_time: ~
+phones_064: 
+  company_id: "16"
+  created_at: "2009-04-17 05:47:50.677698"
+  department: ~
+  description: ~
+  id: "64"
+  number: "78352289025"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.677698"
+  working_time: ~
+phones_065: 
+  company_id: "17"
+  created_at: "2009-04-17 05:47:50.692349"
+  department: приемная
+  description: ~
+  id: "65"
+  number: "78352662464"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.692349"
+  working_time: ~
+phones_066: 
+  company_id: "17"
+  created_at: "2009-04-17 05:47:50.695134"
+  department: "обмен валюты"
+  description: ~
+  id: "66"
+  number: "78352581989"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.695134"
+  working_time: ~
+phones_067: 
+  company_id: "17"
+  created_at: "2009-04-17 05:47:50.697832"
+  department: факс
+  description: ~
+  id: "67"
+  number: "78352583748"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.697832"
+  working_time: ~
+phones_068: 
+  company_id: "18"
+  created_at: "2009-04-17 05:47:50.714141"
+  department: приемная
+  description: ~
+  id: "68"
+  number: "78352662083"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.714141"
+  working_time: ~
+phones_069: 
+  company_id: "18"
+  created_at: "2009-04-17 05:47:50.716842"
+  department: "операционный зал"
+  description: ~
+  id: "69"
+  number: "78352625908"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.716842"
+  working_time: ~
+phones_070: 
+  company_id: "19"
+  created_at: "2009-04-17 05:47:50.734533"
+  department: ~
+  description: ~
+  id: "70"
+  number: "78352240055"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.734533"
+  working_time: ~
+phones_071: 
+  company_id: "20"
+  created_at: "2009-04-17 05:47:50.748974"
+  department: ~
+  description: ~
+  id: "71"
+  number: "78352623058"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.748974"
+  working_time: ~
+phones_072: 
+  company_id: "20"
+  created_at: "2009-04-17 05:47:50.75177"
+  department: ~
+  description: ~
+  id: "72"
+  number: "78352441952"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.75177"
+  working_time: ~
+phones_073: 
+  company_id: "21"
+  created_at: "2009-04-17 05:47:50.764308"
+  department: ~
+  description: ~
+  id: "73"
+  number: "78352564747"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.764308"
+  working_time: ~
+phones_074: 
+  company_id: "21"
+  created_at: "2009-04-17 05:47:50.767046"
+  department: ~
+  description: ~
+  id: "74"
+  number: "78352622392"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.767046"
+  working_time: ~
+phones_075: 
+  company_id: "22"
+  created_at: "2009-04-17 05:47:50.780902"
+  department: ~
+  description: ~
+  id: "75"
+  number: "78352524524"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.780902"
+  working_time: ~
+phones_076: 
+  company_id: "23"
+  created_at: "2009-04-17 05:47:50.792524"
+  department: приемная
+  description: ~
+  id: "76"
+  number: "78352289316"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.792524"
+  working_time: ~
+phones_077: 
+  company_id: "24"
+  created_at: "2009-04-17 05:47:50.802877"
+  department: ~
+  description: ~
+  id: "77"
+  number: "78352451282"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.802877"
+  working_time: ~
+phones_078: 
+  company_id: "25"
+  created_at: "2009-04-17 05:47:50.815381"
+  department: ~
+  description: ~
+  id: "78"
+  number: "78352454028"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.815381"
+  working_time: ~
+phones_079: 
+  company_id: "26"
+  created_at: "2009-04-17 05:47:50.825628"
+  department: ~
+  description: ~
+  id: "79"
+  number: "78352286854"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.825628"
+  working_time: ~
+phones_080: 
+  company_id: "26"
+  created_at: "2009-04-17 05:47:50.82855"
+  department: ~
+  description: ~
+  id: "80"
+  number: "78352286789"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.82855"
+  working_time: ~
+phones_081: 
+  company_id: "27"
+  created_at: "2009-04-17 05:47:50.839972"
+  department: ~
+  description: ~
+  id: "81"
+  number: "78352449009"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.839972"
+  working_time: ~
+phones_082: 
+  company_id: "28"
+  created_at: "2009-04-17 05:47:50.851916"
+  department: ~
+  description: ~
+  id: "82"
+  number: "78352738444"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.851916"
+  working_time: ~
+phones_083: 
+  company_id: "29"
+  created_at: "2009-04-17 05:47:50.862869"
+  department: ~
+  description: ~
+  id: "83"
+  number: "78352372350"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.862869"
+  working_time: ~
+phones_084: 
+  company_id: "29"
+  created_at: "2009-04-17 05:47:50.865548"
+  department: ~
+  description: ~
+  id: "84"
+  number: "78352373028"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.865548"
+  working_time: ~
+phones_085: 
+  company_id: "29"
+  created_at: "2009-04-17 05:47:50.868191"
+  department: ~
+  description: ~
+  id: "85"
+  number: "78352373021"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.868191"
+  working_time: ~
+phones_086: 
+  company_id: "30"
+  created_at: "2009-04-17 05:47:50.880902"
+  department: ~
+  description: ~
+  id: "86"
+  number: "78352784100"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.880902"
+  working_time: ~
+phones_087: 
+  company_id: "31"
+  created_at: "2009-04-17 05:47:50.892517"
+  department: ~
+  description: ~
+  id: "87"
+  number: "78354021704"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.892517"
+  working_time: ~
+phones_088: 
+  company_id: "32"
+  created_at: "2009-04-17 05:47:50.90882"
+  department: автоответчик
+  description: ~
+  id: "88"
+  number: "78352525767"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.90882"
+  working_time: ~
+phones_089: 
+  company_id: "32"
+  created_at: "2009-04-17 05:47:50.911572"
+  department: касса
+  description: ~
+  id: "89"
+  number: "78352546044"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.911572"
+  working_time: ~
+phones_090: 
+  company_id: "33"
+  created_at: "2009-04-17 05:47:50.997712"
+  department: ~
+  description: ~
+  id: "90"
+  number: "78352513294"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:50.997712"
+  working_time: ~
+phones_091: 
+  company_id: "34"
+  created_at: "2009-04-17 05:47:51.009403"
+  department: ~
+  description: ~
+  id: "91"
+  number: "78352585309"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.009403"
+  working_time: ~
+phones_092: 
+  company_id: "35"
+  created_at: "2009-04-17 05:47:51.020385"
+  department: ~
+  description: ~
+  id: "92"
+  number: "78352547000"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.020385"
+  working_time: ~
+phones_093: 
+  company_id: "35"
+  created_at: "2009-04-17 05:47:51.025246"
+  department: автоинформатор
+  description: ~
+  id: "93"
+  number: "78352333333"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.025246"
+  working_time: ~
+phones_094: 
+  company_id: "36"
+  created_at: "2009-04-17 05:47:51.036219"
+  department: ~
+  description: ~
+  id: "94"
+  number: "78352400445"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.036219"
+  working_time: ~
+phones_095: 
+  company_id: "36"
+  created_at: "2009-04-17 05:47:51.038999"
+  department: ~
+  description: ~
+  id: "95"
+  number: "78352400368"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.038999"
+  working_time: ~
+phones_096: 
+  company_id: "37"
+  created_at: "2009-04-17 05:47:51.050211"
+  department: ~
+  description: ~
+  id: "96"
+  number: "78352283314"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.050211"
+  working_time: ~
+phones_097: 
+  company_id: "37"
+  created_at: "2009-04-17 05:47:51.052949"
+  department: ~
+  description: ~
+  id: "97"
+  number: "78352283301"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.052949"
+  working_time: ~
+phones_098: 
+  company_id: "37"
+  created_at: "2009-04-17 05:47:51.055662"
+  department: боулинг
+  description: ~
+  id: "98"
+  number: "78352632474"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.055662"
+  working_time: ~
+phones_099: 
+  company_id: "40"
+  created_at: "2009-04-17 05:47:51.082262"
+  department: ~
+  description: ~
+  id: "99"
+  number: "78352457386"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.082262"
+  working_time: ~
+phones_100: 
+  company_id: "41"
+  created_at: "2009-04-17 05:47:51.092721"
+  department: ~
+  description: ~
+  id: "100"
+  number: "78352441072"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.092721"
+  working_time: ~
+phones_101: 
+  company_id: "42"
+  created_at: "2009-04-17 05:47:51.104213"
+  department: ~
+  description: ~
+  id: "101"
+  number: "78352512331"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.104213"
+  working_time: ~
+phones_102: 
+  company_id: "42"
+  created_at: "2009-04-17 05:47:51.107145"
+  department: ~
+  description: ~
+  id: "102"
+  number: "78352514450"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.107145"
+  working_time: ~
+phones_103: 
+  company_id: "43"
+  created_at: "2009-04-17 05:47:51.117414"
+  department: ~
+  description: ~
+  id: "103"
+  number: "78352389390"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.117414"
+  working_time: ~
+phones_104: 
+  company_id: "45"
+  created_at: "2009-04-17 05:47:51.137766"
+  department: ~
+  description: ~
+  id: "104"
+  number: "78352757001"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.137766"
+  working_time: ~
+phones_105: 
+  company_id: "46"
+  created_at: "2009-04-17 05:47:51.148214"
+  department: ~
+  description: ~
+  id: "105"
+  number: "78352748898"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.148214"
+  working_time: ~
+phones_106: 
+  company_id: "47"
+  created_at: "2009-04-17 05:47:51.203308"
+  department: ~
+  description: ~
+  id: "106"
+  number: "78352749394"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.203308"
+  working_time: ~
+phones_107: 
+  company_id: "48"
+  created_at: "2009-04-17 05:47:51.234368"
+  department: ~
+  description: ~
+  id: "107"
+  number: "78352562242"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.234368"
+  working_time: ~
+phones_108: 
+  company_id: "48"
+  created_at: "2009-04-17 05:47:51.250223"
+  department: ~
+  description: ~
+  id: "108"
+  number: "78352562257"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.250223"
+  working_time: ~
+phones_109: 
+  company_id: "48"
+  created_at: "2009-04-17 05:47:51.256571"
+  department: ~
+  description: ~
+  id: "109"
+  number: "78352554070"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.256571"
+  working_time: ~
+phones_110: 
+  company_id: "48"
+  created_at: "2009-04-17 05:47:51.259962"
+  department: ~
+  description: ~
+  id: "110"
+  number: "78352564693"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.259962"
+  working_time: ~
+phones_111: 
+  company_id: "49"
+  created_at: "2009-04-17 05:47:51.297245"
+  department: ~
+  description: ~
+  id: "111"
+  number: "78352523513"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.297245"
+  working_time: ~
+phones_112: 
+  company_id: "50"
+  created_at: "2009-04-17 05:47:51.323844"
+  department: ~
+  description: ~
+  id: "112"
+  number: "78352733187"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.323844"
+  working_time: ~
+phones_113: 
+  company_id: "50"
+  created_at: "2009-04-17 05:47:51.326812"
+  department: ~
+  description: ~
+  id: "113"
+  number: "78352733980"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.326812"
+  working_time: ~
+phones_114: 
+  company_id: "51"
+  created_at: "2009-04-17 05:47:51.353885"
+  department: ~
+  description: ~
+  id: "114"
+  number: "78352721270"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.353885"
+  working_time: ~
+phones_115: 
+  company_id: "52"
+  created_at: "2009-04-17 05:47:51.382725"
+  department: ~
+  description: ~
+  id: "115"
+  number: "78352624123"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.382725"
+  working_time: ~
+phones_116: 
+  company_id: "53"
+  created_at: "2009-04-17 05:47:51.419806"
+  department: ~
+  description: ~
+  id: "116"
+  number: "78352623170"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.419806"
+  working_time: ~
+phones_117: 
+  company_id: "53"
+  created_at: "2009-04-17 05:47:51.422526"
+  department: ~
+  description: ~
+  id: "117"
+  number: "78352674449"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.422526"
+  working_time: ~
+phones_118: 
+  company_id: "54"
+  created_at: "2009-04-17 05:47:51.446231"
+  department: ~
+  description: ~
+  id: "118"
+  number: "78352299191"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.446231"
+  working_time: ~
+phones_119: 
+  company_id: "55"
+  created_at: "2009-04-17 05:47:51.471439"
+  department: ~
+  description: ~
+  id: "119"
+  number: "78352637044"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.471439"
+  working_time: ~
+phones_120: 
+  company_id: "56"
+  created_at: "2009-04-17 05:47:51.497518"
+  department: ~
+  description: ~
+  id: "120"
+  number: "78352304407"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.497518"
+  working_time: ~
+phones_121: 
+  company_id: "57"
+  created_at: "2009-04-17 05:47:51.533554"
+  department: ~
+  description: ~
+  id: "121"
+  number: "78352638484"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.533554"
+  working_time: ~
+phones_122: 
+  company_id: "58"
+  created_at: "2009-04-17 05:47:51.545563"
+  department: ~
+  description: ~
+  id: "122"
+  number: "78352583376"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.545563"
+  working_time: ~
+phones_123: 
+  company_id: "59"
+  created_at: "2009-04-17 05:47:51.582795"
+  department: ~
+  description: ~
+  id: "123"
+  number: "78352412277"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.582795"
+  working_time: ~
+phones_124: 
+  company_id: "60"
+  created_at: "2009-04-17 05:47:51.605846"
+  department: ~
+  description: ~
+  id: "124"
+  number: "78352453233"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.605846"
+  working_time: ~
+phones_125: 
+  company_id: "61"
+  created_at: "2009-04-17 05:47:51.633274"
+  department: ~
+  description: ~
+  id: "125"
+  number: "78352675150"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.633274"
+  working_time: ~
+phones_126: 
+  company_id: "62"
+  created_at: "2009-04-17 05:47:51.661242"
+  department: ~
+  description: ~
+  id: "126"
+  number: "78352432233"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.661242"
+  working_time: ~
+phones_127: 
+  company_id: "62"
+  created_at: "2009-04-17 05:47:51.664314"
+  department: ~
+  description: ~
+  id: "127"
+  number: "78352432899"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.664314"
+  working_time: ~
+phones_128: 
+  company_id: "63"
+  created_at: "2009-04-17 05:47:51.700249"
+  department: автосалон
+  description: ~
+  id: "128"
+  number: "78352220120"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.700249"
+  working_time: ~
+phones_129: 
+  company_id: "63"
+  created_at: "2009-04-17 05:47:51.703004"
+  department: автосервис
+  description: ~
+  id: "129"
+  number: "78352282000"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.703004"
+  working_time: ~
+phones_130: 
+  company_id: "64"
+  created_at: "2009-04-17 05:47:51.728226"
+  department: ~
+  description: ~
+  id: "130"
+  number: "78352286286"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.728226"
+  working_time: ~
+phones_131: 
+  company_id: "64"
+  created_at: "2009-04-17 05:47:51.731043"
+  department: ~
+  description: ~
+  id: "131"
+  number: "78352289101"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.731043"
+  working_time: ~
+phones_132: 
+  company_id: "64"
+  created_at: "2009-04-17 05:47:51.733804"
+  department: факс
+  description: ~
+  id: "132"
+  number: "78352289046"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.733804"
+  working_time: ~
+phones_133: 
+  company_id: "65"
+  created_at: "2009-04-17 05:47:51.761963"
+  department: ~
+  description: ~
+  id: "133"
+  number: "78352587711"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.761963"
+  working_time: ~
+phones_134: 
+  company_id: "65"
+  created_at: "2009-04-17 05:47:51.765382"
+  department: ~
+  description: ~
+  id: "134"
+  number: "78352482008"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.765382"
+  working_time: ~
+phones_135: 
+  company_id: "66"
+  created_at: "2009-04-17 05:47:51.776362"
+  department: ~
+  description: ~
+  id: "135"
+  number: "78352304130"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.776362"
+  working_time: ~
+phones_136: 
+  company_id: "66"
+  created_at: "2009-04-17 05:47:51.779024"
+  department: ~
+  description: ~
+  id: "136"
+  number: "78352304131"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.779024"
+  working_time: ~
+phones_137: 
+  company_id: "66"
+  created_at: "2009-04-17 05:47:51.781629"
+  department: ~
+  description: ~
+  id: "137"
+  number: "78352293303"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.781629"
+  working_time: ~
+phones_138: 
+  company_id: "67"
+  created_at: "2009-04-17 05:47:51.793033"
+  department: ~
+  description: ~
+  id: "138"
+  number: "78352501986"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.793033"
+  working_time: ~
+phones_139: 
+  company_id: "68"
+  created_at: "2009-04-17 05:47:51.879302"
+  department: ~
+  description: ~
+  id: "139"
+  number: "78352672181"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.879302"
+  working_time: ~
+phones_140: 
+  company_id: "68"
+  created_at: "2009-04-17 05:47:51.882136"
+  department: ~
+  description: ~
+  id: "140"
+  number: "78352460321"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.882136"
+  working_time: ~
+phones_141: 
+  company_id: "68"
+  created_at: "2009-04-17 05:47:51.884904"
+  department: факс
+  description: ~
+  id: "141"
+  number: "78352240357"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.884904"
+  working_time: ~
+phones_142: 
+  company_id: "69"
+  created_at: "2009-04-17 05:47:51.903564"
+  department: справочная
+  description: ~
+  id: "142"
+  number: "78352301241"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.903564"
+  working_time: ~
+phones_143: 
+  company_id: "70"
+  created_at: "2009-04-17 05:47:51.91554"
+  department: справочная
+  description: ~
+  id: "143"
+  number: "78352391900"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.91554"
+  working_time: ~
+phones_144: 
+  company_id: "70"
+  created_at: "2009-04-17 05:47:51.918562"
+  department: касса
+  description: ~
+  id: "144"
+  number: "78352391850"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.918562"
+  working_time: ~
+phones_145: 
+  company_id: "70"
+  created_at: "2009-04-17 05:47:51.921985"
+  department: авиакассы
+  description: ~
+  id: "145"
+  number: "78352571691"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.921985"
+  working_time: ~
+phones_146: 
+  company_id: "70"
+  created_at: "2009-04-17 05:47:51.924805"
+  department: "дежурный вокзала"
+  description: ~
+  id: "146"
+  number: "78352391894"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.924805"
+  working_time: ~
+phones_147: 
+  company_id: "71"
+  created_at: "2009-04-17 05:47:51.937478"
+  department: справочная
+  description: ~
+  id: "147"
+  number: "78352580053"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.937478"
+  working_time: ~
+phones_148: 
+  company_id: "71"
+  created_at: "2009-04-17 05:47:51.940424"
+  department: диспетчерская
+  description: ~
+  id: "148"
+  number: "78352580683"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.940424"
+  working_time: ~
+phones_149: 
+  company_id: "72"
+  created_at: "2009-04-17 05:47:51.954039"
+  department: справочная
+  description: ~
+  id: "149"
+  number: "78352287843"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.954039"
+  working_time: ~
+phones_150: 
+  company_id: "72"
+  created_at: "2009-04-17 05:47:51.957139"
+  department: справочная
+  description: ~
+  id: "150"
+  number: "78352289000"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.957139"
+  working_time: ~
+phones_151: 
+  company_id: "72"
+  created_at: "2009-04-17 05:47:51.959924"
+  department: диспетчер
+  description: ~
+  id: "151"
+  number: "78352288203"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.959924"
+  working_time: ~
+phones_152: 
+  company_id: "72"
+  created_at: "2009-04-17 05:47:51.963045"
+  department: диспетчер
+  description: ~
+  id: "152"
+  number: "78352288788"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.963045"
+  working_time: ~
+phones_153: 
+  company_id: "73"
+  created_at: "2009-04-17 05:47:51.975266"
+  department: диспетчерская
+  description: ~
+  id: "153"
+  number: "78352526408"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.975266"
+  working_time: ~
+phones_154: 
+  company_id: "74"
+  created_at: "2009-04-17 05:47:51.986026"
+  department: диспетчерская
+  description: ~
+  id: "154"
+  number: "78352563634"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.986026"
+  working_time: ~
+phones_155: 
+  company_id: "75"
+  created_at: "2009-04-17 05:47:51.996449"
+  department: диспетчерская
+  description: ~
+  id: "155"
+  number: "78352313766"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:51.996449"
+  working_time: ~
+phones_156: 
+  company_id: "76"
+  created_at: "2009-04-17 05:47:52.008482"
+  department: диспетчерская
+  description: ~
+  id: "156"
+  number: "78352525985"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.008482"
+  working_time: ~
+phones_157: 
+  company_id: "77"
+  created_at: "2009-04-17 05:47:52.019186"
+  department: диспетчерская
+  description: ~
+  id: "157"
+  number: "78352453333"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.019186"
+  working_time: ~
+phones_158: 
+  company_id: "78"
+  created_at: "2009-04-17 05:47:52.030053"
+  department: диспетчерская
+  description: ~
+  id: "158"
+  number: "78352631028"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.030053"
+  working_time: ~
+phones_159: 
+  company_id: "80"
+  created_at: "2009-04-17 05:47:52.050285"
+  department: диспетчерская
+  description: ~
+  id: "159"
+  number: "78352759270"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.050285"
+  working_time: ~
+phones_160: 
+  company_id: "81"
+  created_at: "2009-04-17 05:47:52.061263"
+  department: ~
+  description: ~
+  id: "160"
+  number: "78352730512"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.061263"
+  working_time: ~
+phones_161: 
+  company_id: "81"
+  created_at: "2009-04-17 05:47:52.063987"
+  department: диспетчерская
+  description: ~
+  id: "161"
+  number: "78352737336"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.063987"
+  working_time: ~
+phones_162: 
+  company_id: "82"
+  created_at: "2009-04-17 05:47:52.076533"
+  department: "дежурный грузовой станции"
+  description: ~
+  id: "162"
+  number: "78352735376"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.076533"
+  working_time: ~
+phones_163: 
+  company_id: "82"
+  created_at: "2009-04-17 05:47:52.079448"
+  department: "товарная контора"
+  description: ~
+  id: "163"
+  number: "78352735472"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.079448"
+  working_time: ~
+phones_164: 
+  company_id: "83"
+  created_at: "2009-04-17 05:47:52.090175"
+  department: диспетчер
+  description: ~
+  id: "164"
+  number: "78352564836"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.090175"
+  working_time: ~
+phones_165: 
+  company_id: "83"
+  created_at: "2009-04-17 05:47:52.093308"
+  department: экономисты
+  description: ~
+  id: "165"
+  number: "78352561720"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.093308"
+  working_time: ~
+phones_166: 
+  company_id: "83"
+  created_at: "2009-04-17 05:47:52.09603"
+  department: "ремонтный отдел"
+  description: ~
+  id: "166"
+  number: "78352561962"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.09603"
+  working_time: ~
+phones_167: 
+  company_id: "83"
+  created_at: "2009-04-17 05:47:52.098723"
+  department: "инженер по ТБ"
+  description: ~
+  id: "167"
+  number: "78352569124"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.098723"
+  working_time: ~
+phones_168: 
+  company_id: "84"
+  created_at: "2009-04-17 05:47:52.109337"
+  department: диспетчер
+  description: ~
+  id: "168"
+  number: "78352458893"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.109337"
+  working_time: ~
+phones_169: 
+  company_id: "84"
+  created_at: "2009-04-17 05:47:52.113856"
+  department: начальник
+  description: ~
+  id: "169"
+  number: "78352454153"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.113856"
+  working_time: ~
+phones_170: 
+  company_id: "84"
+  created_at: "2009-04-17 05:47:52.116708"
+  department: "главный инженер"
+  description: ~
+  id: "170"
+  number: "78352458097"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.116708"
+  working_time: ~
+phones_171: 
+  company_id: "84"
+  created_at: "2009-04-17 05:47:52.119432"
+  department: медпункт
+  description: ~
+  id: "171"
+  number: "78352454408"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.119432"
+  working_time: ~
+phones_172: 
+  company_id: "85"
+  created_at: "2009-04-17 05:47:52.131088"
+  department: диспетчер
+  description: ~
+  id: "172"
+  number: "78352527300"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.131088"
+  working_time: ~
+phones_173: 
+  company_id: "85"
+  created_at: "2009-04-17 05:47:52.134305"
+  department: начальник
+  description: ~
+  id: "173"
+  number: "78352563129"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.134305"
+  working_time: ~
+phones_174: 
+  company_id: "85"
+  created_at: "2009-04-17 05:47:52.137129"
+  department: "технический отдел"
+  description: ~
+  id: "174"
+  number: "78352563124"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.137129"
+  working_time: ~
+phones_175: 
+  company_id: "86"
+  created_at: "2009-04-17 05:47:52.155507"
+  department: "отдел регистрации"
+  description: ~
+  id: "175"
+  number: "78352625640"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.155507"
+  working_time: ~
+phones_176: 
+  company_id: "86"
+  created_at: "2009-04-17 05:47:52.158307"
+  department: ~
+  description: ~
+  id: "176"
+  number: "78352621070"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.158307"
+  working_time: ~
+phones_177: 
+  company_id: "86"
+  created_at: "2009-04-17 05:47:52.161075"
+  department: ~
+  description: ~
+  id: "177"
+  number: "78352624063"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.161075"
+  working_time: ~
+phones_178: 
+  company_id: "87"
+  created_at: "2009-04-17 05:47:52.174663"
+  department: ~
+  description: ~
+  id: "178"
+  number: "78352451717"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.174663"
+  working_time: ~
+phones_179: 
+  company_id: "88"
+  created_at: "2009-04-17 05:47:52.189613"
+  department: ~
+  description: ~
+  id: "179"
+  number: "78352513843"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.189613"
+  working_time: ~
+phones_180: 
+  company_id: "89"
+  created_at: "2009-04-17 05:47:52.201263"
+  department: ~
+  description: ~
+  id: "180"
+  number: "78352564808"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.201263"
+  working_time: ~
+phones_181: 
+  company_id: "90"
+  created_at: "2009-04-17 05:47:52.212166"
+  department: ~
+  description: ~
+  id: "181"
+  number: "78352527924"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.212166"
+  working_time: ~
+phones_182: 
+  company_id: "90"
+  created_at: "2009-04-17 05:47:52.215049"
+  department: ~
+  description: ~
+  id: "182"
+  number: "78352527876"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.215049"
+  working_time: ~
+phones_183: 
+  company_id: "91"
+  created_at: "2009-04-17 05:47:52.227825"
+  department: ~
+  description: ~
+  id: "183"
+  number: "78352634876"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.227825"
+  working_time: ~
+phones_184: 
+  company_id: "92"
+  created_at: "2009-04-17 05:47:52.238816"
+  department: ~
+  description: ~
+  id: "184"
+  number: "78352533403"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.238816"
+  working_time: ~
+phones_185: 
+  company_id: "93"
+  created_at: "2009-04-17 05:47:52.256813"
+  department: ~
+  description: ~
+  id: "185"
+  number: "78352620171"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.256813"
+  working_time: ~
+phones_186: 
+  company_id: "94"
+  created_at: "2009-04-17 05:47:52.267761"
+  department: ~
+  description: ~
+  id: "186"
+  number: "78352620034"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.267761"
+  working_time: ~
+phones_187: 
+  company_id: "94"
+  created_at: "2009-04-17 05:47:52.270467"
+  department: факс
+  description: ~
+  id: "187"
+  number: "78352625253"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.270467"
+  working_time: ~
+phones_188: 
+  company_id: "95"
+  created_at: "2009-04-17 05:47:52.283972"
+  department: ~
+  description: ~
+  id: "188"
+  number: "78352620476"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.283972"
+  working_time: ~
+phones_189: 
+  company_id: "95"
+  created_at: "2009-04-17 05:47:52.286627"
+  department: факс
+  description: ~
+  id: "189"
+  number: "78352622006"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.286627"
+  working_time: ~
+phones_190: 
+  company_id: "95"
+  created_at: "2009-04-17 05:47:52.29086"
+  department: "телефон доверия"
+  description: ~
+  id: "190"
+  number: "78352306124"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.29086"
+  working_time: ~
+phones_191: 
+  company_id: "95"
+  created_at: "2009-04-17 05:47:52.293566"
+  department: "телефон доверия"
+  description: ~
+  id: "191"
+  number: "78352306655"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.293566"
+  working_time: ~
+phones_192: 
+  company_id: "96"
+  created_at: "2009-04-17 05:47:52.307033"
+  department: факс
+  description: ~
+  id: "192"
+  number: "78352623594"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.307033"
+  working_time: ~
+phones_193: 
+  company_id: "97"
+  created_at: "2009-04-17 05:47:52.319754"
+  department: ~
+  description: ~
+  id: "193"
+  number: "78352580311"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.319754"
+  working_time: ~
+phones_194: 
+  company_id: "97"
+  created_at: "2009-04-17 05:47:52.324151"
+  department: факс
+  description: ~
+  id: "194"
+  number: "78352580166"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.324151"
+  working_time: ~
+phones_195: 
+  company_id: "98"
+  created_at: "2009-04-17 05:47:52.337627"
+  department: ~
+  description: ~
+  id: "195"
+  number: "78352623501"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.337627"
+  working_time: ~
+phones_196: 
+  company_id: "98"
+  created_at: "2009-04-17 05:47:52.34032"
+  department: факс
+  description: ~
+  id: "196"
+  number: "78352625547"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.34032"
+  working_time: ~
+phones_197: 
+  company_id: "99"
+  created_at: "2009-04-17 05:47:52.429028"
+  department: ~
+  description: ~
+  id: "197"
+  number: "78352623081"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.429028"
+  working_time: ~
+phones_198: 
+  company_id: "99"
+  created_at: "2009-04-17 05:47:52.432389"
+  department: факс
+  description: ~
+  id: "198"
+  number: "78352627415"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.432389"
+  working_time: ~
+phones_199: 
+  company_id: "100"
+  created_at: "2009-04-17 05:47:52.44791"
+  department: ~
+  description: ~
+  id: "199"
+  number: "78352626922"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.44791"
+  working_time: ~
+phones_200: 
+  company_id: "100"
+  created_at: "2009-04-17 05:47:52.450734"
+  department: факс
+  description: ~
+  id: "200"
+  number: "78352627383"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.450734"
+  working_time: ~
+phones_201: 
+  company_id: "101"
+  created_at: "2009-04-17 05:47:52.47222"
+  department: "отдел продаж"
+  description: ~
+  id: "201"
+  number: "78352252020"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.47222"
+  working_time: ~
+phones_202: 
+  company_id: "101"
+  created_at: "2009-04-17 05:47:52.488295"
+  department: техподдержка
+  description: ~
+  id: "202"
+  number: "78352250202"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.488295"
+  working_time: ~
+phones_203: 
+  company_id: "102"
+  created_at: "2009-04-17 05:47:52.501139"
+  department: "многоканальный номер"
+  description: ~
+  id: "203"
+  number: "78352415555"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.501139"
+  working_time: ~
+phones_204: 
+  company_id: "103"
+  created_at: "2009-04-17 05:47:52.512072"
+  department: ~
+  description: ~
+  id: "204"
+  number: "78352220000"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.512072"
+  working_time: ~
+phones_205: 
+  company_id: "104"
+  created_at: "2009-04-17 05:47:52.523303"
+  department: абонотдел
+  description: ~
+  id: "205"
+  number: "78352240200"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.523303"
+  working_time: ~
+phones_206: 
+  company_id: "104"
+  created_at: "2009-04-17 05:47:52.526117"
+  department: техподдержка
+  description: ~
+  id: "206"
+  number: "78352240200"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.526117"
+  working_time: ~
+phones_207: 
+  company_id: "104"
+  created_at: "2009-04-17 05:47:52.528886"
+  department: "отдел продаж"
+  description: ~
+  id: "207"
+  number: "78352626794"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.528886"
+  working_time: ~
+phones_208: 
+  company_id: "104"
+  created_at: "2009-04-17 05:47:52.531628"
+  department: офис
+  description: ~
+  id: "208"
+  number: "78352453826"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.531628"
+  working_time: ~
+phones_209: 
+  company_id: "105"
+  created_at: "2009-04-17 05:47:52.543594"
+  department: ~
+  description: ~
+  id: "209"
+  number: "78352234234"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.543594"
+  working_time: ~
+phones_210: 
+  company_id: "106"
+  created_at: "2009-04-17 05:47:52.556853"
+  department: "информационная служба"
+  description: ~
+  id: "210"
+  number: "78352230050"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.556853"
+  working_time: ~
+phones_211: 
+  company_id: "106"
+  created_at: "2009-04-17 05:47:52.560167"
+  department: техподдержка
+  description: ~
+  id: "211"
+  number: "78352230051"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.560167"
+  working_time: ~
+phones_212: 
+  company_id: "106"
+  created_at: "2009-04-17 05:47:52.563039"
+  department: ~
+  description: ~
+  id: "212"
+  number: "78352230052"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.563039"
+  working_time: ~
+phones_213: 
+  company_id: "106"
+  created_at: "2009-04-17 05:47:52.565731"
+  department: "отдел продаж"
+  description: ~
+  id: "213"
+  number: "78352230053"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.565731"
+  working_time: ~
+phones_214: 
+  company_id: "107"
+  created_at: "2009-04-17 05:47:52.578092"
+  department: "отдел продаж"
+  description: ~
+  id: "214"
+  number: "78352661878"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.578092"
+  working_time: ~
+phones_215: 
+  company_id: "107"
+  created_at: "2009-04-17 05:47:52.580819"
+  department: техподдержка
+  description: ~
+  id: "215"
+  number: "78352230003"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.580819"
+  working_time: ~
+phones_216: 
+  company_id: "107"
+  created_at: "2009-04-17 05:47:52.583993"
+  department: факс
+  description: ~
+  id: "216"
+  number: "78352230020"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.583993"
+  working_time: ~
+phones_217: 
+  company_id: "108"
+  created_at: "2009-04-17 05:47:52.594343"
+  department: ~
+  description: ~
+  id: "217"
+  number: "78352240000"
+  person: ~
+  short_code: f
+  updated_at: "2009-04-17 05:47:52.594343"
+  working_time: ~

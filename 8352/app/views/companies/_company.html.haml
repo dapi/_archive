@@ -1,0 +1,47 @@
+%p
+  %b Название:
+  =h company.name
+
+%p
+  %b ИНН:
+  =h company.inn
+
+%p
+  %b Адрес:
+  =h company.address
+
+%p
+  %b Сайт:
+  =h company.site
+
+%p
+  %b Директор:
+  =h company.director
+
+%p
+  %b Описание:
+  =h company.description
+
+%p
+  %b Рабочее время:
+  =h company.working_time
+
+%p
+  %b Источники:
+  =h company.sources.map(&:target_url).join(', ')
+
+%p
+  %b Телефоны:
+  =h company.phones.collect{|phone| h_phone(phone)}.join(', ')
+
+%p
+  %b E-mail:
+  =h company.emails
+
+%p
+  %b Создано:
+  =h company.created_at
+
+%p
+  %b Обновлено:
+  =h company.updated_at

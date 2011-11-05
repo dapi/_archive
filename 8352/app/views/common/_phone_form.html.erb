@@ -1,0 +1,27 @@
+<div class="phone">
+  <%= remove_link_unless_new_record(f) %>
+  <p>
+    <%= f.label :number, 'Номер' %>
+		<%= f.text_field :number %>
+  </p>
+  <p>
+    <%= f.label :person, 'Контактное лицо' %>
+		<%= f.text_field :person %>
+  </p>
+  <p>
+    <%= f.label :department, 'Отдел' %>
+		<%= f.text_field :department %>
+  </p>
+  <p>
+    <%= f.label :working_time, 'Рабочее время' %>
+		<%= f.text_field :working_time %>
+  </p>
+  <p>
+    <%= f.label :description, 'Описание' %>
+		<%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :short_code, 'Тип кода' %>
+		<%= f.select :short_code, [['3 знака', true], ['5 знаков', false]] %>
+  </p>
+</div>

@@ -1,0 +1,13 @@
+<%= breadcrumb @company.breadcrumb %>
+<h1><%=h @company.name %></h1>
+
+<% if current_user && current_user.has_role?(:moderator) %>
+  <%= link_to 'Исходные данные', company_results_path(@company) %>
+<% end %>
+<%#= link_to "Изменить", edit_category_company_url(@company.category, @company) %>
+
+<%= render @company %>
+
+<h2>На карте</h2>
+<a href="#" onclick="showCompanyAddress('<%= @company.address %>');return false;">смотреть на карте</a>
+<div id="YMapsID" style="width:400px;height:300px"></div>

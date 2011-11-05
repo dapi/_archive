@@ -1,0 +1,111 @@
+--- 
+categories_001: 
+  ancestors_count: "0"
+  children_count: ~
+  companies_count: "17"
+  descendants_count: "0"
+  description: Вокзалы
+  hidden: ~
+  id: "7"
+  name: Вокзалы
+  parent_id: ~
+  position: "7"
+categories_002: 
+  ancestors_count: "0"
+  children_count: ~
+  companies_count: "7"
+  descendants_count: "0"
+  description: библиотеки
+  hidden: ~
+  id: "8"
+  name: библиотеки
+  parent_id: ~
+  position: "8"
+categories_003: 
+  ancestors_count: "0"
+  children_count: ~
+  companies_count: "18"
+  descendants_count: "0"
+  description: банки
+  hidden: ~
+  id: "1"
+  name: банки
+  parent_id: ~
+  position: "1"
+categories_004: 
+  ancestors_count: "0"
+  children_count: ~
+  companies_count: "8"
+  descendants_count: "0"
+  description: "Министерства ЧР"
+  hidden: ~
+  id: "9"
+  name: "Министерства ЧР"
+  parent_id: ~
+  position: "9"
+categories_005: 
+  ancestors_count: "0"
+  children_count: ~
+  companies_count: "13"
+  descendants_count: "0"
+  description: Автошколы
+  hidden: ~
+  id: "2"
+  name: Автошколы
+  parent_id: ~
+  position: "2"
+categories_006: 
+  ancestors_count: "0"
+  children_count: ~
+  companies_count: "8"
+  descendants_count: "0"
+  description: "Провайдеры ЧР"
+  hidden: ~
+  id: "10"
+  name: "Провайдеры ЧР"
+  parent_id: ~
+  position: "10"
+categories_007: 
+  ancestors_count: "0"
+  children_count: ~
+  companies_count: "16"
+  descendants_count: "0"
+  description: Клубы
+  hidden: ~
+  id: "3"
+  name: Клубы
+  parent_id: ~
+  position: "3"
+categories_008: 
+  ancestors_count: "0"
+  children_count: ~
+  companies_count: "4"
+  descendants_count: "0"
+  description: бассейны
+  hidden: ~
+  id: "4"
+  name: бассейны
+  parent_id: ~
+  position: "4"
+categories_009: 
+  ancestors_count: "0"
+  children_count: ~
+  companies_count: "10"
+  descendants_count: "0"
+  description: фитнес
+  hidden: ~
+  id: "5"
+  name: фитнес
+  parent_id: ~
+  position: "5"
+categories_010: 
+  ancestors_count: "0"
+  children_count: ~
+  companies_count: "7"
+  descendants_count: "0"
+  description: Автосалоны
+  hidden: ~
+  id: "6"
+  name: Автосалоны
+  parent_id: ~
+  position: "6"

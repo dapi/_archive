@@ -1,0 +1,6 @@
+<h2>Улицы</h2>
+<ul>
+  <% @streets.each do |street| %>
+    <li><%= link_to street.name, street %></li>
+  <% end %>
+</ul>

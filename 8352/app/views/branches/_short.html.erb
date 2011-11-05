@@ -1,0 +1,29 @@
+<h2>Предприятия</h2>
+
+<% columns = 3 %>
+<% rows = (Branch.roots.size/columns).round + (Branch.roots.size % columns > 0 ? 1 : 0) %>
+
+<% column=0 %>
+<% index=0 %>
+<div class="ccol">
+<% Branch.roots.each do |branch| %>
+<% if (index/rows).round>column %>
+<% column = column + 1 %></div><div class="ccol"><% end %>
+<div><%= link_to "<h3>"+branch.name+"</h3>", branch_path(branch) %>
+
+<ul>
+<% branch.children.each do |b| %>
+  <li><%= link_to "<h4>"+b.name+"</h4>", branch_path(b) %></li>
+  <%end%>
+<% branch.groups[0..4].each do |g| %>
+  <li><%= link_to g.name, company_group_path(g) %></li>
+  <%end%>
+</ul>
+
+</div>
+
+<% index=index + 1 %>
+<% end %>
+</div>
+<br class="clearer"/>
+<%= link_to "Все категории..", branches_path %>

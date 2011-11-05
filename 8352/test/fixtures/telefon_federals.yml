@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  federal: MyString
+  city: MyString
+  operator: MyString
+
+two:
+  federal: MyString
+  city: MyString
+  operator: MyString

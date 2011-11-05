@@ -1,0 +1,38 @@
+
+<% content_for :sidebar do %>
+  <%= typus_block :location => @resource[:self], :partial => 'sidebar' %>
+  <%= actions %>
+<% end %>
+
+
+<% if @item.unprocessed_categories.count>0 %>
+<h2>Новые категории (<%= @item.unprocessed_categories.count %>)</h2>
+
+<% options=option_groups_from_collection_for_select(Branch.all,:groups,:name,:id,:name) %>
+
+<% form_tag :action => 'set_company_group' do |f|%>
+<%= hidden_field "item", "id" %>
+  <table>
+    <tr>
+      <th>Источник</th>
+      <th>Каталог</th>
+    </tr>
+  <% @item.unprocessed_categories.each_with_index do |rc, i| %>
+    <tr>
+      <td><%= hidden_field "groups[#{i}]", "title", :value => rc.category_name %>
+<%= link_to "#{rc.category_name} (#{rc.count})", :controller=>"results", :source_id=>@item.id, :category_name=>rc.category_name %>
+</td>
+      <td>
+<%# , :selected=>"all" %>
+<%# aac_select @croots, {:name=>"categories[#{i}][id]", :option_nil=>"-", :option_all=>"auto" } %>
+<%# aac_select @croots, {:name=>"categories[#{i}][id]", :option_nil=>"-", :option_all=>"auto" } %>
+<%# select("groups[#{i}]","id",CompanyGroup.all.collect { |p| [p.long_name, p.id] }, { :include_blank => true }) %>
+<%= select_tag "groups[#{i}][id]", '<option value=""></option>'+options %>
+</td>
+    </tr>
+  <% end %>
+  </table>
+
+  <%= submit_tag "Установить" %>
+<% end %>
+<% end %>

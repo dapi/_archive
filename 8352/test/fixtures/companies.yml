@@ -1,0 +1,1621 @@
+--- 
+companies_001: 
+  address: "г.Чебоксары, Московский пр., 16А"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.252253"
+  description: ~
+  director: ~
+  full_name: Промсвязьбанк
+  id: "1"
+  inn: ~
+  name: Промсвязьбанк
+  pending: t
+  site: www.psbank.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.252253"
+  working_time: ~
+companies_002: 
+  address: "г.Чебоксары, пр. Ленина, 6А"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.304513"
+  description: ~
+  director: ~
+  full_name: "Национальный банк \"ТРАСТ\""
+  id: "2"
+  inn: ~
+  name: "Национальный банк \"ТРАСТ\""
+  pending: t
+  site: www.trust.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.304513"
+  working_time: ~
+companies_003: 
+  address: "г.Чебоксары, ул. Коммунальная слобода, 25А"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.329502"
+  description: ~
+  director: ~
+  full_name: "Объединенный Банк Республики"
+  id: "3"
+  inn: ~
+  name: "Объединенный Банк Республики"
+  pending: t
+  site: www.obr1016.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.329502"
+  working_time: ~
+companies_004: 
+  address: "г.Чебоксары, Московский пр., 15А"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.359277"
+  description: ~
+  director: ~
+  full_name: "Чебоксарский филиал банка \"Стратегия\""
+  id: "4"
+  inn: ~
+  name: "Чебоксарский филиал банка \"Стратегия\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.359277"
+  working_time: ~
+companies_005: 
+  address: "г.Чебоксары, ул. К.Маркса, 26"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.443259"
+  description: ~
+  director: ~
+  full_name: "Банк Москвы"
+  id: "5"
+  inn: ~
+  name: "Банк Москвы"
+  pending: t
+  site: www.mmbank.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.443259"
+  working_time: ~
+companies_006: 
+  address: "г.Чебоксары, Московский пр., 3"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.4683"
+  description: ~
+  director: ~
+  full_name: "АКБ Чувашкредитпромбанк"
+  id: "6"
+  inn: ~
+  name: "АКБ Чувашкредитпромбанк"
+  pending: t
+  site: www.kred-bank.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.4683"
+  working_time: ~
+companies_007: 
+  address: "г.Чебоксары, пр. Мира, 98"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.489261"
+  description: ~
+  director: ~
+  full_name: "банк \"Девон-Кредит\""
+  id: "7"
+  inn: ~
+  name: "банк \"Девон-Кредит\""
+  pending: t
+  site: devoncredit.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.489261"
+  working_time: ~
+companies_008: 
+  address: "г.Чебоксары, ул. К.Воробьевых, 5"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.517606"
+  description: ~
+  director: ~
+  full_name: "Чебоксарский филиал ПКБ \"Автовазбанк\""
+  id: "8"
+  inn: ~
+  name: "Чебоксарский филиал ПКБ \"Автовазбанк\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.517606"
+  working_time: ~
+companies_009: 
+  address: "г.Чебоксары, пр. М.Горького, 8"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.541834"
+  description: ~
+  director: ~
+  full_name: НБД-Банк
+  id: "9"
+  inn: ~
+  name: НБД-Банк
+  pending: t
+  site: www.nbdbank.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.541834"
+  working_time: ~
+companies_010: 
+  address: "г.Чебоксары, ул. К.Иванова, 80А"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.559045"
+  description: ~
+  director: ~
+  full_name: "банк \"ВТБ\""
+  id: "10"
+  inn: ~
+  name: "банк \"ВТБ\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.559045"
+  working_time: ~
+companies_011: 
+  address: "г.Чебоксары, ул. К.Маркса, 31А"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.578679"
+  description: ~
+  director: ~
+  full_name: "банк \"Уралсиб\""
+  id: "11"
+  inn: ~
+  name: "банк \"Уралсиб\""
+  pending: t
+  site: bank.uralsib.ru/moscow/bank/offices/russia/index.wbp?region=1000
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.578679"
+  working_time: ~
+companies_012: 
+  address: "г.Чебоксары, ул. Университетская, 2"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.602097"
+  description: ~
+  director: ~
+  full_name: "коммерческий банк \"Евротраст\" ЗАО"
+  id: "12"
+  inn: ~
+  name: "коммерческий банк \"Евротраст\" ЗАО"
+  pending: t
+  site: www.etrust.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.602097"
+  working_time: ~
+companies_013: 
+  address: "г.Чебоксары, ул. Университетская, 36"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.616201"
+  description: ~
+  director: ~
+  full_name: "Доп.офис АКБ \"Чувашкредитпромбанк\""
+  id: "13"
+  inn: ~
+  name: "Доп.офис АКБ \"Чувашкредитпромбанк\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.616201"
+  working_time: ~
+companies_014: 
+  address: "г.Чебоксары, ул. Гагарина, 7"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.636717"
+  description: ~
+  director: ~
+  full_name: "КИТ Финанс Инвестиционный банк"
+  id: "14"
+  inn: ~
+  name: "КИТ Финанс Инвестиционный банк"
+  pending: t
+  site: www.kf.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.636717"
+  working_time: ~
+companies_015: 
+  address: "г.Чебоксары, ул. Энгельса, 3-1 "
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.653302"
+  description: ~
+  director: ~
+  full_name: "банк \"Русский стандарт\""
+  id: "15"
+  inn: ~
+  name: "банк \"Русский стандарт\""
+  pending: t
+  site: www.bank.rs.ru/ru/regions/cheboksary/
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.653302"
+  working_time: ~
+companies_016: 
+  address: "г.Чебоксары, ул. Пристанционная, 1"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.66473"
+  description: ~
+  director: ~
+  full_name: Татэкобанк
+  id: "16"
+  inn: ~
+  name: Татэкобанк
+  pending: t
+  site: www.tateco.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.66473"
+  working_time: ~
+companies_017: 
+  address: "г.Чебоксары, Президентский бульвар, 31"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.686134"
+  description: ~
+  director: ~
+  full_name: Россельхозбанк
+  id: "17"
+  inn: ~
+  name: Россельхозбанк
+  pending: t
+  site: rshb.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.686134"
+  working_time: ~
+companies_018: 
+  address: "г.Чебоксары, ул. Ярославская, 44"
+  category_id: "1"
+  created_at: "2009-04-17 05:47:50.707662"
+  description: ~
+  director: ~
+  full_name: Связь-Банк
+  id: "18"
+  inn: ~
+  name: Связь-Банк
+  pending: t
+  site: www.sviaz-bank.ru/cheboksary/
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.707662"
+  working_time: ~
+companies_019: 
+  address: "г.Чебоксары, пр. Ленина, 7-1"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.728589"
+  description: ~
+  director: ~
+  full_name: "Клуб городского вождения"
+  id: "19"
+  inn: ~
+  name: "Клуб городского вождения"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.728589"
+  working_time: ~
+companies_020: 
+  address: "г.Чебоксары, ул. Б.Хмельницкого, 3"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.742428"
+  description: ~
+  director: ~
+  full_name: "Автошкола ООО \"Спортклуб\""
+  id: "20"
+  inn: ~
+  name: "Автошкола ООО \"Спортклуб\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.742428"
+  working_time: ~
+companies_021: 
+  address: "г.Чебоксары, ул. Гагарина, 20"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.758396"
+  description: ~
+  director: ~
+  full_name: "Автошкола РУКК Автотранспорта"
+  id: "21"
+  inn: ~
+  name: "Автошкола РУКК Автотранспорта"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.758396"
+  working_time: ~
+companies_022: 
+  address: "г.Чебоксары, ул. Орлова, 34/8"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.773611"
+  description: ~
+  director: ~
+  full_name: "Автошкола РОСТО Калининская"
+  id: "22"
+  inn: ~
+  name: "Автошкола РОСТО Калининская"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.773611"
+  working_time: ~
+companies_023: 
+  address: "г.Чебоксары, пр. Мира, 52"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.786206"
+  description: ~
+  director: ~
+  full_name: "Автошкола Всероссийского общества автомобилистов"
+  id: "23"
+  inn: ~
+  name: "Автошкола Всероссийского общества автомобилистов"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.786206"
+  working_time: ~
+companies_024: 
+  address: "г.Чебоксары, ул. Пирогова, 10А (в здании Московского военкомата)"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.796936"
+  description: ~
+  director: ~
+  full_name: "Автошкола Московского РО РОСТО"
+  id: "24"
+  inn: ~
+  name: "Автошкола Московского РО РОСТО"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.796936"
+  working_time: ~
+companies_025: 
+  address: "г.Чебоксары, ул. Пирогова, 16"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.807206"
+  description: ~
+  director: ~
+  full_name: "Автошкола, учебного комбината \"Нива\""
+  id: "25"
+  inn: ~
+  name: "Автошкола, учебного комбината \"Нива\""
+  pending: t
+  site: ukkniva.chuvashia.ru/auto/about.shtml
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.807206"
+  working_time: ~
+companies_026: 
+  address: "г.Чебоксары, ул. Хевешская, 5А"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.819647"
+  description: ~
+  director: ~
+  full_name: "Автошкола при ленинской РОСТО ДОСААФ"
+  id: "26"
+  inn: ~
+  name: "Автошкола при ленинской РОСТО ДОСААФ"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.819647"
+  working_time: ~
+companies_027: 
+  address: "г.Чебоксары, пр. Тракторостроителей, 101-31 (каб. 424)"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.833771"
+  description: ~
+  director: ~
+  full_name: "Центр подготовки водителей \"Профессионал\""
+  id: "27"
+  inn: ~
+  name: "Центр подготовки водителей \"Профессионал\""
+  pending: t
+  site: www.madiprofi.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.833771"
+  working_time: ~
+companies_028: 
+  address: "г.Новочебоксарск, ул. Советская, 26"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.843911"
+  description: ~
+  director: ~
+  full_name: Автошкола
+  id: "28"
+  inn: ~
+  name: Автошкола
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.843911"
+  working_time: ~
+companies_029: 
+  address: "г.Новочебоксарск, ул. Солнечная, 14 (школа №8, с торца здания)"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.85683"
+  description: ~
+  director: ~
+  full_name: "Автошкола \"Драйвин\""
+  id: "29"
+  inn: ~
+  name: "Автошкола \"Драйвин\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.85683"
+  working_time: ~
+companies_030: 
+  address: "г.Новочебоксарск, ул. Первомайская, 42"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.874781"
+  description: ~
+  director: ~
+  full_name: "Автошкола РОСТО НЧК"
+  id: "30"
+  inn: ~
+  name: "Автошкола РОСТО НЧК"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.874781"
+  working_time: ~
+companies_031: 
+  address: "пос. Кугеси, ул. Шоршелская, 4"
+  category_id: "2"
+  created_at: "2009-04-17 05:47:50.886441"
+  description: ~
+  director: ~
+  full_name: "Кугесинская автошкола"
+  id: "31"
+  inn: ~
+  name: "Кугесинская автошкола"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.886441"
+  working_time: ~
+companies_032: 
+  address: "г.Чебоксары, Эгерский бульвар, 36"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:50.90284"
+  description: ~
+  director: ~
+  full_name: "данс-клуб \"Корона\""
+  id: "32"
+  inn: ~
+  name: "данс-клуб \"Корона\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.90284"
+  working_time: ~
+companies_033: 
+  address: "г.Чебоксары, пр. Тракторостроителей, 11А"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:50.991176"
+  description: ~
+  director: ~
+  full_name: "клуб \"FClub\""
+  id: "33"
+  inn: ~
+  name: "клуб \"FClub\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:50.991176"
+  working_time: ~
+companies_034: 
+  address: "г.Чебоксары, площадь Речников, 5"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.002775"
+  description: ~
+  director: ~
+  full_name: "клуб \"Zажигалка\""
+  id: "34"
+  inn: ~
+  name: "клуб \"Zажигалка\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.002775"
+  working_time: ~
+companies_035: 
+  address: "г.Чебоксары, Эгерский бульвар, 26"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.014116"
+  description: ~
+  director: ~
+  full_name: "ночной клуб \"Тройка\""
+  id: "35"
+  inn: ~
+  name: "ночной клуб \"Тройка\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.014116"
+  working_time: ~
+companies_036: 
+  address: "г.Чебоксары, ул. Эльгера, 20 "
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.029798"
+  description: ~
+  director: ~
+  full_name: "бар-клуб \"Пирамида\""
+  id: "36"
+  inn: ~
+  name: "бар-клуб \"Пирамида\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.029798"
+  working_time: ~
+companies_037: 
+  address: "г.Чебоксары, ул. 50 лет Октября, 13"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.043534"
+  description: ~
+  director: ~
+  full_name: "развлекательный центр \"MegaGalaxy\""
+  id: "37"
+  inn: ~
+  name: "развлекательный центр \"MegaGalaxy\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.043534"
+  working_time: ~
+companies_038: 
+  address: "г.Чебоксары, ул. Т.Кривова, 6Г"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.061272"
+  description: ~
+  director: ~
+  full_name: "клуб \"Black Bull Pub\""
+  id: "38"
+  inn: ~
+  name: "клуб \"Black Bull Pub\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.061272"
+  working_time: ~
+companies_039: 
+  address: "г.Чебоксары, ул. Кадыкова, 7А"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.068775"
+  description: ~
+  director: ~
+  full_name: "клуб \"Менуа\""
+  id: "39"
+  inn: ~
+  name: "клуб \"Менуа\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.068775"
+  working_time: ~
+companies_040: 
+  address: "г.Чебоксары, ул. М.Павлова, 12"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.076083"
+  description: ~
+  director: ~
+  full_name: "клуб \"Неон\""
+  id: "40"
+  inn: ~
+  name: "клуб \"Неон\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.076083"
+  working_time: ~
+companies_041: 
+  address: "г.Чебоксары, ул. З.Яковлевой, 54А "
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.086241"
+  description: ~
+  director: ~
+  full_name: "клуб \"Хорошо\""
+  id: "41"
+  inn: ~
+  name: "клуб \"Хорошо\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.086241"
+  working_time: ~
+companies_042: 
+  address: "г.Чебоксары, ул. Ашмарина, 54"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.098223"
+  description: ~
+  director: ~
+  full_name: "клуб \"Gorod\""
+  id: "42"
+  inn: ~
+  name: "клуб \"Gorod\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.098223"
+  working_time: ~
+companies_043: 
+  address: "г.Чебоксары, ул. К.Воробьевых, 20"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.111378"
+  description: ~
+  director: ~
+  full_name: "клуб \"Бармалина\""
+  id: "43"
+  inn: ~
+  name: "клуб \"Бармалина\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.111378"
+  working_time: ~
+companies_044: 
+  address: "г.Чебоксары, ул. К.Маркса, 52-1"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.121453"
+  description: ~
+  director: ~
+  full_name: "боулинг \"Первая площадка\""
+  id: "44"
+  inn: ~
+  name: "боулинг \"Первая площадка\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.121453"
+  working_time: ~
+companies_045: 
+  address: "г.Новочебоксарск, ул. Винокурова, 48"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.13109"
+  description: ~
+  director: ~
+  full_name: "клуб \"Космос\""
+  id: "45"
+  inn: ~
+  name: "клуб \"Космос\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.13109"
+  working_time: ~
+companies_046: 
+  address: "г.Новочебоксарск, ул. Терешковой, 16"
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.141978"
+  description: ~
+  director: ~
+  full_name: "клуб \"Кристалл-Нео\""
+  id: "46"
+  inn: ~
+  name: "клуб \"Кристалл-Нео\""
+  pending: t
+  site: www.crystall-neo.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.141978"
+  working_time: ~
+companies_047: 
+  address: "г.Новочебоксарск, ул. Ж.Крутовой, 12А "
+  category_id: "3"
+  created_at: "2009-04-17 05:47:51.167394"
+  description: ~
+  director: ~
+  full_name: "клуб \"Адреналин\""
+  id: "47"
+  inn: ~
+  name: "клуб \"Адреналин\""
+  pending: t
+  site: www.adrenalin-club.net
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.167394"
+  working_time: ~
+companies_048: 
+  address: "г.Чебоксары, ул. Чапаева, 1"
+  category_id: "4"
+  created_at: "2009-04-17 05:47:51.228014"
+  description: ~
+  director: ~
+  full_name: "бассейн на стадионе \"Олимпийский\""
+  id: "48"
+  inn: ~
+  name: "бассейн на стадионе \"Олимпийский\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.228014"
+  working_time: ~
+companies_049: 
+  address: "г.Чебоксары, ул. Хузангая, 26А"
+  category_id: "4"
+  created_at: "2009-04-17 05:47:51.2641"
+  description: ~
+  director: ~
+  full_name: "бассейн в спорткомплексе ЧЗПТ"
+  id: "49"
+  inn: ~
+  name: "бассейн в спорткомплексе ЧЗПТ"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.2641"
+  working_time: ~
+companies_050: 
+  address: "г.Новочебоксарск, ул. Винокурова, 1А"
+  category_id: "4"
+  created_at: "2009-04-17 05:47:51.301807"
+  description: ~
+  director: ~
+  full_name: "бассейн в спорткомплексе Химпрома"
+  id: "50"
+  inn: ~
+  name: "бассейн в спорткомплексе Химпрома"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.301807"
+  working_time: ~
+companies_051: 
+  address: "г.Новочебоксарск, ул. Набережная, 46"
+  category_id: "4"
+  created_at: "2009-04-17 05:47:51.331093"
+  description: ~
+  director: ~
+  full_name: "бассейн в санатории \"Надежда\""
+  id: "51"
+  inn: ~
+  name: "бассейн в санатории \"Надежда\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.331093"
+  working_time: ~
+companies_052: 
+  address: "г.Чебоксары, Президентский бульвар, 14 (ДДиЮТ)"
+  category_id: "5"
+  created_at: "2009-04-17 05:47:51.376541"
+  description: "Солярий, душ. Дети до 17 лет - бесплатно (с 14:00 до 18:00)"
+  director: ~
+  full_name: "атлетический клуб \"Атлант\""
+  id: "52"
+  inn: ~
+  name: "атлетический клуб \"Атлант\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.376541"
+  working_time: ~
+companies_053: 
+  address: "г.Чебоксары, ул. К.Воробьевых, 20"
+  category_id: "5"
+  created_at: "2009-04-17 05:47:51.402931"
+  description: "степ-аэробика, силовая-памп-аэробика, фитнес-восток, солярий, массаж, инфракрасная сауна."
+  director: ~
+  full_name: "Республиканская Фитнес-студия \"Амазонка\""
+  id: "53"
+  inn: ~
+  name: "Республиканская Фитнес-студия \"Амазонка\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.402931"
+  working_time: ~
+companies_054: 
+  address: "г.Чебоксары, ул. Ярмарочная, 6"
+  category_id: "5"
+  created_at: "2009-04-17 05:47:51.42773"
+  description: "Аэробика: данс, стэп, латино, тайбо, танцы живота, стрит-джаз, тренажерный зал, солярий, массаж, ИК-сауна."
+  director: ~
+  full_name: "фитнес-клуб \"Фиеста\""
+  id: "54"
+  inn: ~
+  name: "фитнес-клуб \"Фиеста\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.42773"
+  working_time: ~
+companies_055: 
+  address: "г.Чебоксары, ул. Цивильская, 11 (в отеле \"ДИС\")"
+  category_id: "5"
+  created_at: "2009-04-17 05:47:51.465248"
+  description: ~
+  director: ~
+  full_name: "фитнес-центр \"CITY-GUM\""
+  id: "55"
+  inn: ~
+  name: "фитнес-центр \"CITY-GUM\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.465248"
+  working_time: ~
+companies_056: 
+  address: "г.Чебоксары, пр. Мира, 1"
+  category_id: "5"
+  created_at: "2009-04-17 05:47:51.491021"
+  description: "Степаэробика, стрип-пластика, пилатес, йога, современные танцы, фитнес-бар, детская комната."
+  director: ~
+  full_name: "фитнес-центр \"CITY GYM PLUS\""
+  id: "56"
+  inn: ~
+  name: "фитнес-центр \"CITY GYM PLUS\""
+  pending: t
+  site: www.citygym.info
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.491021"
+  working_time: ~
+companies_057: 
+  address: "г.Чебоксары, пр. Мира, 90"
+  category_id: "5"
+  created_at: "2009-04-17 05:47:51.513356"
+  description: "степ-эробика, силовая-памп-аэробика, фит-болл-аэробика, фитнес-восток, латиноамериканские танцы, душ, солярий, массаж, бесплатная инфракрасная сауна."
+  director: ~
+  full_name: "фитнес-центр \"Амазонка-плюс\""
+  id: "57"
+  inn: ~
+  name: "фитнес-центр \"Амазонка-плюс\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.513356"
+  working_time: ~
+companies_058: 
+  address: "г.Чебоксары, ул. Афанасьева, 11 (школа №2)"
+  category_id: "5"
+  created_at: "2009-04-17 05:47:51.539436"
+  description: "Аэробика, танец живота, массаж, душевые и раздевалки, спортивное питание."
+  director: ~
+  full_name: "спортклуб \"Патриот\""
+  id: "58"
+  inn: ~
+  name: "спортклуб \"Патриот\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.539436"
+  working_time: ~
+companies_059: 
+  address: "г.Чебоксары, ул. Лебедева, 7Б"
+  category_id: "5"
+  created_at: "2009-04-17 05:47:51.567162"
+  description: "При приобретении абонемента на 3 месяца - 10 %, на 6 месяцев - 20 %. Сауна, солярий, степ-аэробика, арабские танцы, танец живота, йога23."
+  director: ~
+  full_name: "фитнес-центр \"Велайн-клуб\""
+  id: "59"
+  inn: ~
+  name: "фитнес-центр \"Велайн-клуб\""
+  pending: t
+  site: www.veline.ch-r.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.567162"
+  working_time: ~
+companies_060: 
+  address: "г.Чебоксары, Московский пр., 19-5 "
+  category_id: "5"
+  created_at: "2009-04-17 05:47:51.586937"
+  description: ~
+  director: ~
+  full_name: "фитнес-клуб \"Надежда\""
+  id: "60"
+  inn: ~
+  name: "фитнес-клуб \"Надежда\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.586937"
+  working_time: ~
+companies_061: 
+  address: "г.Чебоксары, ул. Т.Кривова, 13А"
+  category_id: "5"
+  created_at: "2009-04-17 05:47:51.611423"
+  description: "степ-эробика, силовая-памп-аэробика, фит-болл-аэробика, фитнес-восток, латиноамериканские, уличные танцы, детский фитнес, душ."
+  director: ~
+  full_name: "фитнес-студия \"Олимпийский\""
+  id: "61"
+  inn: ~
+  name: "фитнес-студия \"Олимпийский\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.611423"
+  working_time: ~
+companies_062: 
+  address: "г.Чебоксары, ул. М.Павлова, 39"
+  category_id: "6"
+  created_at: "2009-04-17 05:47:51.655031"
+  description: ~
+  director: ~
+  full_name: "автосалон \"Фердинанд Моторс\""
+  id: "62"
+  inn: ~
+  name: "автосалон \"Фердинанд Моторс\""
+  pending: t
+  site: www.vw-ferdinand.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.655031"
+  working_time: ~
+companies_063: 
+  address: "г.Чебоксары, Марпосадское шоссе, 3А "
+  category_id: "6"
+  created_at: "2009-04-17 05:47:51.683572"
+  description: ~
+  director: ~
+  full_name: "автосалон \"Альянс-авто\""
+  id: "63"
+  inn: ~
+  name: "автосалон \"Альянс-авто\""
+  pending: t
+  site: www.almotors.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.683572"
+  working_time: ~
+companies_064: 
+  address: "г.Чебоксары, ул. Пристанционная, 1"
+  category_id: "6"
+  created_at: "2009-04-17 05:47:51.708213"
+  description: ~
+  director: ~
+  full_name: "автосалон \"АвтоФан\""
+  id: "64"
+  inn: ~
+  name: "автосалон \"АвтоФан\""
+  pending: t
+  site: www.avtofan21.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.708213"
+  working_time: ~
+companies_065: 
+  address: "г.Чебоксары, площадь Речников, 5"
+  category_id: "6"
+  created_at: "2009-04-17 05:47:51.753891"
+  description: ~
+  director: ~
+  full_name: "автосалон \"Точка\""
+  id: "65"
+  inn: ~
+  name: "автосалон \"Точка\""
+  pending: t
+  site: tochka_cheb@mail.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.753891"
+  working_time: ~
+companies_066: 
+  address: "г.Чебоксары, пр. Тракторостроителей, 101 (напр. очистных сооружений)"
+  category_id: "6"
+  created_at: "2009-04-17 05:47:51.770082"
+  description: ~
+  director: ~
+  full_name: "автосалон \"Акос\""
+  id: "66"
+  inn: ~
+  name: "автосалон \"Акос\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.770082"
+  working_time: ~
+companies_067: 
+  address: "г.Чебоксары, пр. Тракторостроителей, 9"
+  category_id: "6"
+  created_at: "2009-04-17 05:47:51.786642"
+  description: ~
+  director: ~
+  full_name: "автосалон \"Азино-авто\""
+  id: "67"
+  inn: ~
+  name: "автосалон \"Азино-авто\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.786642"
+  working_time: ~
+companies_068: 
+  address: "г.Чебоксары, Марпосадское шоссе, 1Б (офис 10)"
+  category_id: "6"
+  created_at: "2009-04-17 05:47:51.799235"
+  description: ~
+  director: ~
+  full_name: "автосалон \"Прогресс-Авто\""
+  id: "68"
+  inn: ~
+  name: "автосалон \"Прогресс-Авто\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.799235"
+  working_time: ~
+companies_069: 
+  address: "г.Чебоксары, площадь Скворцова, 1"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:51.895326"
+  description: ~
+  director: ~
+  full_name: "Аэропорт Чебоксары"
+  id: "69"
+  inn: ~
+  name: "Аэропорт Чебоксары"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.895326"
+  working_time: ~
+companies_070: 
+  address: "г.Чебоксары, ул. Привокзальная, 1"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:51.909192"
+  description: ~
+  director: ~
+  full_name: "Железнодорожный вокзал"
+  id: "70"
+  inn: ~
+  name: "Железнодорожный вокзал"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.909192"
+  working_time: ~
+companies_071: 
+  address: "г.Чебоксары, площадь Речников, 3"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:51.929396"
+  description: ~
+  director: ~
+  full_name: "Речной вокзал"
+  id: "71"
+  inn: ~
+  name: "Речной вокзал"
+  pending: t
+  site: www.chport.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.929396"
+  working_time: ~
+companies_072: 
+  address: "г.Чебоксары, пр. Мира, 78 "
+  category_id: "7"
+  created_at: "2009-04-17 05:47:51.947905"
+  description: ~
+  director: ~
+  full_name: "Центральный автовокзал"
+  id: "72"
+  inn: ~
+  name: "Центральный автовокзал"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.947905"
+  working_time: ~
+companies_073: 
+  address: "г.Чебоксары, ул. Привокзальная"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:51.967605"
+  description: ~
+  director: ~
+  full_name: Автостанция
+  id: "73"
+  inn: ~
+  name: Автостанция
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.967605"
+  working_time: ~
+companies_074: 
+  address: "г.Чебоксары, ул. Привокзальная, 3"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:51.979622"
+  description: ~
+  director: ~
+  full_name: "Автостанция \"Привокзальная\""
+  id: "74"
+  inn: ~
+  name: "Автостанция \"Привокзальная\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.979622"
+  working_time: ~
+companies_075: 
+  address: "г.Чебоксары, ул. Гражданская, 133"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:51.990404"
+  description: ~
+  director: ~
+  full_name: "Автостанция \"Юго-западная\""
+  id: "75"
+  inn: ~
+  name: "Автостанция \"Юго-западная\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:51.990404"
+  working_time: ~
+companies_076: 
+  address: "г.Чебоксары, ул. Пролетарская, 18"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:52.000584"
+  description: ~
+  director: ~
+  full_name: Автостанция
+  id: "76"
+  inn: ~
+  name: Автостанция
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.000584"
+  working_time: ~
+companies_077: 
+  address: "г.Чебоксары, пр. М.Горького, 22 (остановка \"Новое село\")"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:52.013118"
+  description: ~
+  director: ~
+  full_name: "Автостанция \"Новосельская\""
+  id: "77"
+  inn: ~
+  name: "Автостанция \"Новосельская\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.013118"
+  working_time: ~
+companies_078: 
+  address: "г.Чебоксары, Марпосадское шоссе, 2А"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:52.023541"
+  description: ~
+  director: ~
+  full_name: "Автостанция \"Восточная\""
+  id: "78"
+  inn: ~
+  name: "Автостанция \"Восточная\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.023541"
+  working_time: ~
+companies_079: 
+  address: "г.Чебоксары, пер. Бабушкина, 8А"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:52.034047"
+  description: ~
+  director: ~
+  full_name: "Автостанция \"Ярмарочная\""
+  id: "79"
+  inn: ~
+  name: "Автостанция \"Ярмарочная\""
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.034047"
+  working_time: ~
+companies_080: 
+  address: "г.Новочебоксарск, ул. Семенова, 6"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:52.043661"
+  description: ~
+  director: ~
+  full_name: "Новочебоксарский автовокзал"
+  id: "80"
+  inn: ~
+  name: "Новочебоксарский автовокзал"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.043661"
+  working_time: ~
+companies_081: 
+  address: "г.Новочебоксарск, ул. Герцена"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:52.054685"
+  description: ~
+  director: ~
+  full_name: "Речной вокзал Новочебоксарск"
+  id: "81"
+  inn: ~
+  name: "Речной вокзал Новочебоксарск"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.054685"
+  working_time: ~
+companies_082: 
+  address: "г.Новочебоксарск, ул. Промышленная, 103"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:52.068746"
+  description: ~
+  director: ~
+  full_name: "Вокзал железнодроржный"
+  id: "82"
+  inn: ~
+  name: "Вокзал железнодроржный"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.068746"
+  working_time: ~
+companies_083: 
+  address: "г.Чебоксары, ул. Энгельса, 27"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:52.084082"
+  description: ~
+  director: ~
+  full_name: "Троллейбусное ДЕПО"
+  id: "83"
+  inn: ~
+  name: "Троллейбусное ДЕПО"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.084082"
+  working_time: ~
+companies_084: 
+  address: "г.Чебоксары, Ядринское шоссе, 1/40"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:52.103374"
+  description: ~
+  director: ~
+  full_name: "Троллейбусное ДЕПО"
+  id: "84"
+  inn: ~
+  name: "Троллейбусное ДЕПО"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.103374"
+  working_time: ~
+companies_085: 
+  address: "г.Чебоксары, ул. Ашмарина, 21"
+  category_id: "7"
+  created_at: "2009-04-17 05:47:52.124095"
+  description: ~
+  director: ~
+  full_name: "Троллейбусное ДЕПО"
+  id: "85"
+  inn: ~
+  name: "Троллейбусное ДЕПО"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.124095"
+  working_time: ~
+companies_086: 
+  address: "г.Чебоксары, пр. Ленина, 15 "
+  category_id: "8"
+  created_at: "2009-04-17 05:47:52.149122"
+  description: ~
+  director: ~
+  full_name: "Национальная библиотека Чувашии"
+  id: "86"
+  inn: ~
+  name: "Национальная библиотека Чувашии"
+  pending: t
+  site: www.lib.cap.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.149122"
+  working_time: ~
+companies_087: 
+  address: "г.Чебоксары, ул. Гузовского, 11"
+  category_id: "8"
+  created_at: "2009-04-17 05:47:52.168601"
+  description: ~
+  director: ~
+  full_name: "Центральная библиотека им. Маяковского"
+  id: "87"
+  inn: ~
+  name: "Центральная библиотека им. Маяковского"
+  pending: t
+  site: mayak.cheb.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.168601"
+  working_time: ~
+companies_088: 
+  address: "г.Чебоксары, пр. 9 Пятилетки, 19/37"
+  category_id: "8"
+  created_at: "2009-04-17 05:47:52.183479"
+  description: ~
+  director: ~
+  full_name: "Библиотека им. К.Иванова"
+  id: "88"
+  inn: ~
+  name: "Библиотека им. К.Иванова"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.183479"
+  working_time: ~
+companies_089: 
+  address: "г.Чебоксары, ул. Б.Хмельницкого, 55"
+  category_id: "8"
+  created_at: "2009-04-17 05:47:52.194697"
+  description: ~
+  director: ~
+  full_name: "Библиотека им. Чернышевского"
+  id: "89"
+  inn: ~
+  name: "Библиотека им. Чернышевского"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.194697"
+  working_time: ~
+companies_090: 
+  address: "г.Чебоксары, ул. Р.Зорге, 1 "
+  category_id: "8"
+  created_at: "2009-04-17 05:47:52.205579"
+  description: ~
+  director: ~
+  full_name: "Библиотека для слепых им. Толстого"
+  id: "90"
+  inn: ~
+  name: "Библиотека для слепых им. Толстого"
+  pending: t
+  site: chrsb.thelook.ru
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.205579"
+  working_time: ~
+companies_091: 
+  address: "г.Чебоксары, ул. 50 лет Октября, 3"
+  category_id: "8"
+  created_at: "2009-04-17 05:47:52.221588"
+  description: ~
+  director: ~
+  full_name: "Центр семейного чтения им. Сеспеля"
+  id: "91"
+  inn: ~
+  name: "Центр семейного чтения им. Сеспеля"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.221588"
+  working_time: ~
+companies_092: 
+  address: "г.Чебоксары, пр. Тракторостроителей, 73 "
+  category_id: "8"
+  created_at: "2009-04-17 05:47:52.2329"
+  description: ~
+  director: ~
+  full_name: "Центр семейного чтения им. Шумилова"
+  id: "92"
+  inn: ~
+  name: "Центр семейного чтения им. Шумилова"
+  pending: t
+  site: ~
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.2329"
+  working_time: ~
+companies_093: 
+  address: "г.Чебоксары, площадь Республики, 1"
+  category_id: "9"
+  created_at: "2009-04-17 05:47:52.249302"
+  description: ~
+  director: ~
+  full_name: "Кабинет Министров Чувашской Республики"
+  id: "93"
+  inn: ~
+  name: "Кабинет Министров Чувашской Республики"
+  pending: t
+  site: gov.cap.ru/main.asp?govid=17
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.249302"
+  working_time: ~
+companies_094: 
+  address: "г.Чебоксары, Президентский бульвар, 17"
+  category_id: "9"
+  created_at: "2009-04-17 05:47:52.261703"
+  description: ~
+  director: ~
+  full_name: "Министерство культуры ЧР"
+  id: "94"
+  inn: ~
+  name: "Министерство культуры ЧР"
+  pending: t
+  site: gov.cap.ru/main.asp?govid=12
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.261703"
+  working_time: ~
+companies_095: 
+  address: "г.Чебоксары, ул. К.Маркса, 41"
+  category_id: "9"
+  created_at: "2009-04-17 05:47:52.27775"
+  description: ~
+  director: ~
+  full_name: "Министерство внутренних дел ЧР"
+  id: "95"
+  inn: ~
+  name: "Министерство внутренних дел ЧР"
+  pending: t
+  site: gov.cap.ru/main.asp?govid=45
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.27775"
+  working_time: ~
+companies_096: 
+  address: "г.Чебоксары, Президентский бульвар, 17"
+  category_id: "9"
+  created_at: "2009-04-17 05:47:52.300725"
+  description: ~
+  director: ~
+  full_name: "Министерство здравоохранения и социальной политики ЧР"
+  id: "96"
+  inn: ~
+  name: "Министерство здравоохранения и социальной политики ЧР"
+  pending: t
+  site: gov.cap.ru/main.asp?govid=11
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.300725"
+  working_time: ~
+companies_097: 
+  address: "г.Чебоксары, ул. К.Иванова, 84"
+  category_id: "9"
+  created_at: "2009-04-17 05:47:52.313824"
+  description: ~
+  director: ~
+  full_name: "Министерство имущества ЧР"
+  id: "97"
+  inn: ~
+  name: "Министерство имущества ЧР"
+  pending: t
+  site: gov.cap.ru/main.asp?govid=10
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.313824"
+  working_time: ~
+companies_098: 
+  address: "г.Чебоксары, Президентский бульвар, 17 (6 этаж)"
+  category_id: "9"
+  created_at: "2009-04-17 05:47:52.331644"
+  description: ~
+  director: ~
+  full_name: "Управление информационной политики ЧР"
+  id: "98"
+  inn: ~
+  name: "Управление информационной политики ЧР"
+  pending: t
+  site: gov.cap.ru/main.asp?govid=3
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.331644"
+  working_time: ~
+companies_099: 
+  address: "г.Чебоксары, Президентский бульвар, 17"
+  category_id: "9"
+  created_at: "2009-04-17 05:47:52.348139"
+  description: ~
+  director: ~
+  full_name: "Министерство образования ЧР"
+  id: "99"
+  inn: ~
+  name: "Министерство образования ЧР"
+  pending: t
+  site: gov.cap.ru/main.asp?govid=13
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.348139"
+  working_time: ~
+companies_100: 
+  address: "г.Чебоксары, ул. Ленинградская, 33"
+  category_id: "9"
+  created_at: "2009-04-17 05:47:52.441481"
+  description: ~
+  director: ~
+  full_name: "Министерство природопользования Чувашской Республики"
+  id: "100"
+  inn: ~
+  name: "Министерство природопользования Чувашской Республики"
+  pending: t
+  site: gov.cap.ru/main.asp?govid=4
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.441481"
+  working_time: ~
+companies_101: 
+  address: "г.Чебоксары, пр. Ленина, 2"
+  category_id: "10"
+  created_at: "2009-04-17 05:47:52.465854"
+  description: ~
+  director: ~
+  full_name: ВолгаТелеком
+  id: "101"
+  inn: ~
+  name: ВолгаТелеком
+  pending: t
+  site: "http://www.chr.vt.ru, http://www.corp.vt.ru"
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.465854"
+  working_time: ~
+companies_102: 
+  address: "г.Чебоксары, ул. К.Маркса, 19"
+  category_id: "10"
+  created_at: "2009-04-17 05:47:52.492689"
+  description: ~
+  director: ~
+  full_name: Чебнет
+  id: "102"
+  inn: ~
+  name: Чебнет
+  pending: t
+  site: "http://www.chebnet.com"
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.492689"
+  working_time: ~
+companies_103: 
+  address: "г.Чебоксары, yл. К.Маркса, 60А"
+  category_id: "10"
+  created_at: "2009-04-17 05:47:52.505297"
+  description: ~
+  director: ~
+  full_name: Инфолинк
+  id: "103"
+  inn: ~
+  name: Инфолинк
+  pending: t
+  site: "http://www.info-link.ru"
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.505297"
+  working_time: ~
+companies_104: 
+  address: "г.Чебоксары, ул. Пирогова, 4"
+  category_id: "10"
+  created_at: "2009-04-17 05:47:52.516622"
+  description: ~
+  director: ~
+  full_name: "ORIONET "
+  id: "104"
+  inn: ~
+  name: "ORIONET "
+  pending: t
+  site: "http://www.orionet.ru"
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.516622"
+  working_time: ~
+companies_105: 
+  address: "г.Чебоксары, пр. Ленина, 19 корп. 1"
+  category_id: "10"
+  created_at: "2009-04-17 05:47:52.537149"
+  description: ~
+  director: ~
+  full_name: Etherway
+  id: "105"
+  inn: ~
+  name: Etherway
+  pending: t
+  site: "http://www.etherway.ru"
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.537149"
+  working_time: ~
+companies_106: 
+  address: ": г.Чебоксары, ул. Ярославская, 30"
+  category_id: "10"
+  created_at: "2009-04-17 05:47:52.550741"
+  description: ~
+  director: ~
+  full_name: Альтаком
+  id: "106"
+  inn: ~
+  name: Альтаком
+  pending: t
+  site: "http://www.altacom.ru"
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.550741"
+  working_time: ~
+companies_107: 
+  address: "г.Чебоксары, ул. Ярославская, 30"
+  category_id: "10"
+  created_at: "2009-04-17 05:47:52.572029"
+  description: ~
+  director: ~
+  full_name: Инфанет
+  id: "107"
+  inn: ~
+  name: Инфанет
+  pending: t
+  site: "http://www.infanet.ru"
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.572029"
+  working_time: ~
+companies_108: 
+  address: "г.Чебоксары, пр. Ленина, 7 корп. 1"
+  category_id: "10"
+  created_at: "2009-04-17 05:47:52.588318"
+  description: ~
+  director: ~
+  full_name: Информтехнолоджи
+  id: "108"
+  inn: ~
+  name: Информтехнолоджи
+  pending: t
+  site: "http://www.chuvashia.ru"
+  sources: ~
+  updated_at: "2009-04-17 05:47:52.588318"
+  working_time: ~

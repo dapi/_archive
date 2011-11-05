@@ -1,0 +1,37 @@
+.main_navigation {
+  margin: 0px 5px 0px auto;
+  float:right;
+}
+
+.main_navigation ul {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.main_navigation li {
+  display:inline;
+  padding: 0;
+  margin: 0;
+}
+
+.main_navigation li span.disabled {
+  color: #888888;
+}
+
+.main_navigation a, .main_navigation a:visited, .main_navigation a:hover {
+  border: none;
+  padding:0;
+  margin:0;
+  font-weight: normal;
+  color: #000000;
+}
+
+.main_navigation a:hover {
+  font-weight: normal;
+  color: #CB4415;
+}
+
+.main_navigation a.active {
+  font-weight: bold;
+}

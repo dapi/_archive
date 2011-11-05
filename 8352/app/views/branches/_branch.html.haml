@@ -1,0 +1,5 @@
+%li
+  = link_to branch.name, branch
+  - unless branch.children.empty?
+    %ul
+      = render :partial => 'branch', :collection => branch.children

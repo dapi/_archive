@@ -1,0 +1,6 @@
+- form_for [:admin, @branch], :html => { :class => "bordered columned" } do |f|
+  .row
+    = f.label :name, "Название:"
+    = f.text_field :name
+    = f.error_message_on :name
+  = f.submit "Сохранить", :class => "submit"

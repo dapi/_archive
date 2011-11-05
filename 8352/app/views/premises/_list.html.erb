@@ -1,0 +1,6 @@
+<h2>Premises</h2>
+<ul>
+  <% @premises.each do |premise| %>
+    <li><%= link_to "#{h premise.street.name}, #{premise.number}", premise %></li>
+  <% end %>
+</ul>

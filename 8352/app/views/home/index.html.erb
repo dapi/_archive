@@ -1,0 +1,15 @@
+<%= render :partial => 'branches/short' %>
+
+<h2>Яндекс-Карта</h2>
+
+<form action="#" onsubmit="showAddress(this.address.value);return false;">
+  <p>
+    Чебоксары,
+    <input type="text" id="address" style="width:525px;" value="" />
+    <input type="submit" value="Искать" />
+  </p>
+  <div id="YMapsID" style="width:400px;height:300px"></div>
+</form>
+
+<%= render :partial => 'premises/list' %>
+<%= render :partial => 'streets/list' %>

@@ -1,0 +1,11 @@
+-# the pseudo-class 'last-child' is defined in the upcoming CSS3 specification,
+-# but not supported all browsers
+:javascript
+  $(document).ready(function () {
+    $('ul.tree li:last-child').addClass('last');
+  });
+
+%h1 Все категории
+#jstree
+  %ul.tree
+    = render :partial => 'branch', :collection => @branch_roots

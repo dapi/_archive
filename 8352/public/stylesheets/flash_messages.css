@@ -1,0 +1,26 @@
+/* === FLASH MESSAGES === */
+.flash {
+    margin: 15px;
+    padding: 8px;
+    font-size: 12px;
+    font-family: helvetica, arial, sans-serif;
+    text-align: center;
+}
+
+.notice, .success {
+    color: #264409;
+    background-color: #BBFFB6;
+    border: 1px solid #1FDF00;
+}
+
+.warning {
+    color: #8A1F11;
+    border:1px solid #FFD324;
+    background-color:#fafa98;
+}
+
+.error {
+    color: #8A1F11;
+    border:1px solid #ff0000;
+    background-color:#FFDDDD;
+}

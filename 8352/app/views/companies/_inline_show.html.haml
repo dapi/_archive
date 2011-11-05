@@ -1,0 +1,8 @@
+.company_item
+  %h3= link_to company.name, company
+  .address= h company.address
+  .website= h company.site
+  .work_time= h company.working_time
+  .phones= h_phones company.phones
+  .group= link_to company.company_group.name, company.company_group
+  = link_to 'Edit', "/admin/companies/edit/#{company.id}"

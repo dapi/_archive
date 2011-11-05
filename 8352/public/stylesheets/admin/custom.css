@@ -1,0 +1,45 @@
+dl#branches, #branches dl { margin-left: 7px; padding-left: 23px; border-left: 1px solid #AAAAAA; }
+dt { font-size: 75%; vertical-align: middle; }
+#branch_root { width: 55%; margin-right: 5%; }
+
+dt.odd { background-color: #F3F3F3; }
+dt.even { background-color: #E3E3E3; }
+#branch_root.hover, dt.hover { background-color: #CCCCFF; }
+a._edit img { height: 12px; }
+
+.helper {
+    background-color: #AACCFF;
+    border: 1px dashed black;
+    font-size: 80%;
+    padding: 0.5em;
+    padding-left: 30px;
+}
+
+.helper.gclone {
+    background: #AACCFF url(/images/admin/add.png) no-repeat;
+    background-position: 4px 6px;
+}
+
+#branches dt { margin-bottom: 1px; padding-bottom: 1px; border-bottom: 1px solid #EEEEEE; }
+#branches { width: 55%; margin-right: 5%; }
+
+#groups_container {
+    position: fixed;
+    top: 117px;
+    right: 3%;
+    width: 35%;
+    overflow: scroll-x;
+}
+
+img._move, img._empty_folder { padding-right: 10px; }
+img._open, img._close { cursor: pointer; padding-right: 10px; }
+img._clone { cursor: move; padding-right: 10px; }
+
+#loader {
+  background-color: white;
+  padding: 1em;
+  border: 1px solid gray;
+  position: fixed;
+  top: 49%;
+  left: 49%;
+}

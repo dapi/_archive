@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title= yield :title if @content_for_title
+    = stylesheet_link_tag "admin/reset", "admin/admin", "admin/custom"
+    = javascript_include_tag "jquery", "jquery-ui", "jquery.cookie", "branches"
+    = javascript_tag "window._token = '#{form_authenticity_token}'"
+ 
+    <!--[if gte IE 7]><link href="/stylesheets/admin/ie.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if lte IE 6]><link href="/stylesheets/admin/ie6.css" media="screen" rel="stylesheet" type="text/css" /><script src="/ie6/warning.js"></script><script>window.onload=function(){e("/ie6/")}</script><![endif]-->
+  %body
+    #loader{:style => "display: none;"}
+      %img{:src => "/images/ajax-loader3.gif", :width => 16, :height => 16, :title => "Загрузка..." }
+    .navigation1
+      %ul
+        = render :partial => "layouts/admin/nav"
+    - begin
+      - s = render :partial => "subnav"
+      .navigation2
+        %ul= s
+    - rescue ActionView::MissingTemplate
+      .empty
+
+    .content= yield
+
+    .copyrights
+      &copy; 2009 gzigzigzeo

@@ -1,0 +1,25 @@
+
+<h2>
+	<%= link_to "Все тэги", tags_path %> &gt;
+  <% @tags.each_index do |i| %>
+	<% tag=@tags[i] %>
+  <%# link_to tag.name, { :action => :show, :id => tag.name } %>
+	<%= tag.name %>
+<small><%= link_to '[x]', tags_link(@tags.reject { |t| t==tag } )  %></small>
+	<%= @tags.size-1>i ? '+' : '' %>
+  <% end %>
+</h2>
+
+
+
+<% if @nested_tags.size > 0 %>
+<h2>В этом списке есть также компании с тэгами (<%= @nested_tags.size %>)</h2>
+<% for tag in @nested_tags %>
+ <%= link_to tag.name, tags_link([*@tags + [tag]]) %>, 
+
+<% end %>
+
+	<%#= will_paginate companies %>
+<% end %>
+
+<%= render :partial => "companies/list", :locals => { :companies => @companies }%>

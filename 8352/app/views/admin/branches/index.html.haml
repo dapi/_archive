@@ -1,0 +1,20 @@
+%h1 Категории
+
+#branch_root{:class => "_branch"}= icon(:root)
+%dl#branches{:class => "level_0"}
+  = render "branches"
+
+#groups_container
+  %table.list
+    %thead
+      %th{:width => 16}
+      %th{:width => "%"} Наименование
+      %th{:width => "30"}      
+      %th{:width => "30"}            
+    %tbody#groups
+      = render "groups"
+
+:javascript
+  $(document).ready(function() {
+    Branch.initialize();
+  });
