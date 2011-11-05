@@ -1,0 +1,9 @@
+[submodule "vendor/plugins/jrails"]
+	path = vendor/plugins/jrails
+	url = git://github.com/aaronchi/jrails.git
+[submodule "vendor/plugins/cucumber_rails_debug"]
+	path = vendor/plugins/cucumber_rails_debug
+	url = git://github.com/mischa/cucumber_rails_debug.git
+[submodule "vendor/plugins/typus"]
+	path = vendor/plugins/typus
+	url = git://github.com/fesplugas/typus.git

@@ -1,0 +1,22 @@
+<h1>Listing strelkis</h1>
+
+<table>
+  <tr>
+    <th>Place</th>
+    <th>Event</th>
+  </tr>
+
+<% @strelkis.each do |strelki| %>
+  <tr>
+    <td><%=h strelki.place %></td>
+    <td><%=h strelki.event %></td>
+    <td><%= link_to 'Show', strelki %></td>
+    <td><%= link_to 'Edit', edit_strelki_path(strelki) %></td>
+    <td><%= link_to 'Destroy', strelki, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New strelki', new_strelki_path %>

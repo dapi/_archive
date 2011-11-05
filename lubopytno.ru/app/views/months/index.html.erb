@@ -1,0 +1,17 @@
+<% title "Months" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for month in @months %>
+    <tr>
+      <td><%=h month.name %></td>
+      <td><%= link_to "Show", month %></td>
+      <td><%= link_to "Edit", edit_month_path(month) %></td>
+      <td><%= link_to "Destroy", month, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Month", new_month_path %></p>

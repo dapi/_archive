@@ -1,0 +1,45 @@
+require 'test_helper'
+
+class StrelkisControllerTest < ActionController::TestCase
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:strelkis)
+  end
+
+  test "should get new" do
+    get :new
+    assert_response :success
+  end
+
+  test "should create strelki" do
+    assert_difference('Strelki.count') do
+      post :create, :strelki => { :place_id=>1, :event_id=>1 }
+    end
+
+    assert_redirected_to strelki_path(assigns(:strelki))
+  end
+
+  test "should show strelki" do
+    get :show, :id => strelkis(:one).to_param
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :edit, :id => strelkis(:one).to_param
+    assert_response :success
+  end
+
+  test "should update strelki" do
+    put :update, :id => strelkis(:one).to_param, :strelki => { }
+    assert_redirected_to strelki_path(assigns(:strelki))
+  end
+
+  test "should destroy strelki" do
+    assert_difference('Strelki.count', -1) do
+      delete :destroy, :id => strelkis(:one).to_param
+    end
+
+    assert_redirected_to strelkis_path
+  end
+end

@@ -1,0 +1,10 @@
+# Делаем однажный
+gem install -r ya2yaml
+
+# Каждый раз при колнировании
+git submodule init
+git submodule update
+rake db:create
+rake db:migrate
+rake db:fixtures:load
+./script/server

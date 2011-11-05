@@ -1,0 +1,9 @@
+<div id="places">
+<h1>Рейтинг мест</h1>
+<ul class="inline">
+<% for pt in @place_types %>
+<li><a href=""><%= pt.name %> <span>(<%= pt.places_count || 0 %>)</span></a></li>
+<% end %>
+<li><%= link_to "Все заведения <span>(123)</span>", {:controller=>"places"} %></li>
+</ul>
+</div>

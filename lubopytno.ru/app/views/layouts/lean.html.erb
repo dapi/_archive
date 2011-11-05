@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>любопытно.ru</title>
+    <%= stylesheet_link_tag 'styles' %>
+    <%= javascript_include_tag :defaults %>
+  </head>
+  <body  id="lean_body">
+
+<div id="center_block">
+<div id="logo_block"><a href="/"  id="logo">Любопытно<span>.Ru</span></a></div>
+
+<div id="sign_form">
+<%= render :partial => 'layouts/flashes' -%>
+<%= yield  %>
+</div>
+
+</div>
+  </body>
+</html>

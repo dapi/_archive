@@ -1,0 +1,31 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+  email: "Email"
+  password: "Пароль"
+  password_confirmation: "Подтвердите пароль"
+  username: "Имя пользователя"
+  signup: "Зарегистрироваться"
+  remember_me: "Запомнить"
+
+  clearance:
+    models:
+      clearance_mailer:
+        change_password: Установка пароля
+        confirmation: Подтверждение регистрации
+    controllers:
+      confirmations:
+        confirmed_email: Подтверждет email и осуществлен вход.
+      passwords:
+        deliver_change_password: Через несколько минут вы получите письмо, которое будет содержать инструкции по смене пароля.
+        unknown_email: Неизвестный email.
+      sessions:
+        bad_email_or_password: Неверный пользователь или пароль.
+        unconfirmed_email: Пользователь не подтвердил email. Письмо для подтверждение отправлено снова.
+
+
+      users:
+        deliver_confirmation: Через несколько минут вы получите письмо с инструкциями о подтверждении регистрации.
+  signed_in: Вошел.
+  signed_out: Вышел.

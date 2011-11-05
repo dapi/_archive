@@ -1,0 +1,8 @@
+one:
+  title: Отчет1
+  place_id: 1
+  event_id: 1
+two:
+  title: Отчет2
+  place_id: 2
+  event_id: 2

@@ -1,0 +1,11 @@
+* jquery notification 
+	http://boedesign.com/2009/07/11/growl-for-jquery-gritter/
+
+* commentable
+
+* backlog
+** lenta
+*** ссылка "сегодня", гасящаяся когде выбрано сегодня
+*** таскать за календарь
+*** hover для календяра и ленты
+

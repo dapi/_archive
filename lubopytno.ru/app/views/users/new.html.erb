@@ -1,0 +1,6 @@
+<h2>Регистрация</h2>
+
+<% form_for @user do |form| %>
+<%= render :partial => '/users/form', :object => form %>
+<%= form.submit translate(:signup), :disable_with => 'Ждите...' %>
+<% end %>

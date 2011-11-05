@@ -1,0 +1,130 @@
+# Typus Models Configuration File
+#
+# Use the README file on the same folder as this file as a reference to
+# customize this file to your needs.
+
+Day:
+  fields:
+    list: id, date, counter, is_passed, is_holiday
+    form: date, counter, is_passed, is_holiday
+    show: id, date, counter, is_passed, is_holiday, created_at, updated_at
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: events
+  filters:
+  search:
+  application: lubopytno.ru
+  description:
+
+Event:
+  fields:
+    list: id, subject, date, time, place, day, event_type
+    form: subject, date, time, place, day, event_type
+    show: id, subject, date, time, created_at, updated_at, place, day, event_type
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: day, event_type, place
+  filters:
+  search:
+  application: lubopytno.ru
+  description: События
+
+EventType:
+  fields:
+    list: id, name
+    form: name
+    show: id, name, created_at, updated_at
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: 
+  filters:
+  search:
+  application: lubopytno.ru
+  description: Тип события
+
+Place:
+  fields:
+    list: id, name, address, telefons, place_type
+    form: name, address, telefons, desc, place_type
+    show: id, name, created_at, updated_at, address, telefons, desc, place_type
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: events, place_type
+  filters:
+  search:
+  application: lubopytno.ru
+  description: Места
+
+PlaceType:
+  fields:
+    list: id, name, places_count
+    form: name
+    show: id, name, created_at, updated_at, places_count
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: places
+  filters:
+  search:
+  application: lubopytno.ru
+  description: Вид мест
+
+Report:
+  fields:
+    list: id, title, place, event
+    form: title, place, event
+    show: id, title, created_at, updated_at, place, event
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: event, place
+  filters:
+  search:
+  application: lubopytno.ru
+  description: Отчеты
+
+Strelki:
+  fields:
+    list: id, place, event
+    form: place, event
+    show: id, created_at, updated_at, place, event
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: event, place
+  filters:
+  search:
+  application: lubopytno.ru
+  description:
+
+AdminUser:
+  fields:
+    list: username, email, status, role, email_confirmed, phone, phone_confirmed
+    form: email, status, email_confirmed, username, role, phone, phone_confirmed, about, password
+    show: id, email, status, email_confirmed, username, role, phone, phone_confirmed, about, created_ip, updated_ip, session_at, session_ip, session_user_agent, created_at, updated_at
+    options:
+      selectors: role
+      booleans:
+        status: Active, Inactive
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: 
+  filters: status, role
+  search: username, email
+  application: lubopytno.ru
+  description: Пользователи
+#  options:
+#     icon_on_boolean: false

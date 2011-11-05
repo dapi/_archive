@@ -1,0 +1,16 @@
+one:
+  id: 1
+  subject: Test event
+  day_id: 1
+  place_id: 1
+  event_type: 1
+  date: 2009-01-02
+  time: 12:00
+two:
+  id: 2
+  subject: Test event2
+  day_id: 2
+  place_id: 2
+  event_type: 2
+  date: 2009-01-01
+  time: 13:00

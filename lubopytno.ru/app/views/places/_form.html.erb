@@ -1,0 +1,27 @@
+<% form_for(@place) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label "Вид заведения" %><br />
+    <%= collection_select(:place, :place_type_id, PlaceType.find(:all), :id, :name) %>
+  </p>
+
+  <p>
+    <%= f.label "Название" %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Телефоны" %><br />
+    <%= f.text_field :telefons %>
+  </p>
+  <p>
+    <%= f.label "Адрес" %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label "Описание" %><br />
+    <%= f.text_area :desc, :size=> "60x12" %>
+  </p>
+  <p>
+    <%= f.submit 'OK' %>
+  </p>
+<% end %>

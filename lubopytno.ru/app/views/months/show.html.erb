@@ -1,0 +1,5 @@
+<div  id="<%= @month.year %>month_lenta<%= @month.month %>" class="month_lenta">
+<% for number in 1..31 %>
+<%=render :partial => "months/day" %>
+<% end %>       
+</div>

@@ -1,0 +1,2 @@
+class Mailer < ClearanceMailer
+end

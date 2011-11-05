@@ -1,0 +1,1 @@
+psql -U danil lubo -h orionet.ru

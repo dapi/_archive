@@ -1,0 +1,2 @@
+module StrelkisHelper
+end

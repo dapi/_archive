@@ -1,0 +1,19 @@
+<h1>New strelki</h1>
+
+<% form_for(@strelki) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :place %><br />
+    <%= f.text_field :place %>
+  </p>
+  <p>
+    <%= f.label :event %><br />
+    <%= f.text_field :event %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', strelkis_path %>

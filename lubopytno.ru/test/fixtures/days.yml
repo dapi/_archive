@@ -1,0 +1,10 @@
+one:
+  id: 1
+  date: 2009-01-01
+  is_holiday: true
+  is_passed: true
+two:
+  id: 2
+  date: 2009-01-02
+  is_holiday: false
+  is_passed: false

@@ -1,0 +1,38 @@
+
+<% if controller.signed_in? %>
+<div id="login">
+<div>Hello <%= current_user.username %></div>
+<div><%= link_to "выдох", session_path, :method => :delete, :class=>"spec" %></div>
+</div>
+<% else %>
+
+<div id="login">
+
+
+<% form_for :session, :url => session_path(:return_to => request.request_uri), :name=>"login" do |form| %>
+    <%= form.text_field :email, :size=>7, :value=>'Логин',
+:onfocus=>"if (this.value=='Логин') this.value=''",
+:onblur=>"if (this.value=='') this.value='Логин'",
+:title=>"Псевдоним или email"
+ %>  
+    <%= form.password_field :password, :size=>7, :title=>"Пароль" %>
+
+    <%= form.check_box :remember_me, :checked=>'checked', :title=>"Запомнить меня на пару недель" %>
+    <%= form.submit "Войти", :disable_with => "Подождите..." %>
+<% end %>
+
+<div id="submit_menu">
+<ul>
+  <li>
+    <%= link_to "Регистрация", new_user_path, :class=>"spec" %>
+  </li>
+  <li>
+    <%= link_to "Забыл пароль?", new_password_path, :class=>"spec" %>
+  </li>
+</ul>
+</div>
+
+</div>
+<% end %>
+
+<%= render :partial => 'layouts/flashes' -%>

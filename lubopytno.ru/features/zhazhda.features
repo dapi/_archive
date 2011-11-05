@@ -1,0 +1,16 @@
+Feature: Test zhazhda features
+  In order to get access to zhazhda data
+  A user
+  Should be able to sign in
+
+   Scenario: User signs in successfully with username from zhazhda.ru
+      When I go to the sign in page
+      And I sign in as "test/tasya"
+      Then I should see "Hello test"
+      And I should be signed in
+
+   Scenario: User is not confirmed
+      When I go to the sign in page
+      And I sign in as "umka78/dandy"
+      Then I should see "User has not confirmed email"
+      And I should be signed out

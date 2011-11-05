@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @report.title %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%=h @report.place %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%=h @report.event %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>

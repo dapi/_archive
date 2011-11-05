@@ -1,0 +1,5 @@
+<div id="<%= month.year %>month_lenta<%= month.month %>" class="month_lenta">
+<% month.days.each do |day| %>
+<%= render :partial => "lenta/day", :locals=>{:day=>day} %>
+<% end %>       
+</div>

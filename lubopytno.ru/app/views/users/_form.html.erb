@@ -1,0 +1,17 @@
+<%= form.error_messages %>
+<div class="text_field">
+  <%= form.label :username, translate(:username) %>
+  <%= form.text_field :username, :size=>20 %>
+</div>
+<div class="text_field">
+  <%= form.label :email, translate(:email) %>
+  <%= form.text_field :email, :size=>20 %>
+</div>
+<div class="password_field">
+  <%= form.label :password, translate(:password) %>
+  <%= form.password_field :password, :size=>20 %>
+</div>
+<div class="password_field">
+  <%= form.label :password_confirmation, translate(:password_confirmation) %>
+  <%= form.password_field :password_confirmation, :size=>20 %>
+</div>

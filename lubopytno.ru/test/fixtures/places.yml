@@ -1,0 +1,28 @@
+--- 
+one: 
+  address: "Водопроводная 20"
+  created_at: "2009-06-08 09:11:08"
+  desc: ""
+  id: "1"
+  name: "Grand Luidor Club"
+  place_type_id: "1"
+  telefons: ""
+  updated_at: "2009-06-08 16:42:25"
+two: 
+  address: "Проспект Ленина, 47"
+  created_at: "2009-06-08 09:11:39"
+  desc: ~
+  id: "2"
+  name: "13121231231"
+  place_type_id: "1"
+  telefons: ~
+  updated_at: "2009-06-08 09:11:39"
+places_003: 
+  address: ""
+  created_at: "2009-06-08 16:43:59"
+  desc: ""
+  id: "3"
+  name: Галактика
+  place_type_id: "1"
+  telefons: ""
+  updated_at: "2009-06-08 16:43:59"

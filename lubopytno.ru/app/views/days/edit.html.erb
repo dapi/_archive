@@ -1,0 +1,16 @@
+<h1>Editing day</h1>
+
+<% form_for(@day) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.text_field :date %>
+  </p>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @day %> |
+<%= link_to 'Back', days_path %>

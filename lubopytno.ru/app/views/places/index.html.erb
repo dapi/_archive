@@ -1,0 +1,18 @@
+<h1>Места</h1>
+
+<table>
+
+<% @places.each do |place| %>
+  <tr>
+    <td><%=h place.name %></td>
+    <td><%=h place.address %></td>
+    <td><%= link_to 'Show', place %></td>
+    <td><%= link_to 'Edit', edit_place_path(place) %></td>
+    <td><%= link_to 'Destroy', place, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Добавить новое место', new_place_path %>
