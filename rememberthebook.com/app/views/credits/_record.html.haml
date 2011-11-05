@@ -1,0 +1,38 @@
+%li.record
+  .icon
+    - if can? :close, record
+      #returned
+        = icon_link('ok',  close_record_path( record, request.fullpath ), 'Отметить долг как возвращен' )
+  .thing
+    = link_to record.thing, record
+    = render :partial => "credits/accept_state", :locals=>{ :record=>record }
+
+  .desc
+    - if show_contact?
+      = link_to record.partner, contact_path( record.contact ), :class=>'contact'
+    
+    %span.middot &#x00B7;
+
+    -# Отдал
+    -# %b= record.created_at.to_s(:friendly)
+    - if record.is_overdue?
+      %span.overdue
+        просрочка
+        = say_days record.overdue
+
+    - elsif record.till?
+      должен вернуть
+      %b= record.till.to_s(:friendly)
+    -# - if record.is_credit?
+    -#   - if can? :send_confirm, record
+    -#     = link_to 'Отправить повторно запрос на подтверждение', send_confirm_request_credit_path( record ), :class=>'command'
+    -#   - if record.is_overdue?
+    -#     = link_to 'Напомнить о долге', notify_debtor_credit_path( record )     
+    -# - else
+    -# - if can? :close, record
+    -#   %span.middot &#x00B7;
+    -#   = link_to 'Вернул?', close_record_path( record, request.fullpath ), :class=>'command'
+
+
+  
+

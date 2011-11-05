@@ -1,0 +1,7 @@
+%br
+- if @contacts.empty?
+  .center
+    Пусто. Импортировать?
+- else
+  %ol.contacts
+    = render :partial => "contact", :collection => @contacts

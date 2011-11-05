@@ -1,0 +1,8 @@
+%h2
+  Сторонняя авторизация
+
+.openids
+  - resource_class.omniauth_providers.each do |provider|
+    -# %li= link_to "", (provider==:google ? '/users/auth/google' : user_omniauth_authorize_path( provider )), :class=>"signin #{provider}"
+
+    = link_to image_tag("signin/#{provider}_32.png", :size => "32x32", :alt => provider), omniauth_authorize_path(resource_name, provider)

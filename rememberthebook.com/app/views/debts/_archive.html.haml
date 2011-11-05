@@ -1,0 +1,15 @@
+- if @closed_credits.count > 0
+  %h2 Архив одолжений
+  %table
+    %tr
+      %th Что
+      %th Кому
+      %th Когда одал
+    - for debt in @closed_credits
+      %tr
+        %td
+          = link_to debt.thing, debt
+        %td
+          = debt.debtor
+        %td
+          = debt.closed_at

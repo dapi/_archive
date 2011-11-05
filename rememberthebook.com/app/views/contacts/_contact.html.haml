@@ -1,0 +1,19 @@
+%li.contact
+  .avatar
+    = gravatar contact.partner
+  .name
+    = link_to contact.partner, contact_path( contact )
+    %span.actions
+      &middot;
+      = new_credit_link "Дать ему в долг"
+      &middot;
+      = new_debt_link "Взять"
+  .desc
+    - actual_credits = current_user.contacts_credits( contact ).actual
+    - unless actual_credits.empty?
+      Одолжения:
+      %b= actual_credits.count
+    - actual_debts = current_user.contacts_debts( contact ).actual
+    - unless actual_debts.empty?
+      Долги:
+      %b= actual_debts.count

@@ -1,0 +1,7 @@
+- unless action_name=='edit'
+  .mainbar
+    %ul.tmenu.level2
+      = navigation  "Взял" , new_debt_path(:partner_id=>params[:partner_id]), [ "debts#new", "debts#create" ]
+      = navigation "Одолжил" , new_credit_path(:partner_id=>params[:partner_id]), [ "credits#new", "credits#create" ]
+  .clear
+  %br

@@ -1,0 +1,17 @@
+= render "credits/menu"
+
+= semantic_form_for @debt  do |form|
+  //= error_messages_for 'debt', :object=>@debt
+  // = form.error_messages
+  = form.inputs do
+    = form.input :thing, :input_html => {:tabindex=>0, :class=>'autofocus'}, :label => 'Взял'
+  = form.inputs :for => :creditor do |creditor|
+    = creditor.input :email, :label => 'Его email'
+    = creditor.input :name, :label => 'Имя владельца'
+  = form.inputs  do
+    = form.input :till, :label => "Вернуть"
+    -# = form.input :notify_debtor, :label=>"Напомнить мне когда настанет время?"
+  = form.buttons do
+    = form.commit_button :label=>"OK"
+
+.clear

@@ -1,0 +1,33 @@
+- title "Архив одолжений"
+
+- if @closed_credits.count > 0
+  %table
+    %tr
+      %th Что
+      %th Кому
+      %th Когда давал
+      %th Когда одал
+      %th
+    - for credit in @closed_credits
+      %tr
+        %td
+          = link_to credit.thing, credit
+        %td
+          = credit.debtor
+        %td
+          = credit.created_at
+        %td
+          = credit.closed_at
+        - if credit.is_overdue?
+          %td.overdue
+            просрочка
+            = credit.overdue
+            дн.
+        - else
+          %td
+            без просрочки
+          
+          
+- else
+  %p
+    пусто

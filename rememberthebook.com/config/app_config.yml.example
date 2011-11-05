@@ -1,0 +1,93 @@
+mail: &mail
+  delivery_method: sendmail
+  host: "localhost:3000"
+  smtp:
+    address: smtp.server
+    port: 25
+    domain: RememberTheBook.Com
+    user_name: admin@smtp.server
+    password: secret
+    authentication: login # :plain, :login or :cram_md5
+    enable_starttls_auto: false
+    from: '"Сервис RememberTheBook" <notifier@RememberTheBook.com>' # Оповещения пользователям
+  notifier:
+    from: '"RememberTheBook" <notifier@RememberTheBook.com>'
+    # return_path => 'system@example.com'
+
+vkontakte: &vkontakte
+  app_id: ???
+  secret: ???
+
+facebookl: &facebookl # localhost
+  #App URL:	http://localhost:3000/
+  app_id: ???
+  secret: ???
+
+facebook: &facebook # Remember The Book
+  #App URL:	http://RememberTheBook.Com/
+  app_id: ???
+  secret: ???
+
+twitter: &twitter
+  api_key: ???
+
+  consumer_key: ???
+  consumer_secret: ??? 
+
+  # Access token
+  oauth_token: ???
+  oauth_token_secret: ???
+
+common: &common
+
+development:
+  <<: *common
+  domain: RememberTheBook.com
+  facebook:
+    <<: *facebookl
+  twitter:
+    <<: *twitter
+  mail:
+    <<: *mail
+  vkontakte:
+    <<: *vkontakte
+
+test:
+  domain: test.host
+  mail:
+    <<: *mail
+  facebook:
+    <<: *facebookl
+  twitter:
+    <<: *twitter
+  vkontakte:
+    <<: *vkontakte
+
+
+cucumber:
+  domain: test.host
+  mail:
+    <<: *mail
+  facebook:
+    <<: *facebookl
+  twitter:
+    <<: *twitter
+  vkontakte:
+    <<: *vkontakte
+
+
+production:
+  <<: *common
+  domain: RememberTheBook.com
+  vkontakte:
+    <<: *vkontakte
+  facebook:
+    <<: *facebook
+  twitter:
+    <<: *twitter
+  mail:
+    <<: *mail
+    host: rememberthebook.com
+    exception_notifier:
+      recipient: danil.pismenny@gmail.com
+      sender: '"RememberTheBook" <notifier@RememberTheBook.com>'

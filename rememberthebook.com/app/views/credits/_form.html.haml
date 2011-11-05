@@ -1,0 +1,29 @@
+
+
+= render "credits/menu"
+
+= semantic_form_for @credit do |form|
+  //= form.error_messages
+  = form.inputs do
+    = form.input :thing,  :input_html => {:tabindex=>0, :class=>'autofocus'}, :label => 'Дал'
+
+  - if @credit.debtor.new_record?
+    = form.inputs :for => :debtor do |debtor|
+      = debtor.input :email, :label => 'email должника'
+      = debtor.input :name, :label => 'Его имя'
+  - else
+    = form.inputs :for => :debtor do |debtor|
+      = debtor.hidden_field :id, { :value=>@credit.debtor.id }
+      = debtor.input :email, :label => 'email должника', :input_html => { :readonly=>'readonly' }
+      - if @credit.debtor.name?
+        = debtor.input :name, :label => 'Его имя', :input_html => { :readonly=>'readonly' }
+      - else
+        = debtor.input :name, :label => 'Его имя'
+  = form.inputs do
+    = form.input :till, :label => "Должен вернуть"
+    -# = form.input :notify_debtor, :label=>"Напомнить должнику когда настанет время"
+    -# = form.input :notify_creditor, :label=>"Напомнить мне если долг будет просрочен"
+  = form.buttons do
+    = form.commit_button :label=>'OK'
+
+.clear

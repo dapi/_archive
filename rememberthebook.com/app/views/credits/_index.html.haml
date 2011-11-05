@@ -1,0 +1,11 @@
+- if @credits.actual.count==0 && @debts.actual.count==0
+  .center
+    %p Пусто.
+    %p
+      = new_credit_link 'Дать в долг'
+      или
+      = new_debt_link 'взять?'
+- else 
+  = render :partial => "credits/open_credits" 
+  = render :partial => "debts/open_debts" 
+

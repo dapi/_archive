@@ -1,0 +1,13 @@
+%p
+  %strong= @current_user
+  , Вы подтвреждаете что взяли у
+  %strong= @debt.creditor
+  %strong= @debt.thing
+  и обещаете вернуть
+  %strong= @debt.till
+  ?
+
+= semantic_form_for :debt, :url=>confirm_debt_path(@debt), :html => {:class=>'debt_confirm'} do |form|
+  = form.commit_button "Подтверждаю", :button_html=>{ :class=>'accept', :name=>'accept' }
+  = form.commit_button "Не согласен", :button_html=>{ :class=>'decline', :name=>'decline' }
+

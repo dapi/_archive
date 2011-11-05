@@ -1,0 +1,16 @@
+.avatar.right= gravatar current_user
+
+%ul.profile
+  %li
+    %span.gray
+      = current_user
+  %li
+    = navigation_link "Настройка" , edit_user_registration_path, "registrations#edit"
+    &middot;
+    = link_to 'Выйти', destroy_user_session_path
+
+
+-# - unless current_user.normal?
+-#   - flash[:alert] = link_to( 'Установите пароль', edit_user_registration_path) + ' для удобного входа в сервис.' 
+- unless current_user.email?
+  - flash[:notice] = 'Рекомундуем ' + link_to( 'указать email', edit_user_registration_path) + ' для оповещениях о долгах.' 

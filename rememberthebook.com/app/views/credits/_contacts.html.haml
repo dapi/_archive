@@ -1,0 +1,8 @@
+- if @contacts.empty?
+  Нет контактов.
+  = link_to 'Добавить..', new_contact_path
+- else
+  %h2 Контакты:
+  %ol.contacts
+    = render :partial => "contacts/contact", :collection => @contacts
+

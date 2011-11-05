@@ -1,0 +1,11 @@
+<p>Добрый день, <%= @recipient %>!</p>
+
+<%= yield %>
+
+<br/><br/>
+<hr/>
+<p>Одолжил &mdash; запиши! Сервис  <%= link_to 'RememberTheBook.Ru', root_url %></p>
+<br/><br/>
+<p><%= auth_link_to 'Автоматический вход', credits_path  %> на сайт без пароля.</p>
+<p><%= link_to 'Отписаться', users_unsubscribe_url( @recipient ) %> от получения подобным писем.</p>
+<p><%= link_to 'Unsubscribe', users_unsubscribe_url( @recipient ) %>.</p>

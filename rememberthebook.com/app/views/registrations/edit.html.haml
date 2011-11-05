@@ -1,0 +1,48 @@
+%h2 Настройка профиля
+
+.mainbar
+  = semantic_form_for resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }  do |form|
+    //= error_messages_for 'debt', :object=>@debt
+    // = form.error_messages
+    // = devise_error_messages!
+    = form.inputs  do
+      = form.input :email, :required=>true
+      = form.input :name, :label => 'Имя',  :input_html => {:tabindex=>0, :class=>'autofocus'}
+    = form.inputs  do
+      = form.input :password, :required=>false
+      = form.input :password_confirmation
+    = form.inputs  do
+      = form.input :open_id_uid, :label => 'OpenID'
+
+    -# %p
+    -#   = f.label :current_password
+    -#   %i (we need your current password to confirm your changes)
+    -#   %br/
+    -#   = f.password_field :current_password
+
+    = form.buttons do
+      = form.commit_button :label=>"Сохранить изменения"
+
+.sidebar
+  -# = render :partial=>'devise/shared/links'
+  %h2 Сторонняя авторизация
+  %ul.openids
+    - resource_class.omniauth_providers.each do |provider|
+      %li
+        - if resource.is_provider_linked? provider
+          = image_tag("signin/#{provider}_32.png", :size => "32x32", :alt => provider)
+          Авторизован.
+          -# - if [:twitter, :facebook, :open_id].include? provider
+          -#   %span.small
+          -#     = resource.provider_uid provider
+        - else 
+          = link_to image_tag("signin/#{provider}_32.png", :size => "32x32", :alt => provider), omniauth_authorize_path(resource_name, provider)
+          = link_to "Авторизовать", omniauth_authorize_path(resource_name, provider)
+  %br
+  %p
+    Аватар для своего email-а загружайте на 
+    = link_to 'gravatar.com','http://gravatar.com'
+
+-# %p
+-#   Unhappy? #{link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete}.
+-# = link_to "Back", :back

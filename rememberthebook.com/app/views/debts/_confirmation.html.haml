@@ -1,0 +1,6 @@
+- if can? :confirm, record
+  %span.yellow
+    = link_to 'подтвердить', confirm_debt_path( record, :accept=>1, :return_to=>request.fullpath )
+    - if record.wait?
+      \/
+      = link_to 'опровергнуть', confirm_debt_path( record, :decline=>1, :return_to=>request.fullpath )

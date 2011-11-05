@@ -1,0 +1,21 @@
+
+- if @debts.actual.count > 0
+  %h2.left Вы должны:
+  .right= new_debt_link
+  .clear
+
+  %ul.records
+    = render :partial => "credits/record", :collection => @debts.actual
+  .clear
+  %br
+- else
+  %p
+    - if current_contact
+      Вы ему ничего не должены.
+    - else
+      Вы никому не должны.
+  = new_debt_link
+
+
+- if current_user.debts.closed.count>0
+  %p= link_to raw( 'Архив &rarr;' ), closed_debts_path, :class=>:right

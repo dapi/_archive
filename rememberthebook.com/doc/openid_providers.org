@@ -1,0 +1,162 @@
+http://github.com/intridea/omniauth/wiki/Auth-Hash-Schema
+
+* Twitter:
+{"user_info"=>
+  {"name"=>"Danil Pismenny",
+   "location"=>nil,
+   "urls"=>{"Website"=>nil},
+   "nickname"=>"RememberTheBook",
+   "description"=>nil,
+   "image"=>
+    "http://s.twimg.com/a/1287010001/images/default_profile_2_normal.png"},
+ "uid"=>"191120218",
+ "credentials"=>
+  {"token"=>"",
+   "secret"=>""},
+ "extra"=>
+  {"user_hash"=>
+    {"profile_sidebar_fill_color"=>"DDEEF6",
+     "name"=>"Danil Pismenny",
+     "profile_background_tile"=>false,
+     "profile_sidebar_border_color"=>"C0DEED",
+     "location"=>nil,
+     "profile_image_url"=>
+      "http://s.twimg.com/a/1287010001/images/default_profile_2_normal.png",
+     "created_at"=>"Wed Sep 15 17:14:02 +0000 2010",
+     "profile_link_color"=>"0084B4",
+     "follow_request_sent"=>false,
+     "url"=>nil,
+     "contributors_enabled"=>false,
+     "favourites_count"=>0,
+     "utc_offset"=>nil,
+     "id"=>191120218,
+     "listed_count"=>0,
+     "profile_use_background_image"=>true,
+     "protected"=>false,
+     "lang"=>"en",
+     "profile_text_color"=>"333333",
+     "followers_count"=>1,
+     "time_zone"=>nil,
+     "verified"=>false,
+     "profile_background_color"=>"C0DEED",
+     "geo_enabled"=>false,
+     "notifications"=>false,
+     "description"=>nil,
+     "statuses_count"=>2,
+     "friends_count"=>0,
+     "profile_background_image_url"=>
+      "http://s.twimg.com/a/1287010001/images/themes/theme1/bg.png",
+     "status"=>
+      {"coordinates"=>nil,
+       "favorited"=>false,
+       "created_at"=>"Mon Oct 18 07:43:06 +0000 2010",
+       "truncated"=>false,
+       "text"=>
+        "Новый релиз 0.04. Добавлена работа с контактами и изменен интерфейс.",
+       "contributors"=>nil,
+       "id"=>27713874175,
+       "retweet_count"=>nil,
+       "geo"=>nil,
+       "retweeted"=>false,
+       "in_reply_to_user_id"=>nil,
+       "source"=>"web",
+       "in_reply_to_screen_name"=>nil,
+       "place"=>nil,
+       "in_reply_to_status_id"=>nil},
+     "following"=>false,
+     "show_all_inline_media"=>false,
+     "screen_name"=>"RememberTheBook"},
+   "access_token"=>
+    #<OAuth::AccessToken:0xb5ba50e4
+   "provider"=>"twitter"}
+
+* Facebook
+user_info"=>
+  {"name"=>"Danil Pismenny",
+   "urls"=>
+    {"Facebook"=>"http://www.facebook.com/danil.pismenny", "Website"=>nil},
+   "nickname"=>"danil.pismenny",
+   "last_name"=>"Pismenny",
+   "first_name"=>"Danil"},
+ "uid"=>"537034845",
+ "credentials"=>
+  {"token"=> ""},
+ "extra"=>
+  {"user_hash"=>
+    {"name"=>"Danil Pismenny",
+     "timezone"=>4,
+     "gender"=>"male",
+     "id"=>"537034845",
+     "last_name"=>"Pismenny",
+     "updated_time"=>"2010-10-10T17:36:51+0000",
+     "verified"=>true,
+     "locale"=>"ru_RU",
+     "link"=>"http://www.facebook.com/danil.pismenny",
+     "email"=>"danilpismenny@gmail.com",
+     "education"=>
+      [{"school"=>{"name"=>"CHGU", "id"=>"110382862315702"},
+        "type"=>"College",
+        "year"=>{"name"=>"1998", "id"=>"109421542454390"}}],
+     "work"=>
+      [{"start_date"=>"2002-09",
+        "position"=>{"name"=>"гендир", "id"=>"145777228787226"},
+        "employer"=>{"name"=>"ORIONET", "id"=>"105347959503424"},
+        "description"=>"Интернет-провайдер",
+        "end_date"=>"2010-04"},
+       {"start_date"=>"2001-03",
+        "position"=>
+         {"name"=>"Web-разработчик", "id"=>"116027508453003"},
+        "employer"=>{"name"=>"Freelance", "id"=>"115201351823736"},
+        "description"=>"CRM для ЧЭАЗ, Элара",
+        "end_date"=>"2002-10"},
+       {"start_date"=>"2000-03",
+        "position"=>
+         {"name"=>"web-программист", "id"=>"151259708226181"},
+        "employer"=>{"name"=>"e-labs", "id"=>"147887391921521"},
+        "description"=>
+         "perl, монитор, зеленый палас под ногами",
+        "end_date"=>"2001-02"},
+       {"start_date"=>"1998-02",
+        "position"=>
+         {"name"=>"Программист-freelance", "id"=>"120355814688558"},
+        "location"=>{"name"=>"Usa", "id"=>"106438226059249"},
+        "employer"=>{"name"=>"Easternprom", "id"=>"141177382595836"},
+        "description"=>"фрилансил по немногу, Visual C",
+        "end_date"=>"1998-10"},
+       {"start_date"=>"1996-10",
+        "position"=>
+         {"name"=>"главный и единственный инженер",
+          "id"=>"161538673864008"},
+        "employer"=>{"name"=>"Черы-пейдж", "id"=>"120460348011451"},
+        "description"=>"Пейджинговая-компания",
+        "end_date"=>"1998-01"}],
+     "first_name"=>"Danil"}},
+ "provider"=>"facebook"}
+
+* Facebook oauth access_token через devise/warden
+    # data = ActiveSupport::JSON.decode(access_token.get('/me')) 
+    # {"name"=>"Danil Pismenny", "timezone"=>4, "gender"=>"мужской", "id"=>"537034845", "last_name"=>"Pismenny", "updated_time"=>"2010-07-26T09:16:21+0000", "verified"=>true, "locale"=>"ru_RU", "link"=>"http://www.facebook.com/danil.pismenny", "email"=>"danilpismenny@gmail.com", "education"=>[{"school"=>{"name"=>"CHGU", "id"=>"110382862315702"}, "type"=>"College", "year"=>{"name"=>"1998", "id"=>"115130388504373"}}], "work"=>[{"start_date"=>"0000-00", "employer"=>{"name"=>"ORIONET", "id"=>"105347959503424"}}], "first_name"=>"Danil"}
+
+* OpenID
+  {"user_info"=>{}, "uid"=>"http://dapi.livejournal.com/", "provider"=>"open_id"}
+
+* vkontakte
+  {
+    'uid' => '1234567890', # ID пользователя vkontakte.ru
+    'provider' => 'vkontakte',
+    'user_info' => {
+      'name' => 'Nick Recobra',
+      'nickname' => 'oruen',
+      'firstName' => 'Nick',
+      'lastName' => 'Recobra',
+      'image' => 'http://cs191.vkontakte.ru/u00001/e_375bc433.jpg', # путь до вконтактовского аватара
+      'urls' => { 'Page' => 'http://vkontakte.ru/id1234567890' }
+    }
+  }
+
+* Google
+{"user_info"=>{"email"=>"danilpismenny@gmail.com"},
+ "uid"=>
+  "https://www.google.com/accounts/o8/id?id=AItOawkMF3N2KMJThcYLD0YlbDFMrqMf42Olxrc",
+ "provider"=>"google"}
+

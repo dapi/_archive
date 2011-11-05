@@ -1,0 +1,28 @@
+%div#login
+  - if user_signed_in?
+    = render 'devise/menu/profile' 
+  - elsif controller_name != 'sessions' && controller_name != 'registrations'
+    = form_for User.new, :url => user_session_path  do |form|
+      = form.hidden_field :remember_me, { :value=>true }
+      %ul.lmenu
+        -# %li= link_to image_tag('fb.png', :alt=>"Sign in with Facebook"), user_oauth_authorize_url( :facebook )
+        %li
+          = form.text_field :email, :size=>8
+          = form.password_field :password, :size=>8
+        -# %li.large
+        -#   = form.label :remember_me, "remember"
+        %li= form.submit 'Войти'
+        %li= link_to "Нет пароля?", new_user_password_path
+
+    -# %li
+    -#   = link_to('Вход', new_user_session_path)  
+
+
+
+    -#   = link_to_oauth2 "Sign In with Facebook"
+
+      -# %li
+      -#   = link_to("Login With Twitter", user_session_path(:warden_oauth_provider => 'twitter') )
+
+.clear
+

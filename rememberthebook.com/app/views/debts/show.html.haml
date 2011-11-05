@@ -1,0 +1,57 @@
+- title "Долг"
+
+
+
+
+%p
+  %strong= @debt.created_at.to_date.humanize
+  Вы одолжили
+  %strong= @debt.thing
+  у
+  %strong= @debt.debtor
+  - if @debt.till?
+    до
+    %strong= @debt.till.humanize
+- if @debt.closed?
+  %p
+    Долг возвращен.
+- elsif @debt.user != current_user
+  %p
+    - case @debt.accept_state
+    - when "declined"
+      Вы отказались подтверждать эти данные.
+      - if can? :confirm, @debt
+        = link_to 'Подтвердить.', confirm_debt_path( @debt, :accept=>1, :return_to=>request.fullpath )
+    - when "accepted"
+      Вы подтвердили эти данные
+      = @debt.accepted_at.humanize
+    - else
+      Вы еще не подтвердили этот долг.
+      = render :partial => "credits/confirmation", :locals => {:record=>@debt}
+  %p
+    Долг открыт.
+
+- if @debt.is_overdue?
+  %p
+    Долго просрочен на 
+    = @debt.overdue
+    дней.
+
+%p
+  - if @debt.user == current_user
+    Вы являтесь автором этой записи.
+  - else
+    Автором это записи является
+    = @debt.partner
+
+
+%p
+  - if can? :edit, @debt
+    = link_to "Редактировать", edit_debt_path( @debt )
+
+  - if can? :destroy, @debt
+    = link_to "Удалить", @debt, :confirm => 'Are you sure?', :method => :delete, :class=>"delete"
+
+
+%p
+  = link_to "&larr; назад в список".html_safe, debts_path

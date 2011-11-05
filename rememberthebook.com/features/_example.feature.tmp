@@ -1,0 +1,163 @@
+# language: en
+
+Feature: Manage user_registrations
+  In order to [goal]
+  [stakeholder]
+  wants [behaviour]
+
+ # Background:
+  
+  Scenario: Когда пользователь правильно регистрируется даже без имени ему показывают об этом сообщение и меню 'Настройка'
+    Given no any users in the database
+    And I am on the registration page
+    # When I fill in "Name" with "name"
+    When I fill in "Email" with "email@mail.me"
+    And I fill in "Password" with "password"
+    And I fill in "Password confirmation" with "password"
+    And I press "user_submit"
+    Then I should see "signed up"
+    And I should be authorized as "email@mail.me"
+    And We have a user with email "email@mail.me"
+    #And I should receive an email
+    # When I open the email
+    # Then I should see "Вы зарегистрированы" in the email body
+    # When I follow "этой ссылкой" in the email
+    # And I should be authorized as "email@mail.me"
+
+    # Then I should see "Confirm your new account"
+
+
+  Scenario: Пользователь может зарегистрироваться только с емайлом
+    Given no any users in the database
+    And I am on the registration page
+    When I fill in "Email" with "email2@mail.me"
+    And I press "user_submit"
+    Then I should see "signed up"
+    And I should be authorized as "email2@mail.me"
+    And I should see "You have signed up successfully."
+    And We have a user with email "email2@mail.me"
+    And I should see "Установите пароль"
+    # And the new user should receive an email confirmation
+
+
+  # Так как мы одного уже зарегили, поиграем с ним
+  Scenario: Когда регистрируемся повторно, получаем кукиш
+    Given I have one user "email@mail.me"
+    And I am on the registration page
+    When I fill in "Имя" with "name"
+    And I fill in "Email" with "email@mail.me"
+    And I fill in "Password" with "password"
+    And I fill in "Password confirmation" with "password"
+    And I press "user_submit"
+    #And let me debug
+    # 
+    Then I should see "has already been taken"
+    #And show me the page
+
+  Scenario: Мы можем авторизоваться и деавторизоваться
+    Given I am not authenticated
+    Then I follow "Войти"
+    When I go to login 
+    And I fill in "user_email" with "email@mail.me"
+    And I fill in "user_password" with "password"
+    And I press "Sign in"
+    Then I should see "Signed in"
+    And I should be authorized as "email@mail.me"
+    When I follow "Выйти"
+    Then I should be not authorized
+
+  Scenario: Пользователя можно залогинить через devise-step definition
+    Given a user is logged in as "mark@example.com"
+    And I should be authorized as "mark@example.com"
+
+  Scenario: Пользователя может зарегистрировать и авторизовать через devise-step definition
+    Given I am a new, authenticated user
+    And I should be authorized as "testing"
+
+
+  Scenario: Может изменить свое имя и email без пароля, если они не заняты
+     Given a user is signed in as "email@mail.me" with password "password"
+     And I go to the edit user_registration page
+     Then I should see "Edit User"
+     When I fill in "Name" with "New Name"
+     And I fill in "Email" with "newemail@mail.me"
+     And I press "Update"
+     Then I should see "updated"
+     And I should be authorized as "newemail@mail.me"
+     When I go to the edit user_registration page
+     Then I should see "New Name"
+     # When a user is signed in as "email@mail.me" with password "password"
+  
+  Scenario: Не может изменить свое имя и email без пароля, если они заняты
+    Given a user is signed in as "newemail@mail.me" with password "password"
+    And I go to the edit user_registration page
+    Then I should see "Edit User"
+    When I fill in "Name" with "Mark Numan"
+    And I fill in "Email" with "mark@example.com"
+    And I press "Update"
+    Then I should see "Email has already been taken"
+
+  Scenario: Когда пытаемся залогиниться под старым емайлом, нас отшивает
+    Given a user is signed in as "email@mail.me" with password "password"
+    Then I should see "Invalid email or password"
+
+  Scenario: Виртуальный пользователь не может логиниться по паролю
+
+    
+  Scenario: Виртуальный пользователь может логинться через auth_token и тогда он перестает быть виртуальным
+    # Тогда он имеет флаг has_no_password и соответсвующее предупреждение на странице
+    # После регистрации нет флага is_virtual и has_no_password
+
+
+
+  Scenario: Можно зарегистрироваться без пароля и имени
+    #  Тогда приходит письмо с авторизацией и паролем
+    # Тогда он имеет флаг has_no_password и соответсвующее предупреждение на странице
+
+  Scenario: Пользователь без пароля может залогиниться по auth_token и установить пароль
+    # Тогда он имеет флаг has_no_password и соответсвующее предупреждение на странице
+    # После установки пароля сообщение ему больше не показывается
+  
+
+  Scenario: Получть форму восстановления пароля и логина, если регистрируешься под существующим мылом
+
+
+
+  #    Then show me the page
+
+  # Rails generates Delete links that use Javascript to pop up a confirmation
+  # dialog and then do a HTTP POST request (emulated DELETE request).
+  #
+  # Capybara must use Culerity/Celerity or Selenium2 (webdriver) when pages rely
+  # on Javascript events. Only Culerity/Celerity supports clicking on confirmation
+  # dialogs.
+  #
+  # Since Culerity/Celerity and Selenium2 has some overhead, Cucumber-Rails will
+  # detect the presence of Javascript behind Delete links and issue a DELETE request 
+  # instead of a GET request.
+  #
+  # You can turn this emulation off by tagging your scenario with @no-js-emulation.
+  # Turning on browser testing with @selenium, @culerity, @celerity or @javascript
+  # will also turn off the emulation. (See the Capybara documentation for 
+  # details about those tags). If any of the browser tags are present, Cucumber-Rails
+  # will also turn off transactions and clean the database with DatabaseCleaner 
+  # after the scenario has finished. This is to prevent data from leaking into 
+  # the next scenario.
+  #
+  # Another way to avoid Cucumber-Rails' javascript emulation without using any
+  # of the tags above is to modify your views to use <button> instead. You can
+  # see how in http://github.com/jnicklas/capybara/issues#issue/12
+  #
+  # Scenario: Delete user_registration
+  #   Given the following user_registrations:
+  #     |name|email|password|password_confirmation|
+  #     |name 1|email 1|password 1|password_confirmation 1|
+  #     |name 2|email 2|password 2|password_confirmation 2|
+  #     |name 3|email 3|password 3|password_confirmation 3|
+  #     |name 4|email 4|password 4|password_confirmation 4|
+  #   When I delete the 3rd user_registration
+  #   Then I should see the following user_registrations:
+  #     |Name|Email|Password|Password confirmation|
+  #     |name 1|email 1|password 1|password_confirmation 1|
+  #     |name 2|email 2|password 2|password_confirmation 2|
+  #     |name 4|email 4|password 4|password_confirmation 4|

@@ -1,0 +1,60 @@
+%ul.login
+  %li
+    = render :partial=>'common/openids'
+  %li
+    = link_to "Регистрация", new_user_registration_path
+    &middot;
+    = link_to "Вход", new_user_session_path
+
+  -# %li
+  -#   = navigation_link "Напомнить пароль", new_user_password_path, "passwords#new"
+
+-# = form_for User.new, :url => user_session_path  do |form|
+-#   = form.hidden_field :remember_me, { :value=>true }
+-#   %ul.lmenu
+-#     %li
+-#       = form.text_field :email, :size=>12
+-#       = form.password_field :password, :size=>8
+-#       = form.submit 'Войти'
+-#     %li.large
+-#       = link_to "Регистрироваться", new_user_registration_path
+-#       &middot;
+-#       = navigation_link "Напомнить пароль", new_user_password_path, "passwords#new"
+
+-# .openids
+  -# = link_to image_tag('fb.png', :alt=>"Sign in with Facebook"), user_oauth_authorize_url( :facebook )
+  -# %script{:type => "text/javascript",
+  -#         :src  => "http://vkontakte.ru/js/api/openapi.js"}
+
+  -# %div#login_button{:onclick=>"VK.Auth.login(authInfo);"}
+
+  -# %script{:type => "text/javascript"}
+  -#   VK.init({
+  -#   apiId: 1984045,
+  -#   test_mode: 1
+  -#   });
+  -#   function authInfo(response) {
+  -#   if (response.session) {
+  -#   alert('user: '+response.session.mid);
+  -#   } else {
+  -#   alert('not auth');
+  -#   }
+  -#   }
+  -#   VK.Auth.getLoginStatus(authInfo);
+  -#   VK.UI.button('login_button');
+
+-# %li
+-#   = link_to('Вход', new_user_session_path)  
+
+
+
+-#   = link_to_oauth2 "Sign In with Facebook"
+
+-# %li
+-#   = link_to("Login With Twitter", user_session_path(:warden_oauth_provider => 'twitter') )
+
+-# - unless user_signed_in?
+-#   %li
+-#     = link_to('Register', new_user_registration_path) 
+
+

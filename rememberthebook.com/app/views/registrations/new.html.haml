@@ -1,0 +1,19 @@
+= render :partial => "devise/shared/menu"
+
+.mainbar
+  = semantic_form_for resource, :as => resource_name, :url => registration_path(resource_name)  do |form|
+    //= error_messages_for 'debt', :object=>@debt
+    // = form.error_messages
+    // = devise_error_messages!
+    = form.inputs  do
+      = form.input :email, :required=>true,  :input_html => {:tabindex=>0, :class=>'autofocus'}
+      = form.input :name, :label => 'Имя'
+      = form.inputs :name=>'Заполнять не обязательно:' do
+        = form.input :password, :required=>false, :hint => 'Если укажите, сгенерируем автоматически'
+        = form.input :password_confirmation
+
+    = form.buttons do
+      = form.commit_button :label=>"Зарегистрироваться"
+
+.sidebar
+  = render :partial => "devise/shared/links"

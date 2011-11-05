@@ -1,0 +1,583 @@
+* Current
+** Добавление контакта.
+* Roadmap
+** DONE Долги/кредиты без JS. Пост-регистрация, в том числе через facebook.  
+*** [7/7] Логин и авторизация
+**** DONE Создавать псевдо пользователья для всех записей.
+**** DONE Сделать чтобы пароль мог быть менее 6 символов.
+**** DONE Авторизация через facebook
+**** DONE Вход по token. Быстрая регистрация при акцепте долга (вход по токену)
+**** DONE Токен для уже существующих пользователей (не виртуалов) не принимается? *НЕ ПОДТВЕРОИЛОСЬ*
+**** DONE Релогин если указан токен.
+**** DONE При входе виртуала сообщать ему о необходимости установить пароль, и возможно имя через профайл
+***** DONE Снимать is_virtual как только установили пароль
+***** DONE flash с сообщением об установке пароля
+*** [5/5] Рассылка писем
+**** DONE Письмо должнику об необходимости акцепта
+**** DONE При акцепте или неакцепте письмо кредитору
+**** DONE Кнопка "Напомнить должнику о долге"
+**** DONE Письмо о погашении долга должнику
+**** DONE Письмо кредитору если должник более 3-х дней не акцептует
+*** [6/6] Список долгов и кредитов:
+**** DONE Выделяются просроченные долги
+**** DONE Список долгов
+**** DONE Акцепт долга
+**** DONE Комментарий долга при редактировании
+**** DONE Возможность отредактировать долг
+**** DONE Нормальный Show долга или кредита
+*** [3/3] Валидация                                                  
+**** DONE Делать проверку на случайное добавление одинакового долга
+**** DONE На ввод самого себя в качестве партнера
+**** DONE Валидация мыла
+*** [11/11] Прочее
+**** DONE Разобраться с авторизацией в типусе + devise
+**** DONE Typus autoadmin
+**** DONE Scheduller
+**** DONE user_id по которому определять тип записи
+**** DONE confirm -> accept_state
+**** DONE Разделить debts и credits
+**** DONE Долг погашен.
+**** DONE Таблица долгов
+**** DONE Если не залогинен - Save disabled
+**** DONE Сохранять в таблицу
+**** DONE Автоматически ставить фокус на первый input
+**** DONE app_config
+** DONE [10/10] Доступ и права
+**** DONE Предлагать высылать ключ для входа автоматом для virtual-ных и nopass
+***** при логине
+***** при регистрации
+***** TODO Запихать в send_reset_password_instructions auto_password или auth_token
+***** DONE При регистрации
+***** STARTED При логине
+***** Разораться с remind_pass
+**** DONE openid
+**** DONE user.name -> user.to_s
+**** DONE Флажек/поле подключенного facebook
+**** DONE login/password выход на главную страницу в правый верхний угол
+**** DONE Владелец debt тоже может отмечать как возвращен!
+**** DONE Проблема с логином виртуальных пользователей ?
+ BCrypt::Errors::InvalidHash in Devise/sessionsController#create
+
+invalid hash
+
+Rails.root: /home/danil/code/rtb
+Application Trace | Framework Trace | Full Trace
+
+bcrypt-ruby (2.1.2) lib/bcrypt.rb:166:in `initialize'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/models/database_authenticatable.rb:35:in `new'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/models/database_authenticatable.rb:35:in `valid_password?'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/strategies/database_authenticatable.rb:10:in `authenticate!'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/models/authenticatable.rb:62:in `valid_for_authentication?'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/strategies/authenticatable.rb:19:in `validate'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/strategies/database_authenticatable.rb:10:in `authenticate!'
+warden (1.0.0) lib/warden/strategies/base.rb:53:in `_run!'
+warden (1.0.0) lib/warden/proxy.rb:303:in `_run_strategies_for'
+warden (1.0.0) lib/warden/proxy.rb:298:in `each'
+warden (1.0.0) lib/warden/proxy.rb:298:in `_run_strategies_for'
+warden (1.0.0) lib/warden/proxy.rb:271:in `_perform_authentication'
+warden (1.0.0) lib/warden/proxy.rb:113:in `authenticate!'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/app/controllers/devise/sessions_controller.rb:13:in `create'
+actionpack (3.0.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+actionpack (3.0.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+actionpack (3.0.0) lib/abstract_controller/base.rb:150:in `process_action'
+actionpack (3.0.0) lib/action_controller/metal/rendering.rb:11:in `process_action'
+actionpack (3.0.0) lib/abstract_controller/callbacks.rb:18:in `process_action'
+activesupport (3.0.0) lib/active_support/callbacks.rb:445:in `_run__1010667671__process_action__524098549__callbacks'
+activesupport (3.0.0) lib/active_support/callbacks.rb:409:in `send'
+activesupport (3.0.0) lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+activesupport (3.0.0) lib/active_support/callbacks.rb:93:in `send'
+activesupport (3.0.0) lib/active_support/callbacks.rb:93:in `run_callbacks'
+actionpack (3.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+actionpack (3.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+activesupport (3.0.0) lib/active_support/notifications.rb:52:in `instrument'
+activesupport (3.0.0) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (3.0.0) lib/active_support/notifications.rb:52:in `instrument'
+actionpack (3.0.0) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+actionpack (3.0.0) lib/action_controller/metal/rescue.rb:17:in `process_action'
+actionpack (3.0.0) lib/abstract_controller/base.rb:119:in `process'
+actionpack (3.0.0) lib/abstract_controller/rendering.rb:40:in `process'
+actionpack (3.0.0) lib/action_controller/metal.rb:133:in `dispatch'
+actionpack (3.0.0) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+actionpack (3.0.0) lib/action_controller/metal.rb:173:in `action'
+actionpack (3.0.0) lib/action_dispatch/routing/route_set.rb:62:in `call'
+actionpack (3.0.0) lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+actionpack (3.0.0) lib/action_dispatch/routing/route_set.rb:27:in `call'
+actionpack (3.0.0) lib/action_dispatch/routing/mapper.rb:34:in `call'
+rack-mount (0.6.13) lib/rack/mount/route_set.rb:148:in `call'
+rack-mount (0.6.13) lib/rack/mount/code_generation.rb:93:in `recognize'
+rack-mount (0.6.13) lib/rack/mount/code_generation.rb:75:in `optimized_each'
+rack-mount (0.6.13) lib/rack/mount/code_generation.rb:92:in `recognize'
+rack-mount (0.6.13) lib/rack/mount/route_set.rb:139:in `call'
+actionpack (3.0.0) lib/action_dispatch/routing/route_set.rb:492:in `call'
+vendor/plugins/exception_notification/lib/exception_notifier.rb:19:in `call'
+haml (3.0.21) lib/sass/plugin/rack.rb:41:in `call'
+warden (1.0.0) lib/warden/manager.rb:35:in `call'
+warden (1.0.0) lib/warden/manager.rb:34:in `catch'
+warden (1.0.0) lib/warden/manager.rb:34:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/head.rb:14:in `call'
+rack (1.2.1) lib/rack/methodoverride.rb:24:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/flash.rb:182:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/cookies.rb:287:in `call'
+activerecord (3.0.0) lib/active_record/query_cache.rb:32:in `call'
+activerecord (3.0.0) lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+activerecord (3.0.0) lib/active_record/query_cache.rb:12:in `cache'
+activerecord (3.0.0) lib/active_record/query_cache.rb:31:in `call'
+activerecord (3.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+activesupport (3.0.0) lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+actionpack (3.0.0) lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+rack (1.2.1) lib/rack/sendfile.rb:107:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+railties (3.0.0) lib/rails/rack/logger.rb:13:in `call'
+rack (1.2.1) lib/rack/runtime.rb:17:in `call'
+activesupport (3.0.0) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+rack (1.2.1) lib/rack/lock.rb:11:in `call'
+rack (1.2.1) lib/rack/lock.rb:11:in `synchronize'
+rack (1.2.1) lib/rack/lock.rb:11:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/static.rb:30:in `call'
+railties (3.0.0) lib/rails/application.rb:168:in `call'
+railties (3.0.0) lib/rails/application.rb:77:in `send'
+railties (3.0.0) lib/rails/application.rb:77:in `method_missing'
+railties (3.0.0) lib/rails/rack/log_tailer.rb:14:in `call'
+rack (1.2.1) lib/rack/content_length.rb:13:in `call'
+rack (1.2.1) lib/rack/handler/webrick.rb:52:in `service'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+rack (1.2.1) lib/rack/handler/webrick.rb:13:in `run'
+rack (1.2.1) lib/rack/server.rb:213:in `start'
+railties (3.0.0) lib/rails/commands/server.rb:65:in `start'
+railties (3.0.0) lib/rails/commands.rb:30
+railties (3.0.0) lib/rails/commands.rb:27:in `tap'
+railties (3.0.0) lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+
+bcrypt-ruby (2.1.2) lib/bcrypt.rb:166:in `initialize'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/models/database_authenticatable.rb:35:in `new'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/models/database_authenticatable.rb:35:in `valid_password?'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/strategies/database_authenticatable.rb:10:in `authenticate!'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/models/authenticatable.rb:62:in `valid_for_authentication?'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/strategies/authenticatable.rb:19:in `validate'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/lib/devise/strategies/database_authenticatable.rb:10:in `authenticate!'
+warden (1.0.0) lib/warden/strategies/base.rb:53:in `_run!'
+warden (1.0.0) lib/warden/proxy.rb:303:in `_run_strategies_for'
+warden (1.0.0) lib/warden/proxy.rb:298:in `each'
+warden (1.0.0) lib/warden/proxy.rb:298:in `_run_strategies_for'
+warden (1.0.0) lib/warden/proxy.rb:271:in `_perform_authentication'
+warden (1.0.0) lib/warden/proxy.rb:113:in `authenticate!'
+/home/danil/.rvm/gems/ruby-1.8.7-p302/bundler/gems/devise-721843c841f0/app/controllers/devise/sessions_controller.rb:13:in `create'
+actionpack (3.0.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+actionpack (3.0.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+actionpack (3.0.0) lib/abstract_controller/base.rb:150:in `process_action'
+actionpack (3.0.0) lib/action_controller/metal/rendering.rb:11:in `process_action'
+actionpack (3.0.0) lib/abstract_controller/callbacks.rb:18:in `process_action'
+activesupport (3.0.0) lib/active_support/callbacks.rb:445:in `_run__1010667671__process_action__524098549__callbacks'
+activesupport (3.0.0) lib/active_support/callbacks.rb:409:in `send'
+activesupport (3.0.0) lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+activesupport (3.0.0) lib/active_support/callbacks.rb:93:in `send'
+activesupport (3.0.0) lib/active_support/callbacks.rb:93:in `run_callbacks'
+actionpack (3.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+actionpack (3.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+activesupport (3.0.0) lib/active_support/notifications.rb:52:in `instrument'
+activesupport (3.0.0) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (3.0.0) lib/active_support/notifications.rb:52:in `instrument'
+actionpack (3.0.0) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+actionpack (3.0.0) lib/action_controller/metal/rescue.rb:17:in `process_action'
+actionpack (3.0.0) lib/abstract_controller/base.rb:119:in `process'
+actionpack (3.0.0) lib/abstract_controller/rendering.rb:40:in `process'
+actionpack (3.0.0) lib/action_controller/metal.rb:133:in `dispatch'
+actionpack (3.0.0) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+actionpack (3.0.0) lib/action_controller/metal.rb:173:in `action'
+actionpack (3.0.0) lib/action_dispatch/routing/route_set.rb:62:in `call'
+actionpack (3.0.0) lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+actionpack (3.0.0) lib/action_dispatch/routing/route_set.rb:27:in `call'
+actionpack (3.0.0) lib/action_dispatch/routing/mapper.rb:34:in `call'
+rack-mount (0.6.13) lib/rack/mount/route_set.rb:148:in `call'
+rack-mount (0.6.13) lib/rack/mount/code_generation.rb:93:in `recognize'
+rack-mount (0.6.13) lib/rack/mount/code_generation.rb:75:in `optimized_each'
+rack-mount (0.6.13) lib/rack/mount/code_generation.rb:92:in `recognize'
+rack-mount (0.6.13) lib/rack/mount/route_set.rb:139:in `call'
+actionpack (3.0.0) lib/action_dispatch/routing/route_set.rb:492:in `call'
+vendor/plugins/exception_notification/lib/exception_notifier.rb:19:in `call'
+haml (3.0.21) lib/sass/plugin/rack.rb:41:in `call'
+warden (1.0.0) lib/warden/manager.rb:35:in `call'
+warden (1.0.0) lib/warden/manager.rb:34:in `catch'
+warden (1.0.0) lib/warden/manager.rb:34:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/head.rb:14:in `call'
+rack (1.2.1) lib/rack/methodoverride.rb:24:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/flash.rb:182:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/cookies.rb:287:in `call'
+activerecord (3.0.0) lib/active_record/query_cache.rb:32:in `call'
+activerecord (3.0.0) lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+activerecord (3.0.0) lib/active_record/query_cache.rb:12:in `cache'
+activerecord (3.0.0) lib/active_record/query_cache.rb:31:in `call'
+activerecord (3.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+activesupport (3.0.0) lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+actionpack (3.0.0) lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+rack (1.2.1) lib/rack/sendfile.rb:107:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+railties (3.0.0) lib/rails/rack/logger.rb:13:in `call'
+rack (1.2.1) lib/rack/runtime.rb:17:in `call'
+activesupport (3.0.0) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+rack (1.2.1) lib/rack/lock.rb:11:in `call'
+rack (1.2.1) lib/rack/lock.rb:11:in `synchronize'
+rack (1.2.1) lib/rack/lock.rb:11:in `call'
+actionpack (3.0.0) lib/action_dispatch/middleware/static.rb:30:in `call'
+railties (3.0.0) lib/rails/application.rb:168:in `call'
+railties (3.0.0) lib/rails/application.rb:77:in `send'
+railties (3.0.0) lib/rails/application.rb:77:in `method_missing'
+railties (3.0.0) lib/rails/rack/log_tailer.rb:14:in `call'
+rack (1.2.1) lib/rack/content_length.rb:13:in `call'
+rack (1.2.1) lib/rack/handler/webrick.rb:52:in `service'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/danil/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+rack (1.2.1) lib/rack/handler/webrick.rb:13:in `run'
+rack (1.2.1) lib/rack/server.rb:213:in `start'
+railties (3.0.0) lib/rails/commands/server.rb:65:in `start'
+railties (3.0.0) lib/rails/commands.rb:30
+railties (3.0.0) lib/rails/commands.rb:27:in `tap'
+railties (3.0.0) lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+
+Request
+
+Parameters:
+
+{"commit"=>"Войти",
+ "authenticity_token"=>"1JmocM8OspDsvT2DXdKmZPAmlW6nsksUyNFAz27TzYU=",
+ "utf8"=>"✓",
+ "user"=>{"remember_me"=>"0",
+ "password"=>"[FILTERED]",
+ "email"=>"danil@pismenny.ru"}}
+
+**** DONE При Регистрации с сущевствующим мылом выходял глюки на форме логина
+**** DONE Если пользователь существует при регистрации - редирект на логин
+**** DONE Регистрация только с мылом
+** WAITING [1/3] Тесты                                                :roman:
+**** DONE [3/3] Cucumber
+***** DONE User
+***** DONE Debt
+***** DONE Credit
+**** TODO [3/5] Rspec
+***** DONE User
+***** DONE Debt
+***** TODO Notifications
+***** DONE Credit
+***** TODO Ability (CanCan)
+****** TODO Mass-assignment
+****** TODO Закрывать от изменения подтвержденую till, название, и кредитора
+       Дождемся этой фичи в CanCan?
+****** TODO ?? Можно удалять свои долги. Это неправильно, имхо. Должник не должен
+**** TODO RCov
+
+** STARTED [2/9] Список контактов
+   DEADLINE: <2010-10-20 Wed>
+*** STARTED [#A] Создание долга/кредита на определенного контакта
+*** TODO Контакт создается и на владельца кредита и на партнера. Проверка.
+*** TODO rspec на contacts, как они выглядат из debt для владельца и наоборот.
+*** TODO Создать контакт.
+*** TODO Если одолжение смотрит кредитор, не собственник его
+    (то, что ему приходит по мылу) то получается ерунда
+*** TODO Импорт
+**** Google
+     http://www.theirishpenguin.com/2008/06/25/a-little-help-on-importing-gmail-contacts-using-ruby-on-rails/
+     http://rorblog.techcfl.com/2008/04/18/import-gmail-contacts-using-ruby-on-rails/
+**** Facebook
+**** Vkontakte
+*** TODO Ability
+**** TODO контроллер контактов
+**** TODO Создание записей на указанного контакта, контроллеры debts, credits
+*** DONE Страница контакта. Можно кликать по имени и смотреть какие с ним взаимоотношения.
+*** DONE Заводить фиктивную запись для creditor/debitor
+** WAITING Импорт контактов с facebook                                :roman:
+   DEADLINE: <2010-11-01 Mon>
+** STARTED Фиксы
+   DEADLINE: <2010-10-20 Wed>
+*** TODO Несколько емайлов на один аккаунт.
+*** TODO Отмена установки till
+*** TODO Мгновенное оформление долгов на одного должника.
+    Например после создания долга кнопка "Еже еодин дога на негоже"
+*** TODO Архив записей
+*** DONE Exception notifier
+*** DONE is_virtual -> state = normal, nopass, virtual
+*** DONE Перенес в модель проверку существования кредитора/дебитора при создании записи
+*** DONE Если я оформляю на тебя кредит/долг, то тебе приходит письмо что ты зарегистрирован, 
+    это как-то не правильно. Нужно присылать одно письмо с долгом и
+    сообщением о регистрации. Нужно ли вообще посылать кредитору письмо
+    с подтверждением? Его нужно просто оповестить. Может быть ввести
+    флаг, указывающий кто зарегил пользователя, и что он зарегин не сам.
+** WAITING Авторизация по vkontakte                                   :roman:
+** [0/4] Настройка и журналирование оповещений.
+   DEADLINE: <2010-10-21 Thu>
+**** TODO На странице оповещения о возврате долга нужно давать ссылку на страницу этого долга.
+     Как и на других страницах о долге.
+**** TODO Unsubscribe для всех видом писем.
+**** TODO Журналировать оповещений в таблице
+**** TODO Обрабатвать воможные ошибки при отправке писем
+**** TODO Периодичность оповещений
+** [1/6] Каледнарь и даты                                              :dmax:
+   DEADLINE: <2010-10-26 Tue>
+   http://rightjs.org/ui/calendar
+**** TODO Возможность установки даты через количество дней отсрочки
+**** TODO При выборе даты автоматом показывать через сколько дней
+**** TODO Валидация даты
+**** TODO Через __ дней
+**** TODO Нормальный календарь http://railscasts.com/episodes/213-calendars
+**** DONE Дата по-умолчанию, через неделю
+** [0/2] autocomplete
+   DEADLINE: <2010-10-28 Thu>
+   http://github.com/crowdint/rails3-jquery-autocomplete
+   http://groups.google.com/group/ror2ru/browse_thread/thread/d4d784049d60625b
+   http://rightjs.org/ui/autocompleter
+   http://railscasts.com/episodes/57-create-model-through-text-field
+**** TODO книги по ISBN, Названию, Автору с amazon
+**** TODO autocomplete дебитора по имени, автоподставление email
+
+** 2010-10-29 TODO Корректный русский текст
+** TODO фиксим TODO по коду
+** 2010-11-01 - 2010-11-15 [1/20] Дизайн
+*** TODO Выбор контакта в форме.
+***** TODO Автокомплит должника по емайлу, имени
+***** TODO Иконка modal-ное окошко сиска контактов.
+*** TODO При вооде долга только одно поле должника, которое автопомплитится и добавляет поле емайла если такого нет в контактах
+*** TODO OpenID иконкой с modal окном
+*** TODO spinner при логину через openID
+*** DONE navigation_link
+*** TODO Отдельная форма по смене пароля и емайла?
+*** TODO Сортировка долга по сроку создания/погашения/выполнености/должнику
+*** TODO Значение по умаолчанию как название поля
+<a href="javascript:void();" class="advancedSearch">Расширенный поиск</a>
+
+<div class="advancedSearchForm" style="">
+
+
+$(document).ready(function() {
+     $("button, input[type=submit], input[type=button]").addClass('submit_button').button();  
+	 $('.ajaxForm').submitWithAjax();
+	
+     $(".ajax_link").live("click", function() {
+    	$.getScript(this.href);
+    	return false;
+     });      
+
+     $('.showPostWallForm').click(function(){
+	   if ( $(".postWall").is(':visible') )
+	 		$(".postWall").fadeOut(300);
+       else
+		   $(".postWall").fadeIn(300);     
+	 });    
+	
+	$('.messageReplyForm textarea').keydown(function(e){   
+		
+	      if(e.ctrlKey && e.which == 13){
+	       	 $('.messageReplyForm').submit();
+	      }                                                 
+		  return e;
+	 });
+	    
+
+     $('.advancedSearch').click(function(){
+	   if ( $(".advancedSearchForm").is(':visible') ) {
+	 		$(".advancedSearchForm").fadeOut(300);     
+			$("#skills").val('');
+	   }
+       else
+		   $(".advancedSearchForm").fadeIn(300);     
+	 });        		
+         
+	function addslashes(str) {
+	str=str.replace(/\\/g,'\\\\');
+	str=str.replace(/\'/g,'\\\'');
+	str=str.replace(/\"/g,'\\"');
+	str=str.replace(/\0/g,'\\0');
+	return str;
+	}
+	 var country = '';
+	 var country_id = ''; 
+	 var old_location = $("#user_location").val();
+	
+*** STARTED [4/7] devise формы перевести на formtastic
+***** DONE Редактирование профиля
+***** TODO Изменение пароля
+***** DONE Логин
+***** STARTED Регистрация
+****** TODO При заполнении или отсутсвии пароля менять содержимое submit button
+***** DONE Напомнить пароль
+***** TODO CANCEL users/password/edit   Processing by Devise::PasswordsController#edit as HTML
+***** DONE Devise::PasswordsController#new
+
+*** TODO Автофокус на все формы (регистрация и логин)
+*** TODO Логотип
+*** TODO Список долгов в две строки. 
+    Первая большая ДОЛГ и ДОЛЖНИК. Вторая - доп параметры и управление
+*** TODO tooltips
+*** TODO страница accept/decline
+*** TODO Иконки: удалиь, изменить, подтверждено, опровергнуто, на ожидании, добавить
+*** TODO Страницы ошибок и авторизаций
+***** TODO Разобраться где нужен авторизация, а где доступ закрыт на совсем, а где просто редиректнуть
+*** TODO Доделать все видимые погрешности в дизайне. Релиз.
+*** TODO UI-экспертиза http://www.uxdepot.ru/
+*** TODO JS-Окна
+*** TODO Редактирование и добавление долга через JS окно
+** [0/3] Корректный русский текст через I18n
+   DEADLINE: <2010-11-18 Thu>
+*** TODO При логине не существующим пользователем говорит invalid, надо выдавать что-то по существеннее
+*** TODO accept_state_humanize
+*** TODO переводим все на t()
+** TODO Beta invitation
+   DEADLINE: <2010-11-18 Thu>
+   http://railscasts.com/episodes/124-beta-invitations
+   http://www.igvita.com/2007/06/21/5-minute-beta-authentication-in-rails/
+** 2010-11-22 [0/1] Продвижение
+*** Видео-презентация.
+*** TODO Пост на хабре. Подключаем Шальнова.
+** TODO Приложение для facebook
+** Дизайн
+   http://www.catswhocode.com/blog/top-10-css-buttons-tutorial-list
+** [0/2] Английская версия
+**** TODO .com = en, .ru=ru
+**** TODO делаем ru/en.yml
+     translation missing: ru, devise, sessions, user, signed_in
+* Backlog
+** Обьединять пользователей при установки существуюего емайла в настройках или при авторизации сторонними сервисами
+** Автоматическая установка email, если его нет и добавляется в emails
+** gravatar на множественные емайлы
+** В долге имя или емайл. Если мыла нет свистеть что не сможем связаться и выводить соответвующий значек в списке.
+** [#A] Возможность пообщатсья в случае отказа
+   Емайл адресата в письмеи чат на сайте.
+** История взаимоотношений с контактом.
+** В профилье био, домашний сайт и твиттер.
+** TODO [#A] Дополнительные емайлы
+** Проверять возвраты писем и исключать из рассылки неверные адреса.
+** Перенести тесты из моделей в интеграционные или функциональные
+** Configatron http://github.com/markbates/configatron
+** twitter вместо email
+** Рассмотреть возможность безпарольной авторизации как на PivotalTracker
+   В форме только имя и емайл
+   На емайл приходит ссылка на страницу установки пароля
+** DONE Google авторизация
+** STARTED и импорт контактов
+** Rcov
+   http://github.com/aslakhellesoy/cucumber/wiki/Using-RCov-with-Cucumber-and-Rails
+** Проблема с отсутсвием емайла при регистрации через openid
+** Создание долгов для незарегистрированных
+** Автогеренация пароля, если не указан. #auto_password
+** Авторизации через twitter
+** Экспорт в Google Calendar
+** Confirmation на вернул
+** Комментарий по открывающейся панельке
+** Сделать plain/text рассылку
+** Привязка к существующму аккаунту facebook/vkontakte/twitter/openid
+** Восстановление пароля, если человек при регистрации не указал пароль и указал мыло на одну букву не верное
+** DONE Gravatar
+** Возможность подтвердить/опровергнуть из письма
+** Экспорт:
+*** Экспорт в CSV/XLS/Google
+*** Выслать список себе мылом.
+** ОБдумать как и кого оповещать когда закрывается долг или удаляется.
+* Bugs
+** DONE При оформлении долга проблема c case sansitive email
+** DONE case sensitive signin
+** Странный баг с credit.debtor.authentication_token, когда дебитора ввел не с первого раза ??
+** DONE Пре деплое не мигрирует
+* Названия:
+  - Незабывайка
+  - Отжиматель
+  - dolger
+  - bezdolgov
+  - dolgopedia
+  - Удобный Сервис Учета Долгов
+  - monidolg.ru
+  - Долг на память RememberTheDebt.com Должники не забудут.
+  - Должники на коротком поводке. Учет и напоминание долгов.
+* Примеры:
+** miniplan.ru
+** Иконки: http://www.longtest.ru/mutsy_ur/
+* Анализ  http://zapishidolgi.ru от Саши Шальнова
+** Изучить достоинства и недостатки zapishidolgi.ru http://habrahabr.ru/blogs/i_am_advertising/104506/
+** Минусы:
+*** Нет экспорта контактов
+
+*** Нет добавления openid
+
+*** Нет произвольного openid
+
+*** Нет объединение учетных записей
+
+*** Неудобно сделан учет вещевых долгов
+
+*** Раздельный учет вещевых и денежных долгов неудобен, т.к. приходиться -> нужно кудато заходить, что бы посмотреть вещевые долги
+
+*** Нет добавления друзей по аське, джабберу или по ид из "Вконтакте"
+
+*** Нет всзаимосвязи м/у твоей учеткой и учеткой твоих друзей
+
+*** Автовход (Заявлено) нету под этим они понимают вход по OpenID пример автовхода facebook
+
+*** Письмо, которое приходит другу логин/пароль, более прикольно было бы если бы еще был вариант ссылки, а если человек зашел по ссылке в первый раз ему предложить поменять пароль
+
+*** Когда друг нажал "вернул долг", я не увидел сообщения что он это сделал, а из долгов убралось.
+
+*** Кнопочки "Вернул" лишнии - правельнее их поместить в список
+
+*** Нет социальности, я не вижу друзей друга и список его вещей
+
+** Плюсы:
+
+*** OpenID вход с прибовлением в контакте
+
+*** Наличие помошника (правда не совсем хороший)
+
+** Комменты на которые стоит обратить внимание.
+*** Обычно когда я что то занимаю\одалживаю, в руках только коммуникатор, с которого долго заходить на полноценный сайт. По моему, мобильная версия сайта, Вам бы не помешала мобильная версия сайта :) А если еще и виджет на Android, то цены не было бы :)
+*** Сделайте чтоб быстро можно было расписку о займе подготовить/напечатать. сам одалживал деньги под честное слово, теперь понял что так поступать нельзя никогда.
+*** Испокон веков пользуюсь экселем для хранения долгов. Не очень-то удобно, но работает =)
+*** Попытался перейти на вашу систему. Столкнулся с трудностью, связанной с периодическими долгами. (например ЗП).
+*** Каким образом можно загнать в базу старые долги, так чтоб сработала периодика?
+*** Как и писалось ранее — на данный момент цели «монитизация» как таковой, нет. Мы молодая команда, это наш первый проект. Мы пробуем себя, знакомимся с вами) Главная цель — что бы проект пошел в массы и развивался. Если есть дельные предложения — пишите!
+*** В настройках когда жмешь 'дата рождения" вылазит сегодняшняя дата.
+*** Ну это как минимум не реально, выставить нужно где-то 1990 год.
+*** А лучше брать этот параметр из OpenID.
+*** Ну и самое главное. Я 100% уверен, что Google и MS переживут меня. А то что вы переживете следующий Н.Г. у меня уверенности нет. Более того, я уверен, что вы гикнитесь, потому что сделать платным сервис для подсчета своих долгов невозможно, а платить за сервис для хранения чужих длогов — идея абсолютно шизофреническая. 
+** Прочее
+   1. Оповещение ежемесячно/еженедельно — это мало. Лучше напомнить за такой-то срок или тогда, в такие-то дни
+   2. Оповещение по СМС
+   3. Проценты (как говорилось выше)
+   4. Допустим, я супер рэкетир. Раздаю деньги всем подряд и сам занимаю у всех подряд. Т.е. я сам вообще уже ничего не помню. Так вот, допустим, я дал в долг 10 рублей, а сам занял у этого же человека позже 5 рублей. Я себе вписал, что я должен, он что я ему должен. Хорошо бы, чтобы система предлагала эту сумму вычесть из долга
+   5. Добавить что-то типа рейтинга (по уникальным данным телефон, e-mail). Т.е. есть 10 человек, все зарегистрированы на сайте. Среди них есть один индивидуум, который у всех понабрал в долг, но кому-то вернул, кому-то нет (а все сроки уже прошли). Нужно добавить кнопочку пожаловаться на должника. Когда процент не возвращенных во время долгов превышает процент возвращенных, то ставить на таком человеке какое-нибудь клеймо и, соответственно, снимать его, когда процент снижается
+   6. Я у кого-то взял деньги в долг. Он на сайте вписал меня в должники, после этого у меня автоматом должно прописаться, что и кому я должен
+   7. Нет сроков возврата и т.п. для вещевых долгов
+
+
+
+
+Очень странно в комментах ни раз упоминался сервис
+http://vernidolg.su
+но он не доступен
+подозрительно

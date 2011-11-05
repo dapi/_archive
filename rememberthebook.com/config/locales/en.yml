@@ -1,0 +1,20 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  notifications:
+    creditor_confirm:
+      subject: "Подтвердите одолжение"
+
+    debtor_confirm:
+      subject: "Подтвердите долг"
+
+    registration:
+      subject: "Регистрация"
+
+    debt_declined:
+      subject: "От долга отказались"
+
+    debt_accepted:
+      subject: "Долг подтвердили"

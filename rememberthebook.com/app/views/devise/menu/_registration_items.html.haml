@@ -1,0 +1,10 @@
+-# %li
+-#   = link_to 'Twitter Authentication', url_for(user_session_path(:warden_oauth_provider => 'twitter'))
+
+- unless user_signed_in?
+  %li
+    = link_to('Register', new_user_registration_path) 
+  -# %li
+  -#   = link_to("Register With Twitter", user_registration_path(:warden_oauth_provider => 'twitter') )
+
+- #login_path

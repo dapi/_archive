@@ -1,0 +1,7 @@
+<p>Вы зарегистрированы на сервисе <%= link_to 'RememberTheBook.com', root_url %>.</p>
+
+<% if @password.present? %>
+  <p>Но так-как вы не указали пароль, мы создали его для Ваc: <b><%= @password %></b></p>
+<% end %>
+
+<p>Для автоматического входа воспользуйтесь <%= auth_link_to "этой ссылкой", credits_path  %></p>

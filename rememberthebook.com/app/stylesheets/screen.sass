@@ -1,0 +1,176 @@
+// Цвета
+
+$red: #990000
+$yellow: #990
+
+// !link_color = #99ccee
+// !link_color = blue
+$link_color: #0070d8
+$active_bg: #50b0ff
+$chosen_bg: #b0b0b0
+$gray: #999999
+
+
+// Шрифты
+
+// Ссылки настройки-вход-имя профиля
+$fs_mini: 12px
+
+// sidebar
+$fs_medium: 14px
+
+// Основной текст
+$fs_common: 16px
+
+// Формы
+$fs_form: 18px
+
+// Главное горизонтальное меню
+$fs_h: 18px
+
+$fs_h2: 22px
+
+
+// Размеры
+$content_width: 1000px
+$mainbar_width: $content_width/1.6
+$padding_bar_width: 80px
+$sidebar_width = $content_width - $mainbar_width - $padding_bar_width
+
+$form_width = $mainbar_width // 600px
+$form_label_width = 160px
+$form_input_width = 340px
+
+
+@import compass/reset
+@import nifty
+@import forms
+@import jquery.notifyBar
+@import border-radius
+@import sidebar
+@import menu
+@import contacts
+@import records
+@import header-footer
+@import welcome
+@import tooltips
+
+body
+  font:
+    size: 14px
+  line-height: 18px
+  background-image: url(/images/bg.png)
+  background-repeat: repeat-x
+  background-position: top
+
+
+.accept
+  color: green
+
+.decline
+  color: $red
+
+.flashes
+  margin-top: 40px
+  clear: both
+  #flash_notice,
+  #flash_error,
+  #flash_alert
+    padding: 15px 20px
+    color: #333
+    font-size: $fs_common
+    +border-radius(5px)
+    text-align: center
+
+
+.delete
+  /* background: !red
+  /* padding: 5px 10px
+  /* color: white
+  /* font-weight: bold
+  color: $red
+
+strong
+  font-weight: bold
+
+p
+  margin: 20px 0px
+  font-size: $fs_common
+
+.center
+  padding: 40px
+  width: auto
+  text-align: center
+
+.right
+  float: right
+
+.left
+  float: left
+
+.red
+  color: $red
+
+.yellow
+  color: $yellow
+  a
+    color: $yellow
+    
+
+.gray
+  color: #999999
+
+h2
+  font-size: $fs_h2
+  font-weight: bold
+  // margin-top: 40px // Было 40px, для virtual_pass это слишком много, для него нужно 20px
+  margin-bottom: 30px
+  color: #ccc
+
+h1
+  font-size: $fs_h
+  font-weight: bold
+  margin-top: 30px
+  margin-bottom: 20px
+
+span.middot
+  padding: 0px 5px
+
+a
+  color: $link_color
+  &:hover
+    color: #cc0033
+
+a.js
+  border-bottom: 1px dotted $link_color
+  text-decoration: none
+  color: $link_color
+
+a.add
+  padding-top: 10px
+  //  display: block
+  // font-weight: bold
+  font-size: $fs_h
+  // color: $red
+
+// Команда Вернул? в списке долгов
+a.command
+  color: $gray
+
+.avatar
+  padding-top: 3px
+  padding-left: 15px
+
+
+.mainbar
+  padding-top: 3px
+  padding-right: $padding_bar_width
+  width: $mainbar_width
+  float: left
+
+
+// Ссылка "забыл пароль" на странице логина
+.fp
+  display: block
+  font-size: $fs_common
+  margin-top: 9px

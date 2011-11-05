@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+source 'http://rubygems.org'
+
+gem 'rails', '>= 3.0.1'
+
+gem 'pg'
+
+gem "omniauth", :git => "git://github.com/dapi/omniauth.git"
+gem "oa-openid"
+gem "oa-oauth"
+
+gem "devise", :path => '/home/danil/code/devise/'
+# gem "devise", :git => "git://github.com/plataformatec/devise.git", :branch => 'omniauth'
+
+gem 'looper'
+gem "daemon_controller"
+
+gem 'cancan', ">= 1.4.0"
+
+# gem 'typus', '>= 3.0.1' 
+
+gem 'state_machine'
+gem 'validate_email'
+gem 'attribute_normalizer'
+gem 'has_many_emails', ">= 0.2.16"
+
+
+gem 'exception_notification' #, :git => 'http://github.com/rails/exception_notification.git'
+
+gem "haml-rails"
+gem "compass"
+gem "formtastic", "~>1.1.0" #c, :git => "http://github.com/justinfrench/formtastic.git", :branch => "rails3"
+gem 'stateful_link', :git => 'git://github.com/gzigzigzeo/stateful_link.git'
+gem "img_gravatar"
+
+gem "jquery-rails"
+
+gem "russian"
+
+
+group :test do
+
+  gem "ruby-debug"
+  gem "email_spec"
+  gem "hpricot"
+  gem "ruby_parser"
+  gem "capybara"
+  gem "factory_girl"
+  gem "rspec"
+  gem "rspec-rails", ">= 2.0.1"
+  gem 'remarkable_activerecord', '>=4.0.0.alpha4'
+  gem "launchy"
+  gem "cucumber-rails"
+  
+  # gem "database_cleaner"
+  # http://github.com/bmabey/database_cleaner
+  # gem "mocha"
+  # http://github.com/aslakhellesoy/cucumber/wiki/using-rcov-with-cucumber-and-rails
+  # gem "rcov", :git => 'http://github.com/relevance/rcov.git' # На cucumber-е порекомендовали этот форк
+  # gem "rspec-rails", ">= 2.0.0.beta.22"
+  # gem "spork"
+  # http://github.com/liangzan/action_mailer_cache_delivery
+  # http://github.com/bmabey/email-spec
+  # gem "shoulda", :git => "git://github.com/bmaddy/shoulda.git", :branch => "rails3"
+end
+
+group :development do
+  gem "ruby-debug"
+
+  gem "mechanize"
+  gem "deadweight"
+  
+  gem "awesome_print", :require => "ap"
+  gem "wirble", :require => "wirble"
+  gem 'vlad'
+  gem 'vlad-git'
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+  
+  gem "limerick_rake", :git => "http://github.com/dapi/limerick_rake.git", :branch => "rails3"
+  # gem "auto_migrations", :git => "http://github.com/antage/auto_migrations.git"
+  # gem "auto_migrations", :git => "http://github.com/mrdizzy/auto_migrations.git"
+  # gem "rcov", :git => 'http://github.com/relevance/rcov.git' # На cucumber-е порекомендовали этот форк
+  # gem "rails3-generators"
+  gem "nifty-generators"
+  gem "rspec"
+  gem "rspec-rails", ">= 2.0.1"
+
+  gem "metric_fu"
+  
+end

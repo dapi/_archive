@@ -1,0 +1,31 @@
+  #   t.integer  "creditor_id"
+  #   t.string   "thing",                                  :null => false
+  #   t.date     "till"
+  #   t.integer  "debtor_id"
+  #   t.datetime "created_at"
+  #   t.datetime "updated_at"
+  #   t.boolean  "notify_debtor",      :default => true,   :null => false
+  #   t.boolean  "notify_creditor",    :default => true,   :null => false
+  #   t.string   "state",              :default => "open", :null => false
+  #   t.datetime "closed_at"
+  #   t.string   "accept_state",       :default => "wait", :null => false
+  #   t.datetime "accepted_at"
+  #   t.integer  "user_id",                                :null => false
+  #   t.datetime "debtor_notified_at"
+
+
+one:
+  user_id: 2
+  thing: MyString
+  till: 2010-09-09
+  creditor_id: 1
+  debtor_id: 2
+  state: open
+
+two:
+  user_id: 1
+  thing: MyString
+  till: 2010-09-09
+  creditor_id: 1
+  debtor_id: 2
+  state: closed

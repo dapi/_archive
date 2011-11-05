@@ -1,0 +1,8 @@
+<p><b><%= @credit.debtor %></b> (<%= @credit.debtor.email %>) зделал  <%= auth_link_to 'запись на нашем сервисе', credit_path( @credit ) %>,
+что он должен вам <b>"<%= @credit.thing %>"</b>
+<% if @credit.till? %>
+ и обещает вернуть <b><%= @credit.till.humanize %></b>
+<% end %>
+.</p>
+
+<p>Вы можете наблюдать за долгом по <%= auth_link_to 'этой ссылке', credit_path( @credit ) %>

@@ -1,0 +1,137 @@
+@import formtastic_base
+
+//+stack-form(900px,"full","right")
+
+// (!width,!padding=0,!direction="left")
+=myform($total_width, $label_width, $input_width)
+  float: left
+  +float-form-left($total_width, $label_width, $input_width, 0px)
+  width: $total_width
+  margin-bottom: 20px
+
+  // Подровнял под sidebar
+  // margin-top: 20px // Требование формы создания debt/credit
+  .additional
+    .plus
+      font-size: $fs_common
+      color: gray
+    .block
+      display: none
+      visibility: hidden
+    padding-bottom: 20px
+  .date
+    fieldset
+      legend
+        label
+          display: block
+  abbr
+    display: none
+    visibility: hidden
+  li.error
+    color: red
+    input
+      border-color: $red
+    .inline-errors
+      clear: both
+      padding-top: 0px
+      font-size: $fs_common
+      /* li
+      /*   float: left
+      /*   width: auto
+  font-size: $fs_form
+  li
+    padding-bottom: 15px
+  //<li class="boolean optional" id="debt_notify_debtor_input"
+  li
+    label
+      padding: 7px 0px
+  li.boolean
+    label
+      width: auto
+      padding-left: $label_width
+  legend.label
+    display: show
+    width: 100px
+    height: 40px
+  /* .inline-hints, .inline-errors, .errors
+  /*   :margin = 0 0 0 !floated_label_width
+  .inline-hints
+    font-size: $fs_mini
+    font-style: italic
+    color: gray
+  li.string.required
+    label
+      color: black
+  li.string.optional, li.password.optional
+    label
+      font-size: $fs_common
+      padding: 3px 0px
+      color: #999999
+    input[type="text"], input[type="password"]
+      border: 1px dashed gray
+      padding: 3px 6px
+      font-size: $fs_common
+      &:focus
+        border: 1px solid gray
+        background-color: #ffffee
+  fieldset.inputs
+    padding-bottom: 20px
+    legend
+      padding: 20px 0px 30px 0px
+      span
+        font-size: $fs_common
+        color: gray
+  /* fieldset.buttons
+  /*   padding-top: 20px
+  textarea
+    border: 1px dashed gray
+    background-color: #eeeeee
+    height: 180px
+    padding: 2px 2px
+    font-size: $fs_form
+    &:hover
+      border: 1px solid gray
+    &:focus
+      border: 2px solid gray
+      padding: 1px 1px
+      background-color: #ffffee
+
+  input[type="submit"]
+    padding: 4px 4px
+    font-size: $fs_form
+  //      li.string, li.password >>
+  input[type="text"], input[type="password"]
+    border: 1px dotted black
+    // background-color: #eee
+    color: #666666
+    padding: 6px 6px
+    font-size: $fs_form
+    &:hover
+      border: 1px solid gray
+      background-color: #eeeeee
+    &:focus
+      color: #333333
+      border: 2px solid gray
+      padding: 5px 5px
+      background-color: #ffffee
+
+
+  // TODO Разобраться с IE через jQuery
+  input[readonly="readonly"]
+    border: 7px
+    // background-color: #eee
+    color: #333333
+    padding: 7px 7px
+    font-size: $fs_form
+    &:hover
+      border: none
+      background-color: white
+    &:focus
+      color: #333333
+      border: 2px solid gray
+      padding: 5px 5px
+      background-color: #ffffee
+
+
+form.formtastic
+  +myform($form_width, $form_label_width, $form_input_width)

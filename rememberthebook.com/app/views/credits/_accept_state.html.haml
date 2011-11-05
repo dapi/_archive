@@ -1,0 +1,11 @@
+
+- if record.is_credit? #  || record.user!=current_user
+  - case record.accept_state
+  - when "declined"
+    = icon_tag 'messagebox_critical', 'Должник не согласен с долгом!'
+  - else 
+    = icon_tag 'messagebox_warning', 'Должник еще не подтвердил долг'
+- else 
+  - unless record.accepted?
+    = icon_tag 'messagebox_info', 'Вы еще не подтвердили долг'
+    = render :partial => "debts/confirmation", :locals => {:record=>record}

@@ -1,0 +1,18 @@
+%li
+  = link_to( "Долги и одолжения" , credits_path)
+  = red_counter( current_user.credits.actual.count + current_user.debts.actual.count, |
+  current_user.credits.actual.overdues.count + current_user.debts.actual.overdues.count )
+%li
+  = link_to( "Настройка" , edit_user_registration_path )
+  - unless current_user.normal?
+    - flash[:alert] = link_to( 'Установите пароль', edit_user_registration_path) + ' для удобного входа в сервис.' 
+- if current_user.is_root?
+  %li
+    = link_to( 'Админка', '/admin/' )
+
+%li
+  = link_to( 'Выйти', destroy_user_session_path ) 
+  %span.gray
+    = "(#{current_user})"
+%li
+  = gravatar current_user

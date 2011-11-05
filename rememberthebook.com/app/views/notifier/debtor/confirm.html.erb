@@ -1,0 +1,7 @@
+<p><b><%= @debt.creditor %></b> (<%= @debt.creditor.email %>) <% if @confirm_again %>изменил характеристики долга и <% end %>просит подтвердить, что вы взяли у него
+<b>"<%= @debt.thing %>"</b>
+<% if @debt.till? %>
+ и обещаете вернуть <b><%= @debt.till.humanize %></b>
+<% end %>.</p>
+
+<p>Для более подробной информации, подтверждения или отказа долга, кликните по <%= auth_link_to 'этой ссылке', confirm_debt_path(@debt)  %>.</p>

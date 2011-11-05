@@ -1,0 +1,19 @@
+- if @credits.actual.count > 0
+  %h2.left Вам должны:
+  .right= new_credit_link
+  .clear
+
+  %ul.records
+    = render :partial => "credits/record", :collection => @credits.actual
+  .clear
+  %br
+- else
+  %p
+    - if current_contact
+      Он вам ничего не должен.
+    - else
+      Вам никто не должен.
+  = new_credit_link
+- if current_user.credits.closed.count>0
+  %p= link_to raw( 'Архив &rarr;' ), closed_credits_path, :class=>:right
+%br

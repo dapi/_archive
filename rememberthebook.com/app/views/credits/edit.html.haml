@@ -1,0 +1,14 @@
+%h2 Изменить одолжение
+
+= semantic_form_for @credit do |form|
+  = form.inputs do
+    = form.input :thing,  :input_html => {:tabindex=>0, :class=>'autofocus'}, :label => 'Дал'
+  = form.inputs :for => :debtor do |debtor|
+    = debtor.input :email, :label => 'email должника', :disabled => true
+    = debtor.input :name, :label => 'Его имя'
+  = form.inputs do
+    = form.input :till, :label => "Должен вернуть"
+    = form.input :comment, :label => "Комментарий"
+  - form.buttons do
+    = form.commit_button :label=>'Сохранить изменения'
+

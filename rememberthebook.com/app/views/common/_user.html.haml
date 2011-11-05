@@ -1,0 +1,7 @@
+%div#profile
+  - if user_signed_in?
+    = render 'common/profile' 
+  - elsif controller_name != 'sessions' && controller_name != 'registrations'
+    = render 'common/login' 
+.clear
+

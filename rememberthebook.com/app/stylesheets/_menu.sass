@@ -1,0 +1,106 @@
+
+// Форма логина
+#profile
+  float: right
+  /* form.new_user
+  /*   input
+  /*     font-size: $fs_mini
+  /*   label
+  /*     color: $gray
+  /*     font-size: $fs_mini
+
+  ul
+    display: block
+    font-size: $fs_common
+    list-style: none
+    li
+      text-align: right
+      display: block
+      color: $gray
+      padding-bottom: 6px
+    li.large
+      padding-top: 14px
+
+  // Профильное меню
+  ul.profile
+    float: right
+    /* li
+    /*   text-align: right
+    /*   display: block
+    /*   padding-bottom: 7px
+    /*   color: #333333
+    span.active
+      // font-weight: bold
+      color: white
+      span
+        padding: 1px 6px 2px 6px
+        background-color: $active_bg
+        +border-radius(4px)
+
+
+// Меню горизонтальное
+
+/* #hmenu
+/*   clear: both
+  // на странице долгов слишком большое расстояние
+  // padding-bottom: 20px
+  /* ul.hmenu
+  /*   font-size: $fs_h
+  /*   list-style: none
+  /*   margin: 0 0 2em
+  /*   padding: 0
+  /*   li
+  /*     float: left
+  /*     display: block
+  /*     padding-right: 1em
+
+// Меню загловка страницы с выбором другой подобной signin/signup, debt/credit
+// TODO Совместить с .hmenu - функция одна
+.tmenu
+  list-style: none
+  margin: 20px 0 10px
+  padding: 0
+  float: left
+  li
+    font-size: $fs_h
+    padding-right: 30px
+    float: left
+    display: block
+  li.active
+    // font-weight: bold
+    color: white
+    span
+      padding: 2px 10px 4px 10px
+      background-color: $active_bg
+      +border-radius(4px)
+
+  li.chosen
+    // font-weight: bold
+    a
+      // color: white
+      padding: 2px 12px 4px 12px
+      // background-color: $active_bg
+      text-decoration: none
+      border: 2px dotted $link_color
+      +border-radius(4px)
+      
+      &:hover
+        text-decoration: underline
+
+.tmenu.level2
+  li
+    padding-left: 30px
+    padding-right: 0px
+
+.level2
+  float: right
+  li
+    font-size: $fs_common
+  li.active
+    span
+      padding: 2px 7px 3px 7px
+
+  li.chosen
+    a
+      padding: 2px 7px 3px 7px
+

@@ -1,0 +1,16 @@
+
+
+<% if @credit %>
+<p>Напоминаем Вам что <b><%= @credit.debtor %>/<b> должен Вам вернуть <b><%= @credit.thing %></b> до <b><%= @credit.till %></b>.</p>
+
+<% if @credit.overdue > 1 %>
+  <p>Возврат долга уже задержан на <% @credit.overdue %> дней.</p>
+<% end %>
+<% else %>
+<p>Напоминаем Вам что Вы должны вернуть <b>"<%= @debt.thing %>"</b> его владельцу <b><%= @debt.creditor %></b> до <b><%= @debt.till %></b>.</p>
+
+<% if @debt.overdue > 1 %>
+  <p>Вы задерживаете возврат долга на <% @debt.overdue %> дней.</p>
+<% end %>
+<% end %>
+

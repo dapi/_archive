@@ -1,0 +1,9 @@
+- if user_signed_in?
+  %ul.tmenu
+    - actual_count = current_user.credits.actual.count + current_user.debts.actual.count
+    = navigation actual_count==0 ?  "Долги и одолжения" : "Долги и одолжения (#{actual_count})" , credits_path, "credits#index", [ "debts#new", "debts#create", "credits#new", "credits#create", "credits#show", "debts#show" ]
+    -# = red_counter( current_user.credits.actual.count + current_user.debts.actual.count, |
+    -# current_user.credits.actual.overdues.count + current_user.debts.actual.overdues.count )
+    = navigation current_user.contacts.empty? ? "Контакты" : "Контакты (#{current_user.contacts.count})" , contacts_path, "contacts#index", [ "contacts#show" ]
+.clear
+%br

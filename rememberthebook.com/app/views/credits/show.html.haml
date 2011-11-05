@@ -1,0 +1,56 @@
+- title "Одолжение"
+%p
+  %strong= @credit.created_at.to_date.humanize
+  Вы одолжили
+  %strong= @credit.thing
+  человеку по имени
+  %strong= @credit.debtor
+  - if @credit.till?
+    до
+    %strong= @credit.till.humanize
+- if @credit.closed?
+  %p
+    Долг возвращен.
+- else
+  %p
+    - case @credit.accept_state
+    - when "declined"
+      Должник ОТКАЗАЛСЯ подтверждать эти данные.
+    - when "accepted"
+      Должник подтвердил эти данные
+      = @credit.accepted_at.humanize
+    - else
+      Должник еще не подтвердил эти данные.
+      = link_to 'Отправить ему запрос повторно', send_confirm_request_credit_path( @credit )
+  %p
+    Долг не возвращен.
+    - if can? :close, @credit
+      = link_to 'Отметить как возвращен.', close_credit_path( @credit, :return_to=>request.fullpath )
+  - if @credit.is_overdue?
+    %p
+      = link_to 'Напомнить о долге', notify_debtor_credit_path( @credit )     
+
+- if @credit.is_overdue?
+  %p
+    Просрочен на 
+    = say_days @credit.overdue
+
+
+%p
+  - if @credit.user == current_user
+    Вы являтесь автором этой записи.
+  - else
+    Автором это записи является
+    %strong
+      = @credit.user
+
+%p
+  - if can? :edit, @credit
+    = link_to "Изменить", edit_credit_path( @credit )
+
+  - if can? :destroy, @credit
+    = link_to "Удалить", @debt, :confirm => 'Are you sure?', :method => :delete, :class=>"delete"
+
+
+%p
+  = link_to "&larr; назад в список".html_safe, credits_path

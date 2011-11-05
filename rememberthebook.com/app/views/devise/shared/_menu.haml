@@ -1,0 +1,19 @@
+-# %ul.tmenu
+-#   - if controller_name == 'sessions'
+-#     %li= link_to "Быстрая регистрация", new_user_registration_path
+-#     %li.active 
+-#       %span Вход для зарегистрированных
+-#   - elsif controller_name == 'registrations' && action_name != 'virtual_pass'
+-#     %li.active 
+-#       %span Быстрая регистрация
+-#     %li= link_to "Вход для зарегистрированных", new_user_session_path
+-#   - else 
+-#     %li= link_to "Быстрая регистрация", new_user_registration_path
+-#     %li= link_to "Вход для зарегистрированных", new_user_session_path
+
+%ul.tmenu
+  = navigation  "Быстрая регистрация" , new_user_registration_path, ["registrations#new", "registrations#create" ]
+  = navigation  "Вход по емайлу" , new_user_session_path, ["sessions#new", "sessions#create"]
+.clear
+%br
+%br

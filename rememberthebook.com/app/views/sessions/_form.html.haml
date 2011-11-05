@@ -1,0 +1,22 @@
+= semantic_form_for resource, :as => resource_name, :url => session_path(resource_name)  do |form|
+  = form.error_messages
+  = form.inputs do
+    = form.input :email, :input_html => {:tabindex=>0, :class=>'autofocus'}
+    = form.input :password, :label=>'Пароль, если есть'
+    = form.input :remember_me, :as => :boolean, :value=>true
+  = form.buttons do
+    = form.commit_button :label=>'Войти'
+    = link_to "Незнаешь пароль?", new_password_path(resource_name), :class=>'right fp'
+
+
+-# users/auth/open_id
+-#       <form method='post'>
+-# <label for='openid_url'>OpenID Identifier:</label>
+-# <input type='url' id='openid_url' name='openid_url'/>      <button type='submit'>Connect</button>
+
+-#   = form.inputs :name=>'&nbsp;' do
+-#     = form.input :open_id_uid, :label=>'OpenID'
+-#   = form.buttons do
+-#     = form.commit_button :label=>'Войти по OpenID'
+
+
