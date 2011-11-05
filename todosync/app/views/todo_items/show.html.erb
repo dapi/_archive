@@ -1,0 +1,38 @@
+<% title "Todo Item" %>
+
+<p>
+  <strong>Remote Application:</strong>
+  <%=h @todo_item.remote_application_id %>
+</p>
+<p>
+  <strong>Item ID:</strong>
+  <%=h @todo_item.item_id %>
+</p>
+<p>
+  <strong>Text:</strong>
+  <%=h @todo_item.text %>
+</p>
+<p>
+  <strong>Is Removed:</strong>
+  <%=h @todo_item.is_removed %>
+</p>
+<p>
+  <strong>Position:</strong>
+  <%=h @todo_item.position %>
+</p>
+
+<p>
+  <strong>created_at:</strong>
+  <%=h @todo_item.created_at %>
+</p>
+
+<p>
+  <strong>updated_at:</strong>
+  <%=h @todo_item.updated_at %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_todo_item_path(@todo_item) %> |
+  <%= link_to "Destroy", @todo_item, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", todo_items_path %>
+</p>

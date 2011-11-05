@@ -1,0 +1,18 @@
+<% form_for @remote_application do |f| %>
+  <%= f.error_messages %>
+<!--
+  <p>
+    <%= f.label :token %><br />
+    <%= f.text_field :token %>
+  </p>
+-->
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :application_uid %><br />
+    <%= f.text_field :application_uid %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

@@ -1,0 +1,27 @@
+<% title "Todo Items" %>
+
+<table>
+  <tr>
+    <th>sync ID</th>
+    <th>Text</th>
+    <th>Is Removed</th>
+    <th>Position</th>
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+  <% for todo_item in @todo_items %>
+    <tr>
+      <td><%=h todo_item.remote_application_id %>/<%=h todo_item.item_id %></td>
+      <td><%=h todo_item.text %></td>
+      <td><%=h todo_item.is_removed %></td>
+      <td><%=h todo_item.position %></td>
+      <td><%=h todo_item.created_at %></td>
+      <td><%=h todo_item.updated_at %></td>
+      <td><%= link_to "Show", todo_item %></td>
+      <td><%= link_to "Edit", edit_todo_item_path(todo_item) %></td>
+      <td><%= link_to "Destroy", todo_item, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Todo Item", new_todo_item_path %></p>

@@ -1,0 +1,20 @@
+<% title "Remote Application" %>
+
+<p>
+  <strong>Token:</strong>
+  <%=h @remote_application.token %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%=h @remote_application.name %>
+</p>
+<p>
+  <strong>Application uid:</strong>
+  <%=h @remote_application.application_uid %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_remote_application_path(@remote_application) %> |
+  <%= link_to "Destroy", @remote_application, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", remote_applications_path %>
+</p>

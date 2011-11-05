@@ -1,0 +1,25 @@
+<% form_for @todo_item do |f| %>
+  <%= f.error_messages %>
+
+<!--
+  <p>
+    <%= f.label :remote_application_id %><br />
+    <%= f.select :remote_application_id, RemoteApplication.all.collect { |r| [ r.name, r.id ] } %>
+  </p>
+-->
+  <p>
+    <%= f.label :text %><br />
+    <%= f.text_field :text %>
+  </p>
+<!--
+  <p>
+    <%= f.label :is_removed %><br />
+    <%= f.check_box :is_removed %>
+  </p>
+  <p>
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </p>
+-->
+  <p><%= f.submit "Submit" %></p>
+<% end %>

@@ -1,0 +1,61 @@
+
+Табличка получается такая:
+
+application_id: nteger not null
+item_id integer not null
+position integer not null defaul
+text string not null
+created_at timestamp not null default now
+updated_at timestamp not null default now
+is_removed boolean not null default false
+
+application_id + item_id = unque index
+
+
+item_id приложение устанавливает как хочет (инкременто тоесть)
+
+Синхронизация двумя URL-ами
+
+/init
+
+Выполняется при инициализации. Передаются параметры:
+login
+password
+application_name - ну, типа iphone
+application_uid - какой-нибудь уникальный ID устройства. Лучше именно ID устройства, потому что приложение можно снести, поставить снова, проапгрейдить ОС и тп.
+client_version - ну на всякий случай.
+
+В ответ  сервер выдает:
+
+- No Authorization, HTTP error 404
+или
+- HTTP ok и json со праметрами:
+
+server_version
+application_id = уникальный номер приложения
+application_token = ключик с которым это приложение будет коннектиться в дальнейшем
+и параметр sync, о котором ниже
+
+/sync
+
+Выполняется каждый раз при синхронизации (при заходе/выходе из приложения и тп)
+
+Передаются параметры:
+application_token
+sync
+
+Принимаются парметры:
+sync
+
+
+Собствено sync это хэш:
+last_timestamp = последний timestamp в базе (хотя его можно вычислить и из выдаваемого списка)
+todoitems = массив записей, как есть, order by position с момента последнего обновления.
+
+
+Адрес приложения на моем компе:
+http://todosync.dapi.orionet.ru/
+
+
+URL для инициалзации: http://todosync.dapi.orionet.ru/iphone/init
+URL для синхронизации: http://todosync.dapi.orionet.ru/iphone/sync
