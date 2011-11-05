@@ -1,0 +1,11 @@
+one:
+  follow_id: 1
+  message: MyString
+  message_time: 2009-08-07 20:14:37
+  sent_at: 2009-08-07 20:14:37
+
+two:
+  follow_id: 1
+  message: MyString
+  message_time: 2009-08-07 20:14:37
+  sent_at: 2009-08-07 20:14:37

@@ -1,0 +1,32 @@
+<div id="profile" class="left_d">
+  <p class="text_l">Ваш номер телефон:</p>
+  <div class="text_ll">
+    +<%= current_user.phone %>
+  </div>  
+  <% if current_user.phone_confirmed %>
+    <div class="smal_t" align="right">Телефон подтвержден.</div>
+  <% else %>
+    <div class="smal_t" align="right">Телефон НЕ подтвержден!</div>
+    <% form_tag phone_confirm_path do %>
+      <div id="code_form">
+        <%= label_tag :phone_code, "Ваш код: " %> (<%= current_user.phone_code %>)<br /><br />
+        <%= text_field_tag :phone_code %>
+        <br/>
+        <button type="submit"><img src="/images/veryf.gif" alt="Подтвердить"/></button>
+        
+      </div>
+    <% end %>
+  <% end %>
+  <div id="follow">
+    <h1>Я следую за:</h1>
+    <div>
+    <% current_user.follows.each do |f| %>
+      <a href="#" class="large blue awesome"><%= f.twitter %> &raquo;</a> <br /><br />
+    <% end %>
+    </div>
+  </div>
+</div>
+<div id="twitter">
+  
+</div>
+<div class="clear"></div>

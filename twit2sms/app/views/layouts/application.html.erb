@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title><%= h(yield(:title) || "Twitter2SMS") %></title>
+	<%= stylesheet_link_tag 'main' %>
+  <%= yield(:head) %>
+	<!--[if lte IE 7]><link rel="stylesheet" href="/stylesheets/main_ie.css" type="text/css" media="screen" /><![endif]-->
+</head>
+
+<body>
+
+<div style="z-index:-1;overflow:hidden;position:absolute;top:0;left:0;height:100%;width:100%;">
+  <img style="width:100%;height:100%;" src="/images/back.png" alt="" >
+</div>
+
+<div id="wrapper">
+
+	<div id="header">
+    <a href="/" class="left_d"><img src="/images/t2s_logo.png" border="0" /></a>
+		<div style="padding: 20px; background: red; color: white"><h1>ПРОЕКТ В РАЗРАБОТКЕ, СИЛЬНО НЕ ТЫКАТЬ.</h1></div>
+    <div id="top_menu">
+      <a href="/about" >О Проекте</a>
+      &nbsp;|&nbsp;
+      <% if current_user %>
+        <%= link_to "Выход", logout_path %>
+      <% else %>
+        <%= link_to "Вход", login_path %>
+      <% end %>
+    </div>
+    <div class="clear"></div>
+	</div><!-- #header-->
+
+	<div id="content">
+      <%- flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- end -%>
+      
+      <%- if show_title? -%>
+        <h1><%=h yield(:title) %></h1>
+      <%- end -%>
+      
+      <%= yield %>
+	</div><!-- #content-->
+
+</div><!-- #wrapper -->
+
+<div id="footer">
+  <div id="share" class="left_d">
+    <a href="#" title="Добавить в Delicious"><img src="/images/share/delicious_cloud.png" alt="Добавить в Delicious" /></a>
+    <a href="#" title="Добавить в Facebook"><img src="/images/share/facebook_cloud.png" alt="Добавить в Facebook" /></a>
+    <a href="#" title="Добавить в LinkedIn"><img src="/images/share/flinkedin_cloud.png" alt="Добавить в LinkedIn" /></a>
+    <a href="#" title="Добавить в Reddit"><img src="/images/share/reddit_cloud.png" alt="Добавить в Reddit" /></a>
+    <a href="#" title="Добавить в Plurk"><img src="/images/share/plurk_cloud.png" alt="Добавить в Plurk" /></a>
+    <a href="#" title="Добавить в Twitter"><img src="/images/share/twitter_cloud.png" alt="Добавить в Twitter" /></a>
+  </div>
+  <div id="copy" >&copy; 2009 <a href="/">Twit2SMS</a></div>
+  <div class="clear"></div>
+</div><!-- #footer -->
+
+</body>
+</html>

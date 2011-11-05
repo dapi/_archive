@@ -1,0 +1,18 @@
+== twitter2sms
+
+Гейт с твиттера в sms
+
+
+== Запуск проекта
+
+rake gems:install
+
+rake db:create
+rake db:migrate
+
+./script/server
+
+
+user iface http://localhost:3000/
+
+typus admin  http://localhost:3000/admin/

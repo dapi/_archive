@@ -1,0 +1,23 @@
+<% title "Twits" %>
+
+<table>
+  <tr>
+    <th>Follow</th>
+    <th>Message</th>
+    <th>Message Time</th>
+    <th>Sent At</th>
+  </tr>
+  <% for twit in @twits %>
+    <tr>
+      <td><%=h twit.follow_id %></td>
+      <td><%=h twit.message %></td>
+      <td><%=h twit.message_time %></td>
+      <td><%=h twit.sent_at %></td>
+      <td><%= link_to "Show", twit %></td>
+      <td><%= link_to "Edit", edit_twit_path(twit) %></td>
+      <td><%= link_to "Destroy", twit, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Twit", new_twit_path %></p>

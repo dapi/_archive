@@ -1,0 +1,27 @@
+<!--<p>Don't have an account? <%= link_to "Sign up!", signup_path %></p>-->
+<div id="login_form">
+
+  <% form_for @user do |user_form| %>
+    <%= user_form.error_messages %>
+    <p>
+      <%= user_form.label :phone, "Номер моего мобильного:", :class => "label" %>
+      <%= user_form.text_field :phone, :class => "field left_d" %>
+      <div style="display: none"><img src="/images/checked.png" /></div>
+      <div class="clear"></div>
+      <div class="smal_t">Только для Российских операторов сотовой связи. <br/><b>Например</b>: +79128423346</div>
+    </p>
+    <br/>
+    <% user_form.fields_for :follows do |follow_form| %>
+      <p>
+        <%= follow_form.label :name, "За кем следить:", :class => "label" %>
+        <%= follow_form.text_field :twitter, :class => "field left_d" %>
+      <div style="display: none"><img src="/images/checked.png" /></div>
+      <div class="clear"></div>
+      <div class="smal_t">Укажите здесь пользователя, чье сообщения вы хотите получать. <br/><b>Например</b>: rutwit2sms</div>
+      </p>
+    <% end %>
+      <%#= user_form.submit 'Submit' %>
+      <div align="right"><button type="submit"><img src="/images/submit.gif" alt="Следить"/></button></div>
+  <% end %>
+
+</div>

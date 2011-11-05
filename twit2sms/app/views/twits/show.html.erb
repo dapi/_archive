@@ -1,0 +1,24 @@
+<% title "Twit" %>
+
+<p>
+  <strong>Follow:</strong>
+  <%=h @twit.follow_id %>
+</p>
+<p>
+  <strong>Message:</strong>
+  <%=h @twit.message %>
+</p>
+<p>
+  <strong>Message Time:</strong>
+  <%=h @twit.message_time %>
+</p>
+<p>
+  <strong>Sent At:</strong>
+  <%=h @twit.sent_at %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_twit_path(@twit) %> |
+  <%= link_to "Destroy", @twit, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", twits_path %>
+</p>

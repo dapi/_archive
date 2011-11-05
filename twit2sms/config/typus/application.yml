@@ -1,0 +1,50 @@
+# Typus Models Configuration File
+#
+# Use the README file on the same folder as this file as a reference to
+# customize this file to your needs.
+
+Follow:
+  fields:
+    list: id, twitter, user, pulled_at
+    form: twitter, user, pulled_at
+    show: id, twitter, user, pulled_at, created_at, updated_at
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: 
+  filters:
+  search: twitter
+  application: twit2sms
+  description:
+
+Twit:
+  fields:
+    list: id, follow, message, message_time, sent_at
+    form: follow, message, message_time, sent_at
+    show: id, follow, message, message_time, sent_at, created_at, updated_at
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: 
+  filters:
+  search: message
+  application: twit2sms
+  description:
+
+User:
+  fields:
+    list: phone, phone_confirmed
+    form: phone, phone_code, phone_confirmed
+    show: id, phone, phone_code, phone_confirmed, created_at, updated_at
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: follows
+  filters:
+  search: phone
+  application: twit2sms
+  description:
+

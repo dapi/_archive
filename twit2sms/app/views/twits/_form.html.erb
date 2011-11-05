@@ -1,0 +1,20 @@
+<% form_for @twit do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :follow_id %><br />
+    <%= f.text_field :follow_id %>
+  </p>
+  <p>
+    <%= f.label :message %><br />
+    <%= f.text_field :message %>
+  </p>
+  <p>
+    <%= f.label :message_time %><br />
+    <%= f.datetime_select :message_time %>
+  </p>
+  <p>
+    <%= f.label :sent_at %><br />
+    <%= f.datetime_select :sent_at %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>
